@@ -1,0 +1,15 @@
+# Idea files
+.idea/
+*.iml
+
+# Eclipse files
+.classpath
+.project
+
+/.gradle/
+build/
+
+bin/
+classes/
+
+
