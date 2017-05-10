@@ -1,3 +1,5 @@
+package ferry.booking.test;
+
 import static org.junit.Assert.*;
 
 import java.io.File;
@@ -11,9 +13,9 @@ import java.nio.file.Paths;
 import ferry.booking.Program;
 import org.junit.Test;
 
-public class GoldenMasterTests {
+public class GoldenMasterTest {
 
-    //@Test
+//    @Test
     public void generate_golden_master() {
         WriteToFile("master.txt");
     }
