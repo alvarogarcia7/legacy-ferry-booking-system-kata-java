@@ -1,9 +1,6 @@
 package ferry.booking;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.PrintStream;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
@@ -28,8 +25,12 @@ public class Program {
     }
 
     public static void main(String[] args) {
-        start(System.out);
-        commandLoop();
+        start(System.in, System.out);
+    }
+
+    public static void start(InputStream input, PrintStream output) {
+        start(output);
+        commandLoop(input);
     }
 
     public static void mainWithTestData(PrintStream ps) {
@@ -97,15 +98,14 @@ public class Program {
         }
     }
 
-    private static void commandLoop() {
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+    private static void commandLoop(InputStream in) {
+        BufferedReader br = new BufferedReader(new InputStreamReader(in));
         String line;
         try {
             line = br.readLine();
-            while (line != "quit") {
+            while (!(line == null || line.toLowerCase().equals("quit"))) {
                 doCommand(line);
-
-                line = (br.readLine()).toLowerCase();
+                line = br.readLine();
             }
         } catch (IOException e) {
         }
