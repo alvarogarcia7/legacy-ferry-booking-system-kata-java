@@ -1,6 +1,8 @@
 package ferry.booking.test;
 
-import static org.junit.Assert.*;
+import ferry.booking.Program;
+import org.apache.commons.io.input.ReaderInputStream;
+import org.junit.Test;
 
 import java.io.*;
 import java.nio.charset.Charset;
@@ -8,12 +10,17 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
-import ferry.booking.Program;
-import org.apache.commons.io.input.ReaderInputStream;
-import org.junit.Ignore;
-import org.junit.Test;
+import static org.junit.Assert.assertEquals;
 
-public class GoldenMasterTest {
+public class GoldenMaster {
+
+    @Test
+    public void creation() {
+        GoldenMasterCase master = new GoldenMasterCase("master");
+        master.deletePreviousRun();
+        execute(master.input(), master.master());
+        master.acceptResults();
+    }
 
     private static void execute(Path input, Path output) {
         PrintStream ps = null;
@@ -38,20 +45,6 @@ public class GoldenMasterTest {
         return new ReaderInputStream(reader);
     }
 
-    private static String readFile(Path path) throws IOException {
-        byte[] encoded = Files.readAllBytes(path);
-        return new String(encoded, Charset.defaultCharset());
-    }
-
-    @Test
-    public void compare_to_golden_master() throws IOException {
-        GoldenMasterCase goldenMasterCase = new GoldenMasterCase("master");
-
-        execute(goldenMasterCase.input(), goldenMasterCase.execution());
-        String master = readFile(goldenMasterCase.master());
-        String tests = readFile(goldenMasterCase.execution());
-        assertEquals(tests, master);
-    }
 
     static class GoldenMasterCase {
 
