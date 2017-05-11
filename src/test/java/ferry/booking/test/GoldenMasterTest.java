@@ -14,11 +14,6 @@ import org.junit.Test;
 
 public class GoldenMasterTest {
 
-    private static String readFile(Path path) throws IOException {
-        byte[] encoded = Files.readAllBytes(path);
-        return new String(encoded, Charset.defaultCharset());
-    }
-
     @Test
     public void compare_to_golden_master() throws IOException {
 
@@ -28,6 +23,11 @@ public class GoldenMasterTest {
         String master = readFile(goldenMasterCase.master());
         String tests = readFile(goldenMasterCase.execution());
         assertEquals(tests, master);
+    }
+
+    private static String readFile(Path path) throws IOException {
+        byte[] encoded = Files.readAllBytes(path);
+        return new String(encoded, Charset.defaultCharset());
     }
 
 }
