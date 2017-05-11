@@ -1,5 +1,6 @@
 package ferry.booking.test;
 
+import static ferry.booking.test.GoldenMaster.execute;
 import static org.junit.Assert.*;
 
 import java.io.*;
@@ -12,29 +13,6 @@ import org.apache.commons.io.input.ReaderInputStream;
 import org.junit.Test;
 
 public class GoldenMasterTest {
-
-    private static void execute(Path input, Path output) {
-        PrintStream ps = null;
-        try {
-            File file = new File(output.toString());
-            file.createNewFile();
-            ps = new PrintStream(file);
-            Program.start(readFile2(input), ps);
-        } catch (IOException e) {
-        } finally {
-            ps.close();
-        }
-    }
-
-    private static InputStream readFile2(Path file) {
-        FileReader reader = null;
-        try {
-            reader = new FileReader(file.toString());
-        } catch (FileNotFoundException e) {
-            throw new RuntimeException(e);
-        }
-        return new ReaderInputStream(reader);
-    }
 
     private static String readFile(Path path) throws IOException {
         byte[] encoded = Files.readAllBytes(path);
