@@ -5,9 +5,6 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
-/**
- * Created by alvaro on 12/05/17.
- */
 class GoldenMasterCase {
 
     private String caseDescription;
