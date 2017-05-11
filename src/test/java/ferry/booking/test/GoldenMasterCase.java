@@ -14,19 +14,19 @@ class GoldenMasterCase {
     }
 
     private Path output() {
-        return Paths.get("src/test/resources/" + this.caseDescription + ".output.txt").toAbsolutePath();
+        return pathForFileType("output");
     }
 
     public Path input() {
-        return Paths.get("src/test/resources/" + this.caseDescription + ".input.txt").toAbsolutePath();
+        return pathForFileType("input");
     }
 
     public Path execution() {
-        return Paths.get("src/test/resources/" + this.caseDescription + ".execution.txt").toAbsolutePath();
+        return pathForFileType("execution");
     }
 
     public Path master() {
-        return Paths.get("src/test/resources/" + this.caseDescription + ".master.txt").toAbsolutePath();
+        return pathForFileType("master");
     }
 
     public void acceptResults() {
@@ -42,5 +42,9 @@ class GoldenMasterCase {
             Files.delete(master());
         } catch (IOException e) {
         }
+    }
+
+    private Path pathForFileType(String fileType) {
+        return Paths.get("src/test/resources/" + this.caseDescription + "."+ fileType + ".txt").toAbsolutePath();
     }
 }
