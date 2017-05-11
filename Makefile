@@ -11,3 +11,8 @@ check-golden-master:
 	./gradlew test --tests '*GoldenMasterTest'
 
 
+.PHONY: package
+package:
+	./gradlew fatjar
+	ls ./build/libs/booking-all-*.jar
+
