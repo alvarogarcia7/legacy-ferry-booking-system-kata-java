@@ -45,44 +45,4 @@ public class GoldenMaster {
         return new ReaderInputStream(reader);
     }
 
-
-    static class GoldenMasterCase {
-
-        private String caseDescription;
-
-        public GoldenMasterCase(String caseDescription) {
-            this.caseDescription = caseDescription;
-        }
-
-        private Path output() {
-            return Paths.get("src/test/resources/" + this.caseDescription + ".output.txt").toAbsolutePath();
-        }
-
-        public Path input() {
-            return Paths.get("src/test/resources/" + this.caseDescription + ".input.txt").toAbsolutePath();
-        }
-
-        public Path execution() {
-            return Paths.get("src/test/resources/" + this.caseDescription + ".execution.txt").toAbsolutePath();
-        }
-
-        public Path master() {
-            return Paths.get("src/test/resources/" + this.caseDescription + ".master.txt").toAbsolutePath();
-        }
-
-        public void acceptResults() {
-            try {
-                Files.move(execution(), master());
-            } catch (IOException e) {
-            }
-        }
-
-        public void deletePreviousRun() {
-            try {
-                Files.delete(output());
-                Files.delete(master());
-            } catch (IOException e) {
-            }
-        }
-    }
 }
