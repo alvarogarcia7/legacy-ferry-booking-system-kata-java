@@ -14,5 +14,10 @@ check-golden-master:
 .PHONY: package
 package:
 	./gradlew fatjar
-	ls ./build/libs/booking-all-*.jar
+	mv ./build/libs/booking-all-*.jar ./build
+
+.PHONY: execute
+execute: package
+	java -jar ./build/booking-all-*.jar
+
 
