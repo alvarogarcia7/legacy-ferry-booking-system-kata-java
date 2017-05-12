@@ -3,7 +3,7 @@ package ferry.booking.command;
 import ferry.booking.delivery.Console;
 import ferry.booking.delivery.ProgramOutputter;
 
-public class UnknownCommand {
+public class UnknownCommand implements Command {
     private ProgramOutputter programOutputter;
 
     public UnknownCommand(ProgramOutputter programOutputter) {

@@ -101,17 +101,17 @@ public class Program {
         }
     }
 
-    private static void doCommand(String command) {
-        if (command.startsWith("search")) {
-            new SearchCommand(programOutputter, timeTableService, command).run();
-        } else if (command.startsWith("book")) {
-            new BookCommand(programOutputter, bookingService, command).run();
-        } else if (command.startsWith("list ports")) {
-            new ListPortsCommand(programOutputter, ports).run();
-        } else if (command.startsWith("list bookings")) {
-            new ListBookingsCommand(programOutputter, bookingService).run();
-        } else {
-            new UnknownCommand(programOutputter).run();
+    private static void doCommand(String commandDescription) {
+        Command command = new UnknownCommand(programOutputter);
+        if (commandDescription.startsWith("search")) {
+            command = new SearchCommand(programOutputter, timeTableService, commandDescription);
+        } else if (commandDescription.startsWith("book")) {
+            command = new BookCommand(programOutputter, bookingService, commandDescription);
+        } else if (commandDescription.startsWith("list ports")) {
+            command = new ListPortsCommand(programOutputter, ports);
+        } else if (commandDescription.startsWith("list bookings")) {
+            command = new ListBookingsCommand(programOutputter, bookingService);
         }
+        command.run();
     }
 }

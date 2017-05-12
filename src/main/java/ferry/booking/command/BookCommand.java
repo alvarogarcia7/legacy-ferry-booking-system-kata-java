@@ -5,7 +5,7 @@ import ferry.booking.booking.JourneyBookingService;
 import ferry.booking.delivery.Console;
 import ferry.booking.delivery.ProgramOutputter;
 
-public class BookCommand {
+public class BookCommand implements Command {
     private final ProgramOutputter programOutputter;
     private final JourneyBookingService bookingService;
     private String line;

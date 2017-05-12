@@ -7,7 +7,7 @@ import ferry.booking.timetable.TimeTableService;
 
 import java.util.List;
 
-public class SearchCommand {
+public class SearchCommand implements Command {
     private final ProgramOutputter programOutputter;
     private final TimeTableService timeTableService;
     private final String command;

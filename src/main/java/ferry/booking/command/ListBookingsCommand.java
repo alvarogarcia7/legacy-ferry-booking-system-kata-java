@@ -8,7 +8,7 @@ import ferry.booking.delivery.ProgramOutputter;
 import java.util.List;
 
 
-public class ListBookingsCommand {
+public class ListBookingsCommand implements Command {
     private final ProgramOutputter programOutputter;
     private final JourneyBookingService bookingService;
 
