@@ -16,14 +16,14 @@ public class Console implements UserCommunication {
         return new Console(printStream);
     }
 
-    private void println(String message) {
-        printStream.println(message);
-    }
-
     @Override
     public void display(String[] message) {
         for (String line : message) {
             this.println(line);
         }
+    }
+
+    private void println(String message) {
+        printStream.println(message);
     }
 }
