@@ -10,4 +10,10 @@ public class TimeTablePrinter {
     public TimeTablePrinter(Console console) {
         this.console = console;
     }
+
+    public void displayWelcomeMessage() {
+        this.console.println("Welcome to the Ferry Finding System");
+        this.console.println("=======");
+        this.console.println("Ferry Time Table");
+    }
 }

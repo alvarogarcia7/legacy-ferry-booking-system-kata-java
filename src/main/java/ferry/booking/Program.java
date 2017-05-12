@@ -59,18 +59,12 @@ public class Program {
         timeTablePrinter = TimeTablePrinter.console(out);
         wireUp();
 
-        displayWelcomeMessage();
+        timeTablePrinter.displayWelcomeMessage();
 
         List<Port> allPorts = ports.all();
         List<TimeTableViewModelRow> timeTable = timeTableService.getTimeTable(allPorts);
 
         displayTimetable(allPorts, timeTable);
-    }
-
-    private static void displayWelcomeMessage() {
-        out.println("Welcome to the Ferry Finding System");
-        out.println("=======");
-        out.println("Ferry Time Table");
     }
 
     private static void testCommands() {
