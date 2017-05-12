@@ -6,6 +6,9 @@
 .classpath
 .project
 
+# Golden Master files
+src/test/resources/*.execution.txt
+
 /.gradle/
 build/
 
