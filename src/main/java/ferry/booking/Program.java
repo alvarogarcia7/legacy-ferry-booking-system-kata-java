@@ -1,6 +1,5 @@
 package ferry.booking;
 
-import ferry.booking.booking.Booking;
 import ferry.booking.booking.Bookings;
 import ferry.booking.booking.JourneyBookingService;
 import ferry.booking.command.*;

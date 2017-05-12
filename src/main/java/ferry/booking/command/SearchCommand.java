@@ -1,7 +1,6 @@
 package ferry.booking.command;
 
 import ferry.booking.booking.AvailableCrossing;
-import ferry.booking.delivery.Console;
 import ferry.booking.delivery.ProgramOutputter;
 import ferry.booking.timetable.TimeTableService;
 

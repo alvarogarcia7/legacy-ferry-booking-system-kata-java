@@ -2,7 +2,6 @@ package ferry.booking.command;
 
 import ferry.booking.booking.Booking;
 import ferry.booking.booking.JourneyBookingService;
-import ferry.booking.delivery.Console;
 import ferry.booking.delivery.ProgramOutputter;
 
 public class BookCommand implements Command {
