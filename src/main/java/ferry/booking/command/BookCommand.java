@@ -28,9 +28,7 @@ public class BookCommand implements Command {
             if (bookingService.bookIfPossible(new Booking(journeyId, passengers))) {
                 new UserMessage("Booked").print(this.out);
             } else {
-                new ErrorMessage(new String[]{
-                        "Cannot book that journey"
-                }).print(this.out);
+                new ErrorMessage(new String[]{"Cannot book that journey"}).print(this.out);
             }
         } catch (Exception e) {
             new HelpMessage(new String[]{
