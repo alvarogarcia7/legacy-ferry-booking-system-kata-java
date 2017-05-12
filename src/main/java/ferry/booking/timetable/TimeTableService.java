@@ -101,11 +101,7 @@ public class TimeTableService {
             if (toPort == destination.id && fromPort == origin.id) {
                 if (timetable.time >= time) {
                     List<Booking> journeyBookings = new ArrayList<>();
-                    for (Booking x : bookings.all()) {
-                        if (x.journeyId == timetable.id) {
-                            journeyBookings.add(x);
-                        }
-                    }
+                    bookings.byId(timetable.id).map(journeyBookings::add);
                     int pax = 0;
                     for (Booking x : journeyBookings) {
                         pax += x.passengers;

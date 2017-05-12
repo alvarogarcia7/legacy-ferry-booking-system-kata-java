@@ -2,6 +2,7 @@ package ferry.booking.booking;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 public class Bookings {
 
@@ -13,5 +14,9 @@ public class Bookings {
 
     public List<Booking> all() {
         return bookings;
+    }
+
+    public Optional<Booking> byId(int id) {
+        return bookings.stream().filter(x -> x.journeyId == id).findFirst();
     }
 }
