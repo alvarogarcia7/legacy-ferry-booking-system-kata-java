@@ -1,7 +1,5 @@
 package ferry.booking.delivery.port;
 
-import ferry.booking.delivery.adapter.Console;
-
 public class UserMessage {
     private String message;
 

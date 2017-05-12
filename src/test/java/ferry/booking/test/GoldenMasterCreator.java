@@ -5,7 +5,6 @@ import org.junit.Test;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.PrintStream;
-import java.nio.file.Paths;
 
 import static ferry.booking.test.GoldenMaster.execute;
 

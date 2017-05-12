@@ -6,8 +6,6 @@ import org.apache.commons.io.input.ReaderInputStream;
 import java.io.*;
 import java.nio.file.Path;
 
-import static org.junit.Assert.assertEquals;
-
 public class GoldenMaster {
 
     public static void execute(Path input, Path output) {

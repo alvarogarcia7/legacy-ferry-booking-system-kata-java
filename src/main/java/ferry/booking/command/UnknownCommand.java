@@ -1,6 +1,5 @@
 package ferry.booking.command;
 
-import ferry.booking.delivery.adapter.Console;
 import ferry.booking.delivery.ProgramOutputter;
 
 import java.util.ArrayList;

@@ -3,7 +3,6 @@ package ferry.booking.command;
 import ferry.booking.booking.Booking;
 import ferry.booking.booking.JourneyBookingService;
 import ferry.booking.delivery.ProgramOutputter;
-import ferry.booking.port.Port;
 
 import java.util.ArrayList;
 import java.util.List;
