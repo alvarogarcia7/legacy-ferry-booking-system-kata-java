@@ -1,7 +1,7 @@
 package ferry.booking.ferry;
 
+import ferry.booking.port.Port;
 import ferry.booking.port.PortManager;
-import ferry.booking.port.PortModel;
 import ferry.booking.timetable.TimeTable;
 import ferry.booking.timetable.TimeTableEntry;
 import ferry.booking.timetable.TimeTables;
@@ -21,7 +21,7 @@ public class FerryAvailabilityService {
         this.portManager = portManager;
     }
 
-    private static void boatReady(TimeTableEntry timetable, PortModel destination, FerryJourney ferryJourney) {
+    private static void boatReady(TimeTableEntry timetable, Port destination, FerryJourney ferryJourney) {
         if (ferryJourney.ferry == null) {
             FerryManager.addFerry(timetable, ferryJourney);
         }
@@ -32,7 +32,7 @@ public class FerryAvailabilityService {
     }
 
     public Ferry nextFerryAvailableFrom(int portId, long time) {
-        List<PortModel> ports = portManager.PortModels();
+        List<Port> ports = portManager.PortModels();
         List<TimeTableEntry> allEntries = new ArrayList<>();
         for (TimeTable tt : timeTables.all()) {
             allEntries.addAll(tt.entries);

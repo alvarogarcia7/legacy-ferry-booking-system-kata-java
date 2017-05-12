@@ -1,11 +1,11 @@
 package ferry.booking.ferry;
 
-import ferry.booking.port.PortModel;
+import ferry.booking.port.Port;
 import ferry.booking.timetable.TimeTableEntry;
 
 public class FerryModule {
 
-    public static long timeReady(TimeTableEntry timetable, PortModel destination) {
+    public static long timeReady(TimeTableEntry timetable, Port destination) {
         if (timetable == null) {
             return 0;
         }

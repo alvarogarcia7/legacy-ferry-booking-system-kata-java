@@ -17,18 +17,14 @@ public class PortManager {
         this.ferries = ferries;
     }
 
-    public List<PortModel> PortModels() {
-        List<PortModel> allPorts = new ArrayList<>();
-        for (Port port : ports.all()) {
-            allPorts.add(new PortModel(port));
-        }
+    public List<Port> PortModels() {
         for (Ferry ferry : ferries.all()) {
-            for (PortModel port : allPorts) {
+            for (Port port : ports.all()) {
                 if (port.id == ferry.homePortId) {
                     port.addBoat(10, ferry);
                 }
             }
         }
-        return allPorts;
+        return ports.all();
     }
 }

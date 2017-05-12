@@ -1,13 +1,13 @@
 package ferry.booking.ferry;
 
-import ferry.booking.port.PortModel;
+import ferry.booking.port.Port;
 import ferry.booking.timetable.TimeTableEntry;
 
 import java.util.List;
 
 public class FerryManager {
 
-    public static FerryJourney createFerryJourney(List<PortModel> ports, TimeTableEntry timetable) {
+    public static FerryJourney createFerryJourney(List<Port> ports, TimeTableEntry timetable) {
         if (ports == null) {
             return null;
         }
@@ -17,7 +17,7 @@ public class FerryManager {
         }
 
         FerryJourney fj = new FerryJourney();
-        for (PortModel port : ports) {
+        for (Port port : ports) {
             if (port.id == timetable.originId) {
                 fj.origin = port;
             }
@@ -32,7 +32,7 @@ public class FerryManager {
         journey.ferry = journey.origin.getNextAvailable(timetable.time);
     }
 
-    public static int getFerryTurnaroundTime(PortModel destination) {
+    public static int getFerryTurnaroundTime(Port destination) {
         if (destination.id == 3) {
             return 25;
         }

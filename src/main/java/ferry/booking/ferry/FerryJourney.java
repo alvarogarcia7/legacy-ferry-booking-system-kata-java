@@ -1,10 +1,10 @@
 package ferry.booking.ferry;
 
-import ferry.booking.port.PortModel;
+import ferry.booking.port.Port;
 
 public class FerryJourney {
 
     public Ferry ferry;
-    public PortModel origin;
-    public PortModel destination;
+    public Port origin;
+    public Port destination;
 }
