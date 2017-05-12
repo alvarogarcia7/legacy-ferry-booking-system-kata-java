@@ -7,7 +7,7 @@ public class HelpMessage {
         this.payload = payload;
     }
 
-    public void print(UserCommunication console) {
-        console.display(payload);
+    public void print(UserCommunication userCommunication) {
+        userCommunication.display(payload);
     }
 }

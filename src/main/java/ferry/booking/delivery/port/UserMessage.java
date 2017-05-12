@@ -7,7 +7,7 @@ public class UserMessage {
         this.message = message;
     }
 
-    public void print(UserCommunication console) {
-        console.display(this.message);
+    public void print(UserCommunication userCommunication) {
+        userCommunication.display(this.message);
     }
 }
