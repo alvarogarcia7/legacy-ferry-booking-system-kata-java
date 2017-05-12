@@ -1,7 +1,7 @@
 package ferry.booking.delivery;
 
-import ferry.booking.delivery.adapter.Console;
 import ferry.booking.delivery.port.HelpMessage;
+import ferry.booking.delivery.port.UserCommunication;
 import ferry.booking.delivery.port.UserMessage;
 import ferry.booking.port.Port;
 import ferry.booking.timetable.TimeTableViewModelRow;
@@ -12,14 +12,14 @@ import java.util.Comparator;
 import java.util.List;
 
 public class TimeTablePrinter {
-    private Console console;
+    private UserCommunication console;
 
-    public static TimeTablePrinter console(Console console) {
-        return new TimeTablePrinter(console);
+    public static TimeTablePrinter to(UserCommunication userCommunication) {
+        return new TimeTablePrinter(userCommunication);
     }
 
-    public TimeTablePrinter(Console console) {
-        this.console = console;
+    private TimeTablePrinter(UserCommunication userCommunication) {
+        this.console = userCommunication;
     }
 
     public void displayTimetable(List<Port> ports, List<TimeTableViewModelRow> rows) {

@@ -54,7 +54,7 @@ public class Program {
 
     public static void start(PrintStream ps) {
         out = Console.to(ps);
-        timeTablePrinter = TimeTablePrinter.console(out);
+        timeTablePrinter = TimeTablePrinter.to(out);
         programOutputter = ProgramOutputter.aNew(timeTablePrinter, out);
         wireUp();
 
