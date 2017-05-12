@@ -1,11 +1,11 @@
 package ferry.booking;
 
-import ferry.booking.booking.AvailableCrossing;
 import ferry.booking.booking.Booking;
 import ferry.booking.booking.Bookings;
 import ferry.booking.booking.JourneyBookingService;
 import ferry.booking.command.BookCommand;
 import ferry.booking.command.ListPortsCommand;
+import ferry.booking.command.SearchCommand;
 import ferry.booking.command.UnknownCommand;
 import ferry.booking.delivery.Console;
 import ferry.booking.delivery.ProgramOutputter;
@@ -106,7 +106,7 @@ public class Program {
 
     private static void doCommand(String command) {
         if (command.startsWith("search")) {
-            search(command);
+            new SearchCommand(programOutputter, timeTableService, command).run();
         } else if (command.startsWith("book")) {
             new BookCommand(programOutputter, bookingService, command).run();
         } else if (command.startsWith("list ports")) {
@@ -121,31 +121,6 @@ public class Program {
             out.println();
         } else {
             new UnknownCommand(programOutputter).run();
-        }
-    }
-
-    private static void search(String line) {
-        try {
-            String parts[] = line.split(" ");
-            int originPortId = Integer.parseInt(parts[1]);
-            int destinationPortId = Integer.parseInt(parts[2]);
-            String mins[] = parts[3].split(":");
-            long time = Long.parseLong(mins[0]) * 60 + Long.parseLong(mins[1]);
-
-            List<AvailableCrossing> search = timeTableService.getAvailableCrossings(time, originPortId,
-                    destinationPortId);
-
-            for (AvailableCrossing result : search) {
-                out.printf("[%02d:%02d] %s to %s -  %s (JourneyId : %d, spaces left %d)", result.setOff / 60,
-                        result.setOff % 60, result.originPort, result.destinationPort, result.ferryName,
-                        result.journeyId, result.seatsLeft);
-                out.println();
-            }
-        } catch (Exception e) {
-            out.println("Search is [search x y hh:mm]");
-            out.println("where: x - origin port id");
-            out.println("where: y - destinationg port id");
-            out.println("where: hh:mm - time to search after");
         }
     }
 }
