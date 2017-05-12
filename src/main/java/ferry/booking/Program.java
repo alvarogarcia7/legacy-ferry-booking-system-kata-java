@@ -3,6 +3,8 @@ package ferry.booking;
 import ferry.booking.booking.AvailableCrossing;
 import ferry.booking.booking.Booking;
 import ferry.booking.booking.Bookings;
+import ferry.booking.command.ListPortsCommand;
+import ferry.booking.delivery.ProgramOutputter;
 import ferry.booking.delivery.TimeTablePrinter;
 import ferry.booking.ferry.Ferries;
 import ferry.booking.ferry.FerryAvailabilityService;
@@ -26,6 +28,7 @@ public class Program {
     private static FerryAvailabilityService ferryService;
     private static Console out;
     private static TimeTablePrinter timeTablePrinter;
+    private static ProgramOutputter programOutputter;
 
     public static void wireUp() {
         TimeTables timeTables = new TimeTables();
@@ -54,6 +57,7 @@ public class Program {
     public static void start(PrintStream ps) {
         out = Console.to(ps);
         timeTablePrinter = TimeTablePrinter.console(out);
+        programOutputter = ProgramOutputter.aNew(timeTablePrinter, out);
         wireUp();
 
         timeTablePrinter.displayWelcomeMessage();
@@ -104,13 +108,7 @@ public class Program {
         } else if (command.startsWith("book")) {
             book(command);
         } else if (command.startsWith("list ports")) {
-            out.println("Ports:");
-            out.println("------");
-            for (Port port : ports.all()) {
-                out.printf("%d - %s", port.id, port.name);
-                out.println();
-            }
-            out.println();
+            new ListPortsCommand(programOutputter, ports).run();
         } else if (command.startsWith("list bookings")) {
             List<Booking> bookings = bookingService.getAllBookings();
             out.println("Bookings:");

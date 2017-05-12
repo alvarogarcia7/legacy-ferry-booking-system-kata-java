@@ -53,12 +53,6 @@ Search is [search x y hh:mm]
 where: x - origin port id
 where: y - destinationg port id
 where: hh:mm - time to search after
-Ports:
-------
-1 - Port Ellen
-2 - Mos Eisley
-3 - Tarsonis
-
 [00:40] Mos Eisley to Tarsonis -  Black Pearl (JourneyId : 10, spaces left 12)
 [01:40] Mos Eisley to Tarsonis -  Defiant (JourneyId : 14, spaces left 11)
 [00:40] Mos Eisley to Tarsonis -  Black Pearl (JourneyId : 10, spaces left 12)
