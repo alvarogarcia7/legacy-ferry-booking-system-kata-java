@@ -4,8 +4,8 @@ import ferry.booking.booking.Bookings;
 import ferry.booking.booking.JourneyBookingService;
 import ferry.booking.command.*;
 import ferry.booking.delivery.adapter.Console;
-import ferry.booking.delivery.ProgramOutputter;
 import ferry.booking.delivery.TimeTablePrinter;
+import ferry.booking.delivery.port.UserCommunication;
 import ferry.booking.ferry.Ferries;
 import ferry.booking.ferry.FerryAvailabilityService;
 import ferry.booking.port.Port;
@@ -24,9 +24,8 @@ public class Program {
     private static JourneyBookingService bookingService;
     public static Ports ports;
     private static FerryAvailabilityService ferryService;
-    private static Console out;
+    private static UserCommunication out;
     private static TimeTablePrinter timeTablePrinter;
-    private static ProgramOutputter programOutputter;
 
     public static void wireUp() {
         TimeTables timeTables = new TimeTables();
@@ -55,7 +54,6 @@ public class Program {
     public static void start(PrintStream ps) {
         out = Console.to(ps);
         timeTablePrinter = TimeTablePrinter.to(out);
-        programOutputter = ProgramOutputter.aNew(timeTablePrinter, out);
         wireUp();
 
         timeTablePrinter.displayWelcomeMessage();
@@ -101,15 +99,15 @@ public class Program {
     }
 
     private static void doCommand(String commandDescription) {
-        Command command = new UnknownCommand(programOutputter.console);
+        Command command = new UnknownCommand(out);
         if (commandDescription.startsWith("search")) {
-            command = new SearchCommand(programOutputter.console, timeTableService, commandDescription);
+            command = new SearchCommand(out, timeTableService, commandDescription);
         } else if (commandDescription.startsWith("book")) {
-            command = new BookCommand(programOutputter.console, bookingService, commandDescription);
+            command = new BookCommand(out, bookingService, commandDescription);
         } else if (commandDescription.startsWith("list ports")) {
-            command = new ListPortsCommand(programOutputter.console, ports);
+            command = new ListPortsCommand(out, ports);
         } else if (commandDescription.startsWith("list bookings")) {
-            command = new ListBookingsCommand(programOutputter.console, bookingService);
+            command = new ListBookingsCommand(out, bookingService);
         }
         command.run();
     }

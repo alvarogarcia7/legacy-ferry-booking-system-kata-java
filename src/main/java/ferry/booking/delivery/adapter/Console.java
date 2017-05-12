@@ -16,16 +16,8 @@ public class Console implements UserCommunication {
         this.printStream = printStream;
     }
 
-    public void println(String message) {
+    private void println(String message) {
         printStream.println(message);
-    }
-
-    public void printf(String format, Object... values) {
-        printStream.printf(format, values);
-    }
-
-    public void println() {
-        printStream.println();
     }
 
     @Override
