@@ -23,7 +23,7 @@ public class FerryAvailabilityService {
 
     public Ferry nextFerryAvailableFrom(int portId, long time) {
         List<PortModel> ports = portManager.PortModels();
-        List<TimeTableEntry> allEntries = new ArrayList<TimeTableEntry>();
+        List<TimeTableEntry> allEntries = new ArrayList<>();
         for (TimeTable tt : timeTables.all()) {
             allEntries.addAll(tt.entries);
         }

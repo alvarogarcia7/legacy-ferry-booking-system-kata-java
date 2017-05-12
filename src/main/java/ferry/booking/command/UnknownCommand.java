@@ -13,7 +13,7 @@ public class UnknownCommand implements Command {
     }
 
     public void run() {
-        List<String> message = new ArrayList<String>();
+        List<String> message = new ArrayList<>();
         message.add("Commands are: [search x y hh:mm] book, or list bookings");
         message.add("  search x y hh:mm");
         message.add("  book x y");

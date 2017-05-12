@@ -20,7 +20,7 @@ public class ListBookingsCommand implements Command {
     public void run() {
         List<Booking> bookings = bookingService.getAllBookings();
 
-        List<String> message = new ArrayList<String>();
+        List<String> message = new ArrayList<>();
         message.add("Bookings:");
         message.add("---------");
         StringBuilder stringBuilder = new StringBuilder();

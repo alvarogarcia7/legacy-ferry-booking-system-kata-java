@@ -30,14 +30,14 @@ public class SearchCommand implements Command {
                     destinationPortId);
 
             for (AvailableCrossing result : search) {
-                List<String> message = new ArrayList<String>();
+                List<String> message = new ArrayList<>();
                 message.add(String.format("[%02d:%02d] %s to %s -  %s (JourneyId : %d, spaces left %d)", result.setOff / 60,
                         result.setOff % 60, result.originPort, result.destinationPort, result.ferryName,
                         result.journeyId, result.seatsLeft));
                 programOutputter.console.display(message.toArray(new String[0]));
             }
         } catch (Exception e) {
-            List<String> message = new ArrayList<String>();
+            List<String> message = new ArrayList<>();
 
             message.add("Search is [search x y hh:mm]");
             message.add("where: x - origin port id");

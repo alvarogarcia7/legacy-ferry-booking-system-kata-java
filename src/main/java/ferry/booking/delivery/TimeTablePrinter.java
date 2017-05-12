@@ -25,7 +25,7 @@ public class TimeTablePrinter {
     public void displayTimetable(List<Port> ports, List<TimeTableViewModelRow> rows) {
         for (Port port : ports) {
             printPortHeader(port.name);
-            List<TimeTableViewModelRow> items = new ArrayList<TimeTableViewModelRow>();
+            List<TimeTableViewModelRow> items = new ArrayList<>();
             for (TimeTableViewModelRow x : rows) {
                 if (x.originPort.equals(port.name)) {
                     items.add(x);

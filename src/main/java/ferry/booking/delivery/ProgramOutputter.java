@@ -24,7 +24,7 @@ public class ProgramOutputter {
     }
 
     public void printPorts(List<Port> ports) {
-        List<String> message = new ArrayList<String>();
+        List<String> message = new ArrayList<>();
         message.add("Ports:");
         message.add("------");
         for (Port port : ports) {

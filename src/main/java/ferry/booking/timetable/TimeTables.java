@@ -33,8 +33,8 @@ public class TimeTables {
     }
 
     public List<TimeTable> all() {
-        List<TimeTable> result = new ArrayList<TimeTable>();
-        List<TimeTableEntry> timeTableEntries = new ArrayList<TimeTableEntry>();
+        List<TimeTable> result = new ArrayList<>();
+        List<TimeTableEntry> timeTableEntries = new ArrayList<>();
         for (TimeTableEntry entry : entries) {
             if (entry.timeTableId == 1) {
                 timeTableEntries.add(entry);
@@ -46,7 +46,7 @@ public class TimeTables {
         timeTable.entries = timeTableEntries;
         result.add(timeTable);
 
-        List<TimeTableEntry> timeTableEntries2 = new ArrayList<TimeTableEntry>();
+        List<TimeTableEntry> timeTableEntries2 = new ArrayList<>();
         for (TimeTableEntry entry : entries) {
             if (entry.timeTableId == 2) {
                 timeTableEntries2.add(entry);
@@ -58,7 +58,7 @@ public class TimeTables {
         timeTable2.entries = timeTableEntries2;
         result.add(timeTable2);
 
-        List<TimeTableEntry> timeTableEntries3 = new ArrayList<TimeTableEntry>();
+        List<TimeTableEntry> timeTableEntries3 = new ArrayList<>();
         for (TimeTableEntry entry : entries) {
             if (entry.timeTableId == 3) {
                 timeTableEntries3.add(entry);

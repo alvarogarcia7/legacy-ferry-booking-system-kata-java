@@ -25,7 +25,7 @@ public class JourneyBookingService {
 
     public boolean canBook(int journeyId, int passengers) {
         List<TimeTable> timetables = timeTables.all();
-        List<TimeTableEntry> allEntries = new ArrayList<TimeTableEntry>();
+        List<TimeTableEntry> allEntries = new ArrayList<>();
         for (TimeTable tt : timetables) {
             allEntries.addAll(tt.entries);
         }

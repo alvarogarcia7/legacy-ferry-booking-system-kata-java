@@ -27,7 +27,7 @@ public class TimeTableService {
 
     public List<TimeTableViewModelRow> getTimeTable(List<Port> ports) {
         List<TimeTable> timetables = timeTables.all();
-        List<TimeTableEntry> allEntries = new ArrayList<TimeTableEntry>();
+        List<TimeTableEntry> allEntries = new ArrayList<>();
         for (TimeTable tt : timetables) {
             allEntries.addAll(tt.entries);
         }
@@ -39,7 +39,7 @@ public class TimeTableService {
             }
         });
 
-        List<TimeTableViewModelRow> rows = new ArrayList<TimeTableViewModelRow>();
+        List<TimeTableViewModelRow> rows = new ArrayList<>();
 
         for (TimeTableEntry timetable : allEntries) {
             Port origin = null;
@@ -71,7 +71,7 @@ public class TimeTableService {
     public List<AvailableCrossing> getAvailableCrossings(long time, int fromPort, int toPort) {
         List<Port> ports = new Ports().all();
         List<TimeTable> timetables = timeTables.all();
-        List<TimeTableEntry> allEntries = new ArrayList<TimeTableEntry>();
+        List<TimeTableEntry> allEntries = new ArrayList<>();
         for (TimeTable tt : timetables) {
             allEntries.addAll(tt.entries);
         }
@@ -83,7 +83,7 @@ public class TimeTableService {
             }
         });
 
-        List<AvailableCrossing> result = new ArrayList<AvailableCrossing>();
+        List<AvailableCrossing> result = new ArrayList<>();
 
         for (TimeTableEntry timetable : allEntries) {
             Port origin = null;
