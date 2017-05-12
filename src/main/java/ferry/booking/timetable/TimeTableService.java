@@ -12,6 +12,8 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class TimeTableService {
 
@@ -31,13 +33,7 @@ public class TimeTableService {
         for (TimeTable tt : timetables) {
             allEntries.addAll(tt.entries);
         }
-        Collections.sort(allEntries, new Comparator<TimeTableEntry>() {
-
-            @Override
-            public int compare(TimeTableEntry tte1, TimeTableEntry tte2) {
-                return Long.compare(tte1.time, tte2.time);
-            }
-        });
+        Collections.sort(allEntries, Comparator.comparingLong(entry -> entry.time));
 
         List<TimeTableViewModelRow> rows = new ArrayList<>();
 
@@ -75,13 +71,7 @@ public class TimeTableService {
         for (TimeTable tt : timetables) {
             allEntries.addAll(tt.entries);
         }
-        Collections.sort(allEntries, new Comparator<TimeTableEntry>() {
-
-            @Override
-            public int compare(TimeTableEntry tte1, TimeTableEntry tte2) {
-                return Long.compare(tte1.time, tte2.time);
-            }
-        });
+        Collections.sort(allEntries, Comparator.comparingLong(tte -> tte.time));
 
         List<AvailableCrossing> result = new ArrayList<>();
 
