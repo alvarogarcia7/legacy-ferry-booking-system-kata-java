@@ -1,6 +1,7 @@
 package ferry.booking.delivery;
 
 import ferry.booking.delivery.adapter.Console;
+import ferry.booking.delivery.port.HelpMessage;
 import ferry.booking.port.Port;
 import ferry.booking.timetable.TimeTableViewModelRow;
 
@@ -59,8 +60,10 @@ public class TimeTablePrinter {
     }
 
     public void displayWelcomeMessage() {
-        this.console.println("Welcome to the Ferry Finding System");
-        this.console.println("=======");
-        this.console.println("Ferry Time Table");
+        new HelpMessage(new String[]{
+                "Welcome to the Ferry Finding System",
+                "=======",
+                "Ferry Time Table"
+        }).print(this.console);
     }
 }
