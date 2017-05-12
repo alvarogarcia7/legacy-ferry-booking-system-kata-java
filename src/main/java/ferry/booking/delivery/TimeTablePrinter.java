@@ -42,9 +42,8 @@ public class TimeTablePrinter {
             });
 
             for (TimeTableViewModelRow item : items) {
-                out.printf("| %-8s | %-13s | %-13s | %-18s | %-8s |", item.startTime, item.destinationPort,
-                        item.journeyLength, item.ferryName, item.arrivalTime);
-                out.println();
+                new UserMessage(String.format("| %-8s | %-13s | %-13s | %-18s | %-8s |", item.startTime, item.destinationPort,
+                        item.journeyLength, item.ferryName, item.arrivalTime)).print(this.console);
             }
         }
     }
