@@ -3,9 +3,6 @@ package ferry.booking.command;
 import ferry.booking.delivery.port.UserCommunication;
 import ferry.booking.delivery.port.UserMessage;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class UnknownCommand implements Command {
     private UserCommunication out;
 
