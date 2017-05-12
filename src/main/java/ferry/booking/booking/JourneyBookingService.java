@@ -41,12 +41,6 @@ public class JourneyBookingService {
             Ferry ferry = ferryService.nextFerryAvailableFrom(timetable.originId, timetable.time);
 
             if (timetable.id == journeyId) {
-                List<Booking> journeyBookings = new ArrayList<>();
-                for (Booking x : bookings.all()) {
-                    if (x.journeyId == journeyId) {
-                        journeyBookings.add(x);
-                    }
-                }
                 int pax = 0;
                 for (Booking x : bookings.all()) {
                     pax += x.passengers;
