@@ -13,7 +13,6 @@ import java.util.List;
 
 public class TimeTablePrinter {
     private Console console;
-    private Console out;
 
     public static TimeTablePrinter console(Console console) {
         return new TimeTablePrinter(console);
@@ -21,7 +20,6 @@ public class TimeTablePrinter {
 
     public TimeTablePrinter(Console console) {
         this.console = console;
-        this.out = this.console;
     }
 
     public void displayTimetable(List<Port> ports, List<TimeTableViewModelRow> rows) {
