@@ -8,28 +8,21 @@ import java.nio.charset.Charset;
 import java.nio.file.Files;
 import java.nio.file.Path;
 
-import ferry.booking.Program;
-import org.apache.commons.io.input.ReaderInputStream;
 import org.junit.Test;
 
 public class GoldenMasterTest {
 
     @Test
-    public void compare_to_golden_master() throws IOException {
-
-        GoldenMasterCase goldenMasterCase = new GoldenMasterCase("master");
-
-        execute(goldenMasterCase.input(), goldenMasterCase.execution());
-        String master = readFile(goldenMasterCase.master());
-        String tests = readFile(goldenMasterCase.execution());
-        assertEquals(tests, master);
+    public void compare_case_master_to_golden_master() throws IOException {
+        executeCase(new GoldenMasterCase("master"));
     }
 
     @Test
-    public void i_compare_to_golden_master() throws IOException {
+    public void compare_case_availability_to_golden_master() throws IOException {
+        executeCase(new GoldenMasterCase("availability"));
+    }
 
-        GoldenMasterCase goldenMasterCase = new GoldenMasterCase("availability");
-
+    private void executeCase(GoldenMasterCase goldenMasterCase) throws IOException {
         execute(goldenMasterCase.input(), goldenMasterCase.execution());
         String master = readFile(goldenMasterCase.master());
         String tests = readFile(goldenMasterCase.execution());
