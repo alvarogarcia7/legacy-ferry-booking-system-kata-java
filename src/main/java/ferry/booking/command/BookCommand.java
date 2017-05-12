@@ -2,7 +2,10 @@ package ferry.booking.command;
 
 import ferry.booking.booking.Booking;
 import ferry.booking.booking.JourneyBookingService;
+import ferry.booking.delivery.ErrorMessage;
+import ferry.booking.delivery.HelpMessage;
 import ferry.booking.delivery.ProgramOutputter;
+import ferry.booking.delivery.UserMessage;
 
 public class BookCommand implements Command {
     private final ProgramOutputter programOutputter;
@@ -28,15 +31,18 @@ public class BookCommand implements Command {
                 booking.passengers = passengers;
                 bookingService.book(booking);
 
-                programOutputter.console.println("Booked");
+                programOutputter.print(new UserMessage("Booked"));
             } else {
-                programOutputter.console.println("Cannot book that journey");
+                programOutputter.print(new ErrorMessage(new String[]{
+                        "Cannot book that journey"
+                }));
             }
         } catch (Exception e) {
-            programOutputter.console.println("Book is [book x y]");
-            programOutputter.console.println("where x - journey id");
-            programOutputter.console.println("where y - number of passenger");
+            programOutputter.print(new HelpMessage(new String[]{
+                    "Book is [book x y]",
+                    "where x - journey id",
+                    "where y - number of passenger"
+            }));
         }
-
     }
 }

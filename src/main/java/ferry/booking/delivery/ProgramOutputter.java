@@ -26,4 +26,16 @@ public class ProgramOutputter {
         }
         console.println();
     }
+
+    public void print(HelpMessage helpMessage) {
+        helpMessage.print(console);
+    }
+
+    public void print(UserMessage userMessage) {
+        userMessage.print(console);
+    }
+
+    public void print(ErrorMessage errorMessage) {
+        errorMessage.print(console);
+    }
 }
