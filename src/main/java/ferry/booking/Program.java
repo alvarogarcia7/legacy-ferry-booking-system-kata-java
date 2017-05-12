@@ -4,6 +4,7 @@ import ferry.booking.booking.AvailableCrossing;
 import ferry.booking.booking.Booking;
 import ferry.booking.booking.Bookings;
 import ferry.booking.booking.JourneyBookingService;
+import ferry.booking.command.BookCommand;
 import ferry.booking.command.ListPortsCommand;
 import ferry.booking.command.UnknownCommand;
 import ferry.booking.delivery.Console;
@@ -107,7 +108,7 @@ public class Program {
         if (command.startsWith("search")) {
             search(command);
         } else if (command.startsWith("book")) {
-            book(command);
+            new BookCommand(programOutputter, bookingService, command).run();
         } else if (command.startsWith("list ports")) {
             new ListPortsCommand(programOutputter, ports).run();
         } else if (command.startsWith("list bookings")) {
@@ -120,29 +121,6 @@ public class Program {
             out.println();
         } else {
             new UnknownCommand(programOutputter).run();
-        }
-    }
-
-    private static void book(String line) {
-        try {
-            String parts[] = line.split(" ");
-            int journeyId = Integer.parseInt(parts[1]);
-            int passengers = Integer.parseInt(parts[2]);
-
-            if (bookingService.canBook(journeyId, passengers)) {
-                Booking booking = new Booking();
-                booking.journeyId = journeyId;
-                booking.passengers = passengers;
-                bookingService.book(booking);
-
-                out.println("Booked");
-            } else {
-                out.println("Cannot book that journey");
-            }
-        } catch (Exception e) {
-            out.println("Book is [book x y]");
-            out.println("where x - journey id");
-            out.println("where y - number of passenger");
         }
     }
 
