@@ -3,10 +3,7 @@ package ferry.booking;
 import ferry.booking.booking.Booking;
 import ferry.booking.booking.Bookings;
 import ferry.booking.booking.JourneyBookingService;
-import ferry.booking.command.BookCommand;
-import ferry.booking.command.ListPortsCommand;
-import ferry.booking.command.SearchCommand;
-import ferry.booking.command.UnknownCommand;
+import ferry.booking.command.*;
 import ferry.booking.delivery.Console;
 import ferry.booking.delivery.ProgramOutputter;
 import ferry.booking.delivery.TimeTablePrinter;
@@ -112,13 +109,7 @@ public class Program {
         } else if (command.startsWith("list ports")) {
             new ListPortsCommand(programOutputter, ports).run();
         } else if (command.startsWith("list bookings")) {
-            List<Booking> bookings = bookingService.getAllBookings();
-            out.println("Bookings:");
-            out.println("---------");
-            for (Booking b : bookings) {
-                out.printf("journey %d - passengers %d", b.journeyId, b.passengers);
-            }
-            out.println();
+            new ListBookingsCommand(programOutputter, bookingService).run();
         } else {
             new UnknownCommand(programOutputter).run();
         }
