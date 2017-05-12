@@ -1,7 +1,6 @@
 package ferry.booking.command;
 
 import ferry.booking.delivery.ProgramOutputter;
-import ferry.booking.delivery.TimeTablePrinter;
 import ferry.booking.port.Ports;
 
 public class ListPortsCommand implements Command {

@@ -6,7 +6,7 @@ import java.util.List;
 
 public class ProgramOutputter {
     private final TimeTablePrinter timeTablePrinter;
-    private final Console console;
+    public final Console console;
 
     public static ProgramOutputter aNew(TimeTablePrinter timeTablePrinter, Console console) {
         return new ProgramOutputter(timeTablePrinter, console);

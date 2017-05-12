@@ -3,19 +3,20 @@ package ferry.booking;
 import ferry.booking.booking.AvailableCrossing;
 import ferry.booking.booking.Booking;
 import ferry.booking.booking.Bookings;
+import ferry.booking.booking.JourneyBookingService;
 import ferry.booking.command.ListPortsCommand;
+import ferry.booking.command.UnknownCommand;
+import ferry.booking.delivery.Console;
 import ferry.booking.delivery.ProgramOutputter;
 import ferry.booking.delivery.TimeTablePrinter;
 import ferry.booking.ferry.Ferries;
 import ferry.booking.ferry.FerryAvailabilityService;
-import ferry.booking.booking.JourneyBookingService;
 import ferry.booking.port.Port;
 import ferry.booking.port.PortManager;
 import ferry.booking.port.Ports;
 import ferry.booking.timetable.TimeTableService;
 import ferry.booking.timetable.TimeTableViewModelRow;
 import ferry.booking.timetable.TimeTables;
-import ferry.booking.delivery.Console;
 
 import java.io.*;
 import java.util.List;
@@ -118,20 +119,7 @@ public class Program {
             }
             out.println();
         } else {
-            out.println("Commands are: [search x y hh:mm] book, or list bookings");
-            out.println("  search x y hh:mm");
-            out.println("  book x y");
-            out.println("  list bookings");
-            out.println("  list ports");
-            out.println();
-            out.println("Book is [book x y]");
-            out.println("where x - journey id");
-            out.println("where y - number of passenger");
-            out.println();
-            out.println("Search is [search x y hh:mm]");
-            out.println("where: x - origin port id");
-            out.println("where: y - destinationg port id");
-            out.println("where: hh:mm - time to search after");
+            new UnknownCommand(programOutputter).run();
         }
     }
 
