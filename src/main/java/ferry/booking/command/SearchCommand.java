@@ -4,6 +4,7 @@ import ferry.booking.booking.AvailableCrossing;
 import ferry.booking.delivery.ProgramOutputter;
 import ferry.booking.timetable.TimeTableService;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class SearchCommand implements Command {
@@ -29,17 +30,20 @@ public class SearchCommand implements Command {
                     destinationPortId);
 
             for (AvailableCrossing result : search) {
-                programOutputter.console.printf("[%02d:%02d] %s to %s -  %s (JourneyId : %d, spaces left %d)", result.setOff / 60,
+                List<String> message = new ArrayList<String>();
+                message.add(String.format("[%02d:%02d] %s to %s -  %s (JourneyId : %d, spaces left %d)", result.setOff / 60,
                         result.setOff % 60, result.originPort, result.destinationPort, result.ferryName,
-                        result.journeyId, result.seatsLeft);
-                programOutputter.console.println();
+                        result.journeyId, result.seatsLeft));
+                programOutputter.console.display(message.toArray(new String[0]));
             }
         } catch (Exception e) {
-            programOutputter.console.println("Search is [search x y hh:mm]");
-            programOutputter.console.println("where: x - origin port id");
-            programOutputter.console.println("where: y - destinationg port id");
-            programOutputter.console.println("where: hh:mm - time to search after");
+            List<String> message = new ArrayList<String>();
 
+            message.add("Search is [search x y hh:mm]");
+            message.add("where: x - origin port id");
+            message.add("where: y - destinationg port id");
+            message.add("where: hh:mm - time to search after");
+            programOutputter.console.display(message.toArray(new String[0]));
         }
     }
 }

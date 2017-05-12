@@ -1,9 +1,11 @@
-package ferry.booking.delivery;
+package ferry.booking.delivery.adapter;
 
+
+import ferry.booking.delivery.port.UserCommunication;
 
 import java.io.PrintStream;
 
-public class Console {
+public class Console implements UserCommunication {
     private PrintStream printStream;
 
     public static Console to(PrintStream printStream) {
@@ -24,5 +26,17 @@ public class Console {
 
     public void println() {
         printStream.println();
+    }
+
+    @Override
+    public void display(String[] message) {
+        for (String line : message) {
+            this.println(line);
+        }
+    }
+
+    @Override
+    public void display(String message) {
+        this.println(message);
     }
 }

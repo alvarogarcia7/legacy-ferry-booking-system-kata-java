@@ -1,12 +1,18 @@
 package ferry.booking.delivery;
 
+import ferry.booking.delivery.adapter.Console;
+import ferry.booking.delivery.port.ErrorMessage;
+import ferry.booking.delivery.port.HelpMessage;
+import ferry.booking.delivery.port.UserCommunication;
+import ferry.booking.delivery.port.UserMessage;
 import ferry.booking.port.Port;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class ProgramOutputter {
     private final TimeTablePrinter timeTablePrinter;
-    public final Console console;
+    public final UserCommunication console;
 
     public static ProgramOutputter aNew(TimeTablePrinter timeTablePrinter, Console console) {
         return new ProgramOutputter(timeTablePrinter, console);
@@ -18,13 +24,14 @@ public class ProgramOutputter {
     }
 
     public void printPorts(List<Port> ports) {
-        console.println("Ports:");
-        console.println("------");
+        List<String> message = new ArrayList<String>();
+        message.add("Ports:");
+        message.add("------");
         for (Port port : ports) {
-            console.printf("%d - %s", port.id, port.name);
-            console.println();
+            message.add(String.format("%d - %s", port.id, port.name));
         }
-        console.println();
+        message.add("");
+        console.display(message.toArray(new String[0]));
     }
 
     public void print(HelpMessage helpMessage) {

@@ -3,7 +3,7 @@ package ferry.booking;
 import ferry.booking.booking.Bookings;
 import ferry.booking.booking.JourneyBookingService;
 import ferry.booking.command.*;
-import ferry.booking.delivery.Console;
+import ferry.booking.delivery.adapter.Console;
 import ferry.booking.delivery.ProgramOutputter;
 import ferry.booking.delivery.TimeTablePrinter;
 import ferry.booking.ferry.Ferries;

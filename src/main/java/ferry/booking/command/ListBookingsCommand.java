@@ -3,7 +3,9 @@ package ferry.booking.command;
 import ferry.booking.booking.Booking;
 import ferry.booking.booking.JourneyBookingService;
 import ferry.booking.delivery.ProgramOutputter;
+import ferry.booking.port.Port;
 
+import java.util.ArrayList;
 import java.util.List;
 
 
@@ -18,11 +20,15 @@ public class ListBookingsCommand implements Command {
 
     public void run() {
         List<Booking> bookings = bookingService.getAllBookings();
-        programOutputter.console.println("Bookings:");
-        programOutputter.console.println("---------");
+
+        List<String> message = new ArrayList<String>();
+        message.add("Bookings:");
+        message.add("---------");
+        StringBuilder stringBuilder = new StringBuilder();
         for (Booking b : bookings) {
-            programOutputter.console.printf("journey %d - passengers %d", b.journeyId, b.passengers);
+            stringBuilder.append(String.format("journey %d - passengers %d", b.journeyId, b.passengers));
         }
-        programOutputter.console.println();
+        message.add(stringBuilder.toString());
+        programOutputter.console.display(message.toArray(new String[0]));
     }
 }

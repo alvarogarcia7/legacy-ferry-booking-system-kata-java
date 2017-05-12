@@ -1,5 +1,6 @@
 package ferry.booking.delivery;
 
+import ferry.booking.delivery.adapter.Console;
 import ferry.booking.port.Port;
 import ferry.booking.timetable.TimeTableViewModelRow;
 

@@ -1,7 +1,10 @@
 package ferry.booking.command;
 
-import ferry.booking.delivery.Console;
+import ferry.booking.delivery.adapter.Console;
 import ferry.booking.delivery.ProgramOutputter;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class UnknownCommand implements Command {
     private ProgramOutputter programOutputter;
@@ -11,20 +14,21 @@ public class UnknownCommand implements Command {
     }
 
     public void run() {
-        Console out = this.programOutputter.console;
-        out.println("Commands are: [search x y hh:mm] book, or list bookings");
-        out.println("  search x y hh:mm");
-        out.println("  book x y");
-        out.println("  list bookings");
-        out.println("  list ports");
-        out.println();
-        out.println("Book is [book x y]");
-        out.println("where x - journey id");
-        out.println("where y - number of passenger");
-        out.println();
-        out.println("Search is [search x y hh:mm]");
-        out.println("where: x - origin port id");
-        out.println("where: y - destinationg port id");
-        out.println("where: hh:mm - time to search after");
+        List<String> message = new ArrayList<String>();
+        message.add("Commands are: [search x y hh:mm] book, or list bookings");
+        message.add("  search x y hh:mm");
+        message.add("  book x y");
+        message.add("  list bookings");
+        message.add("  list ports");
+        message.add("");
+        message.add("Book is [book x y]");
+        message.add("where x - journey id");
+        message.add("where y - number of passenger");
+        message.add("");
+        message.add("Search is [search x y hh:mm]");
+        message.add("where: x - origin port id");
+        message.add("where: y - destinationg port id");
+        message.add("where: hh:mm - time to search after");
+        programOutputter.console.display(message.toArray(new String[0]));
     }
 }

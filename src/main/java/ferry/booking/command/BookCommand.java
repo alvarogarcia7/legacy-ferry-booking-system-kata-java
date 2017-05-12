@@ -2,10 +2,10 @@ package ferry.booking.command;
 
 import ferry.booking.booking.Booking;
 import ferry.booking.booking.JourneyBookingService;
-import ferry.booking.delivery.ErrorMessage;
-import ferry.booking.delivery.HelpMessage;
+import ferry.booking.delivery.port.ErrorMessage;
+import ferry.booking.delivery.port.HelpMessage;
 import ferry.booking.delivery.ProgramOutputter;
-import ferry.booking.delivery.UserMessage;
+import ferry.booking.delivery.port.UserMessage;
 
 public class BookCommand implements Command {
     private final ProgramOutputter programOutputter;
