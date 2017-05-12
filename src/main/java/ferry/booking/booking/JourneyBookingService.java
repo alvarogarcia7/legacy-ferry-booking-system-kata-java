@@ -23,7 +23,19 @@ public class JourneyBookingService {
         this.ferryService = ferryService;
     }
 
-    public boolean canBook(int journeyId, int passengers) {
+    public boolean bookIfPossible(Booking booking) {
+        if(this.canBook(booking)){
+            this.book(booking);
+            return true;
+        }
+        return false;
+    }
+
+    public List<Booking> getAllBookings() {
+        return bookings.all();
+    }
+
+    private boolean canBook(Booking booking) {
         List<TimeTable> timetables = timeTables.all();
         List<TimeTableEntry> allEntries = new ArrayList<>();
         for (TimeTable tt : timetables) {
@@ -40,23 +52,19 @@ public class JourneyBookingService {
         for (TimeTableEntry timetable : allEntries) {
             Ferry ferry = ferryService.nextFerryAvailableFrom(timetable.originId, timetable.time);
 
-            if (timetable.id == journeyId) {
+            if (timetable.id == booking.journeyId) {
                 int pax = 0;
                 for (Booking x : bookings.all()) {
                     pax += x.passengers;
                 }
                 int seatsLeft = ferry.passengers - pax;
-                return seatsLeft >= passengers;
+                return seatsLeft >= booking.passengers;
             }
         }
         return false;
     }
 
-    public void book(Booking booking) {
+    private void book(Booking booking) {
         bookings.add(booking);
-    }
-
-    public List<Booking> getAllBookings() {
-        return bookings.all();
     }
 }

@@ -25,12 +25,7 @@ public class BookCommand implements Command {
             int journeyId = Integer.parseInt(parts[1]);
             int passengers = Integer.parseInt(parts[2]);
 
-            if (bookingService.canBook(journeyId, passengers)) {
-                Booking booking = new Booking();
-                booking.journeyId = journeyId;
-                booking.passengers = passengers;
-                bookingService.book(booking);
-
+            if (bookingService.bookIfPossible(new Booking(journeyId, passengers))) {
                 new UserMessage("Booked").print(this.out);
             } else {
                 new ErrorMessage(new String[]{
