@@ -12,7 +12,7 @@ public class ListPortsCommand implements Command {
     private UserCommunication out;
     private Ports ports;
 
-    public ListPortsCommand(UserCommunication out, Ports ports) {
+    public ListPortsCommand(Ports ports, UserCommunication out) {
         this.out = out;
         this.ports = ports;
     }

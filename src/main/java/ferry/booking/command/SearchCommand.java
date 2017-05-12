@@ -13,7 +13,7 @@ public class SearchCommand implements Command {
     private final TimeTableService timeTableService;
     private final String command;
 
-    public SearchCommand(UserCommunication out, TimeTableService timeTableService, String command) {
+    public SearchCommand(String command, TimeTableService timeTableService, UserCommunication out) {
         this.out = out;
         this.timeTableService = timeTableService;
         this.command = command;

@@ -101,13 +101,13 @@ public class Program {
     private static void doCommand(String commandDescription) {
         Command command = new UnknownCommand(out);
         if (commandDescription.startsWith("search")) {
-            command = new SearchCommand(out, timeTableService, commandDescription);
+            command = new SearchCommand(commandDescription, timeTableService, out);
         } else if (commandDescription.startsWith("book")) {
-            command = new BookCommand(out, bookingService, commandDescription);
+            command = new BookCommand(commandDescription, bookingService, out);
         } else if (commandDescription.startsWith("list ports")) {
-            command = new ListPortsCommand(out, ports);
+            command = new ListPortsCommand(ports, out);
         } else if (commandDescription.startsWith("list bookings")) {
-            command = new ListBookingsCommand(out, bookingService);
+            command = new ListBookingsCommand(bookingService, out);
         }
         command.run();
     }
