@@ -3,6 +3,7 @@ package ferry.booking;
 import ferry.booking.booking.AvailableCrossing;
 import ferry.booking.booking.Booking;
 import ferry.booking.booking.Bookings;
+import ferry.booking.delivery.TimeTablePrinter;
 import ferry.booking.ferry.Ferries;
 import ferry.booking.ferry.FerryAvailabilityService;
 import ferry.booking.booking.JourneyBookingService;
@@ -27,6 +28,7 @@ public class Program {
     public static Ports ports;
     private static FerryAvailabilityService ferryService;
     private static Console out;
+    private static TimeTablePrinter timeTablePrinter;
 
     public static void wireUp() {
         TimeTables timeTables = new TimeTables();
@@ -54,6 +56,7 @@ public class Program {
 
     public static void start(PrintStream ps) {
         out = Console.to(ps);
+        timeTablePrinter = TimeTablePrinter.console(out);
         wireUp();
 
         out.println("Welcome to the Ferry Finding System");
