@@ -10,6 +10,9 @@ create-golden-master:
 check-golden-master:
 	./gradlew test --tests '*GoldenMasterTest'
 
+.PHONY: test
+test:
+	./gradlew test
 
 .PHONY: package
 package:
