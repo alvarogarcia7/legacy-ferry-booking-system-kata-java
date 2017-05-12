@@ -1,5 +1,6 @@
 package ferry.booking;
 
+import ferry.booking.booking.AvailableCrossing;
 import ferry.booking.booking.Booking;
 import ferry.booking.booking.Bookings;
 import ferry.booking.ferry.Ferries;
@@ -7,7 +8,9 @@ import ferry.booking.ferry.FerryAvailabilityService;
 import ferry.booking.booking.JourneyBookingService;
 import ferry.booking.port.Port;
 import ferry.booking.port.PortManager;
+import ferry.booking.port.Ports;
 import ferry.booking.timetable.TimeTableService;
+import ferry.booking.timetable.TimeTableViewModelRow;
 import ferry.booking.timetable.TimeTables;
 
 import java.io.*;
