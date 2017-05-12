@@ -1,7 +1,7 @@
 package ferry.booking.port;
 
 
-import ferry.booking.Ferries;
+import ferry.booking.ferry.Ferries;
 import ferry.booking.ferry.Ferry;
 import ferry.booking.Ports;
 

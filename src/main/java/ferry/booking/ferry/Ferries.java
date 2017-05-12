@@ -1,4 +1,4 @@
-package ferry.booking;
+package ferry.booking.ferry;
 
 import ferry.booking.ferry.Ferry;
 import org.json.JSONArray;
