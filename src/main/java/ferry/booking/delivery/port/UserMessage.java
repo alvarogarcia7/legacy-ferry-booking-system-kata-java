@@ -1,13 +1,17 @@
 package ferry.booking.delivery.port;
 
 public class UserMessage {
-    private String message;
+    private String[] descriptions;
 
-    public UserMessage(String message) {
-        this.message = message;
+    public UserMessage(String description) {
+        this.descriptions = new String[]{description};
+    }
+
+    public UserMessage(String[] descriptions) {
+        this.descriptions = descriptions;
     }
 
     public void print(UserCommunication userCommunication) {
-        userCommunication.display(this.message);
+        userCommunication.display(this.descriptions);
     }
 }

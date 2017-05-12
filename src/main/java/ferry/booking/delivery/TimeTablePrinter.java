@@ -2,6 +2,7 @@ package ferry.booking.delivery;
 
 import ferry.booking.delivery.adapter.Console;
 import ferry.booking.delivery.port.HelpMessage;
+import ferry.booking.delivery.port.UserMessage;
 import ferry.booking.port.Port;
 import ferry.booking.timetable.TimeTableViewModelRow;
 
@@ -49,14 +50,14 @@ public class TimeTablePrinter {
     }
 
     private void printPortHeader(String portName) {
-        this.console.println();
-        this.console.println("Departures from " + portName);
-        this.console.println();
-        this.console.println(" --------------------------------------------------------------------------");
-        this.console.printf("| %-8s | %-13s | %-13s | %-18s | %-8s |", "Time", "Destination", "Journey Time", "Ferry",
-                "Arrives");
-        this.console.println();
-        this.console.println(" --------------------------------------------------------------------------");
+        new UserMessage(new String[]{
+                "",
+                "Departures from " + portName,
+                "",
+                " --------------------------------------------------------------------------",
+                String.format("| %-8s | %-13s | %-13s | %-18s | %-8s |", "Time", "Destination", "Journey Time", "Ferry", "Arrives"),
+                " --------------------------------------------------------------------------"
+        }).print(this.console);
     }
 
     public void displayWelcomeMessage() {
