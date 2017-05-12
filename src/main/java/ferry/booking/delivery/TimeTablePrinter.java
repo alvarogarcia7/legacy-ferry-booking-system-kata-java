@@ -12,14 +12,14 @@ import java.util.Comparator;
 import java.util.List;
 
 public class TimeTablePrinter {
-    private UserCommunication console;
+    private UserCommunication out;
 
     public static TimeTablePrinter to(UserCommunication userCommunication) {
         return new TimeTablePrinter(userCommunication);
     }
 
     private TimeTablePrinter(UserCommunication userCommunication) {
-        this.console = userCommunication;
+        this.out = userCommunication;
     }
 
     public void displayTimetable(List<Port> ports, List<TimeTableViewModelRow> rows) {
@@ -41,7 +41,7 @@ public class TimeTablePrinter {
 
             for (TimeTableViewModelRow item : items) {
                 new UserMessage(String.format("| %-8s | %-13s | %-13s | %-18s | %-8s |", item.startTime, item.destinationPort,
-                        item.journeyLength, item.ferryName, item.arrivalTime)).print(this.console);
+                        item.journeyLength, item.ferryName, item.arrivalTime)).print(this.out);
             }
         }
     }
@@ -54,7 +54,7 @@ public class TimeTablePrinter {
                 " --------------------------------------------------------------------------",
                 String.format("| %-8s | %-13s | %-13s | %-18s | %-8s |", "Time", "Destination", "Journey Time", "Ferry", "Arrives"),
                 " --------------------------------------------------------------------------"
-        }).print(this.console);
+        }).print(this.out);
     }
 
     public void displayWelcomeMessage() {
@@ -62,6 +62,6 @@ public class TimeTablePrinter {
                 "Welcome to the Ferry Finding System",
                 "=======",
                 "Ferry Time Table"
-        }).print(this.console);
+        }).print(this.out);
     }
 }
