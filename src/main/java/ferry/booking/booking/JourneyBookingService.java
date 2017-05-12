@@ -1,10 +1,10 @@
 package ferry.booking.booking;
 
+import ferry.booking.ferry.Ferry;
+import ferry.booking.ferry.FerryAvailabilityService;
 import ferry.booking.timetable.TimeTable;
 import ferry.booking.timetable.TimeTableEntry;
 import ferry.booking.timetable.TimeTables;
-import ferry.booking.ferry.Ferry;
-import ferry.booking.ferry.FerryAvailabilityService;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -13,9 +13,9 @@ import java.util.List;
 
 public class JourneyBookingService {
 
+    private final FerryAvailabilityService ferryService;
     private TimeTables timeTables;
     private Bookings bookings;
-    private final FerryAvailabilityService ferryService;
 
     public JourneyBookingService(TimeTables timeTables, Bookings bookings, FerryAvailabilityService ferryService) {
         this.timeTables = timeTables;

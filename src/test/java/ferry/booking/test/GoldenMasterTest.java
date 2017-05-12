@@ -1,16 +1,21 @@
 package ferry.booking.test;
 
-import static ferry.booking.test.GoldenMaster.execute;
-import static org.junit.Assert.*;
+import org.junit.Test;
 
-import java.io.*;
+import java.io.IOException;
 import java.nio.charset.Charset;
 import java.nio.file.Files;
 import java.nio.file.Path;
 
-import org.junit.Test;
+import static ferry.booking.test.GoldenMaster.execute;
+import static org.junit.Assert.assertEquals;
 
 public class GoldenMasterTest {
+
+    private static String readFile(Path path) throws IOException {
+        byte[] encoded = Files.readAllBytes(path);
+        return new String(encoded, Charset.defaultCharset());
+    }
 
     @Test
     public void compare_case_master_to_golden_master() throws IOException {
@@ -27,11 +32,6 @@ public class GoldenMasterTest {
         String master = readFile(goldenMasterCase.master());
         String tests = readFile(goldenMasterCase.execution());
         assertEquals(tests, master);
-    }
-
-    private static String readFile(Path path) throws IOException {
-        byte[] encoded = Files.readAllBytes(path);
-        return new String(encoded, Charset.defaultCharset());
     }
 
 }

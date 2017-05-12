@@ -9,11 +9,10 @@ import java.util.Map;
 
 public class PortModel {
 
-    public int id;
-    public String name;
-
     private final Map<Integer, Long> boatAvailability = new HashMap<>();
     private final List<Ferry> boats = new ArrayList<>();
+    public int id;
+    public String name;
 
     public PortModel(Port port) {
         id = port.id;

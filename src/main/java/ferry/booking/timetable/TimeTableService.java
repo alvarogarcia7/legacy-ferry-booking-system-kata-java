@@ -1,12 +1,12 @@
 package ferry.booking.timetable;
 
 import ferry.booking.booking.AvailableCrossing;
-import ferry.booking.port.Ports;
 import ferry.booking.booking.Booking;
 import ferry.booking.booking.Bookings;
 import ferry.booking.ferry.Ferry;
 import ferry.booking.ferry.FerryAvailabilityService;
 import ferry.booking.port.Port;
+import ferry.booking.port.Ports;
 
 import java.util.ArrayList;
 import java.util.Collections;

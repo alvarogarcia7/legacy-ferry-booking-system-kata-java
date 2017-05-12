@@ -14,12 +14,12 @@ import java.util.List;
 public class TimeTablePrinter {
     private UserCommunication out;
 
-    public static TimeTablePrinter to(UserCommunication userCommunication) {
-        return new TimeTablePrinter(userCommunication);
-    }
-
     private TimeTablePrinter(UserCommunication userCommunication) {
         this.out = userCommunication;
+    }
+
+    public static TimeTablePrinter to(UserCommunication userCommunication) {
+        return new TimeTablePrinter(userCommunication);
     }
 
     public void displayTimetable(List<Port> ports, List<TimeTableViewModelRow> rows) {

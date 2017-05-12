@@ -18,13 +18,13 @@ public class ListPortsCommand implements Command {
     }
 
     public void run() {
-            List<String> message = new ArrayList<>();
-            message.add("Ports:");
-            message.add("------");
-            for (Port port : ports.all()) {
-                message.add(String.format("%d - %s", port.id, port.name));
-            }
-            message.add("");
+        List<String> message = new ArrayList<>();
+        message.add("Ports:");
+        message.add("------");
+        for (Port port : ports.all()) {
+            message.add(String.format("%d - %s", port.id, port.name));
+        }
+        message.add("");
         new UserMessage(message.toArray(new String[0])).print(this.out);
     }
 }

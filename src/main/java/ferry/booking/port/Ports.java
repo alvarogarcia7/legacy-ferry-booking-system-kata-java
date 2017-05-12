@@ -1,11 +1,10 @@
 package ferry.booking.port;
 
-import java.util.ArrayList;
-import java.util.List;
-
-import ferry.booking.port.Port;
 import org.json.JSONArray;
 import org.json.JSONObject;
+
+import java.util.ArrayList;
+import java.util.List;
 
 import static ferry.booking.Util.readFileToString;
 
