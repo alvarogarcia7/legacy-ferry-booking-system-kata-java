@@ -12,6 +12,7 @@ import ferry.booking.port.Ports;
 import ferry.booking.timetable.TimeTableService;
 import ferry.booking.timetable.TimeTableViewModelRow;
 import ferry.booking.timetable.TimeTables;
+import ferry.booking.delivery.Console;
 
 import java.io.*;
 import java.util.ArrayList;
@@ -25,7 +26,7 @@ public class Program {
     private static JourneyBookingService bookingService;
     public static Ports ports;
     private static FerryAvailabilityService ferryService;
-    private static PrintStream out;
+    private static Console out;
 
     public static void wireUp() {
         TimeTables timeTables = new TimeTables();
@@ -52,7 +53,7 @@ public class Program {
     }
 
     public static void start(PrintStream ps) {
-        out = ps;
+        out = Console.to(ps);
         wireUp();
 
         out.println("Welcome to the Ferry Finding System");
