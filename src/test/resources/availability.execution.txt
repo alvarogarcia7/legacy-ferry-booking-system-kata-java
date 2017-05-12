@@ -1,0 +1,1138 @@
+Welcome to the Ferry Finding System
+=======
+Ferry Time Table
+
+Departures from Port Ellen
+
+ --------------------------------------------------------------------------
+| Time     | Destination   | Journey Time  | Ferry              | Arrives  |
+ --------------------------------------------------------------------------
+| 00:00    | Mos Eisley    | 00:30         |                    | 00:30    |
+| 00:10    | Tarsonis      | 00:45         | Titanic            | 00:55    |
+| 00:20    | Mos Eisley    | 00:30         | Hyperion           | 00:50    |
+| 00:40    | Mos Eisley    | 00:30         | Millenium Falcon   | 01:10    |
+| 01:00    | Mos Eisley    | 00:30         | Golden Hind        | 01:30    |
+| 01:10    | Tarsonis      | 00:45         | Enterprise         | 01:55    |
+| 01:20    | Mos Eisley    | 00:30         | Hood               | 01:50    |
+| 01:40    | Mos Eisley    | 00:30         | Tempest            | 02:10    |
+
+Departures from Mos Eisley
+
+ --------------------------------------------------------------------------
+| Time     | Destination   | Journey Time  | Ferry              | Arrives  |
+ --------------------------------------------------------------------------
+| 00:10    | Port Ellen    | 00:30         | Enterprise         | 00:40    |
+| 00:30    | Port Ellen    | 00:30         | Tempest            | 01:00    |
+| 00:40    | Tarsonis      | 00:35         | Black Pearl        | 01:15    |
+| 00:50    | Port Ellen    | 00:30         |                    | 01:20    |
+| 01:10    | Port Ellen    | 00:30         | Hyperion           | 01:40    |
+| 01:30    | Port Ellen    | 00:30         | Millenium Falcon   | 02:00    |
+| 01:40    | Tarsonis      | 00:35         | Defiant            | 02:15    |
+| 01:50    | Port Ellen    | 00:30         | Golden Hind        | 02:20    |
+
+Departures from Tarsonis
+
+ --------------------------------------------------------------------------
+| Time     | Destination   | Journey Time  | Ferry              | Arrives  |
+ --------------------------------------------------------------------------
+| 00:25    | Port Ellen    | 00:45         | Dreadnaught        | 01:10    |
+| 00:40    | Mos Eisley    | 00:35         | Defiant            | 01:15    |
+| 01:25    | Port Ellen    | 00:45         | Titanic            | 02:10    |
+| 01:40    | Mos Eisley    | 00:35         | Black Pearl        | 02:15    |
+Search is [search x y hh:mm]
+where: x - origin port id
+where: y - destinationg port id
+where: hh:mm - time to search after
+[00:20] Port Ellen to Mos Eisley -  Hyperion (JourneyId : 2, spaces left 16)
+[00:40] Port Ellen to Mos Eisley -  Millenium Falcon (JourneyId : 3, spaces left 8)
+[01:00] Port Ellen to Mos Eisley -  Golden Hind (JourneyId : 4, spaces left 14)
+[01:20] Port Ellen to Mos Eisley -  Hood (JourneyId : 6, spaces left 8)
+[01:40] Port Ellen to Mos Eisley -  Tempest (JourneyId : 7, spaces left 8)
+[00:20] Port Ellen to Mos Eisley -  Hyperion (JourneyId : 2, spaces left 16)
+[00:40] Port Ellen to Mos Eisley -  Millenium Falcon (JourneyId : 3, spaces left 8)
+[01:00] Port Ellen to Mos Eisley -  Golden Hind (JourneyId : 4, spaces left 14)
+[01:20] Port Ellen to Mos Eisley -  Hood (JourneyId : 6, spaces left 8)
+[01:40] Port Ellen to Mos Eisley -  Tempest (JourneyId : 7, spaces left 8)
+[00:20] Port Ellen to Mos Eisley -  Hyperion (JourneyId : 2, spaces left 16)
+[00:40] Port Ellen to Mos Eisley -  Millenium Falcon (JourneyId : 3, spaces left 8)
+[01:00] Port Ellen to Mos Eisley -  Golden Hind (JourneyId : 4, spaces left 14)
+[01:20] Port Ellen to Mos Eisley -  Hood (JourneyId : 6, spaces left 8)
+[01:40] Port Ellen to Mos Eisley -  Tempest (JourneyId : 7, spaces left 8)
+[00:20] Port Ellen to Mos Eisley -  Hyperion (JourneyId : 2, spaces left 16)
+[00:40] Port Ellen to Mos Eisley -  Millenium Falcon (JourneyId : 3, spaces left 8)
+[01:00] Port Ellen to Mos Eisley -  Golden Hind (JourneyId : 4, spaces left 14)
+[01:20] Port Ellen to Mos Eisley -  Hood (JourneyId : 6, spaces left 8)
+[01:40] Port Ellen to Mos Eisley -  Tempest (JourneyId : 7, spaces left 8)
+[00:20] Port Ellen to Mos Eisley -  Hyperion (JourneyId : 2, spaces left 16)
+[00:40] Port Ellen to Mos Eisley -  Millenium Falcon (JourneyId : 3, spaces left 8)
+[01:00] Port Ellen to Mos Eisley -  Golden Hind (JourneyId : 4, spaces left 14)
+[01:20] Port Ellen to Mos Eisley -  Hood (JourneyId : 6, spaces left 8)
+[01:40] Port Ellen to Mos Eisley -  Tempest (JourneyId : 7, spaces left 8)
+[00:20] Port Ellen to Mos Eisley -  Hyperion (JourneyId : 2, spaces left 16)
+[00:40] Port Ellen to Mos Eisley -  Millenium Falcon (JourneyId : 3, spaces left 8)
+[01:00] Port Ellen to Mos Eisley -  Golden Hind (JourneyId : 4, spaces left 14)
+[01:20] Port Ellen to Mos Eisley -  Hood (JourneyId : 6, spaces left 8)
+[01:40] Port Ellen to Mos Eisley -  Tempest (JourneyId : 7, spaces left 8)
+[00:20] Port Ellen to Mos Eisley -  Hyperion (JourneyId : 2, spaces left 16)
+[00:40] Port Ellen to Mos Eisley -  Millenium Falcon (JourneyId : 3, spaces left 8)
+[01:00] Port Ellen to Mos Eisley -  Golden Hind (JourneyId : 4, spaces left 14)
+[01:20] Port Ellen to Mos Eisley -  Hood (JourneyId : 6, spaces left 8)
+[01:40] Port Ellen to Mos Eisley -  Tempest (JourneyId : 7, spaces left 8)
+[00:20] Port Ellen to Mos Eisley -  Hyperion (JourneyId : 2, spaces left 16)
+[00:40] Port Ellen to Mos Eisley -  Millenium Falcon (JourneyId : 3, spaces left 8)
+[01:00] Port Ellen to Mos Eisley -  Golden Hind (JourneyId : 4, spaces left 14)
+[01:20] Port Ellen to Mos Eisley -  Hood (JourneyId : 6, spaces left 8)
+[01:40] Port Ellen to Mos Eisley -  Tempest (JourneyId : 7, spaces left 8)
+[00:20] Port Ellen to Mos Eisley -  Hyperion (JourneyId : 2, spaces left 16)
+[00:40] Port Ellen to Mos Eisley -  Millenium Falcon (JourneyId : 3, spaces left 8)
+[01:00] Port Ellen to Mos Eisley -  Golden Hind (JourneyId : 4, spaces left 14)
+[01:20] Port Ellen to Mos Eisley -  Hood (JourneyId : 6, spaces left 8)
+[01:40] Port Ellen to Mos Eisley -  Tempest (JourneyId : 7, spaces left 8)
+[00:20] Port Ellen to Mos Eisley -  Hyperion (JourneyId : 2, spaces left 16)
+[00:40] Port Ellen to Mos Eisley -  Millenium Falcon (JourneyId : 3, spaces left 8)
+[01:00] Port Ellen to Mos Eisley -  Golden Hind (JourneyId : 4, spaces left 14)
+[01:20] Port Ellen to Mos Eisley -  Hood (JourneyId : 6, spaces left 8)
+[01:40] Port Ellen to Mos Eisley -  Tempest (JourneyId : 7, spaces left 8)
+[00:20] Port Ellen to Mos Eisley -  Hyperion (JourneyId : 2, spaces left 16)
+[00:40] Port Ellen to Mos Eisley -  Millenium Falcon (JourneyId : 3, spaces left 8)
+[01:00] Port Ellen to Mos Eisley -  Golden Hind (JourneyId : 4, spaces left 14)
+[01:20] Port Ellen to Mos Eisley -  Hood (JourneyId : 6, spaces left 8)
+[01:40] Port Ellen to Mos Eisley -  Tempest (JourneyId : 7, spaces left 8)
+[00:20] Port Ellen to Mos Eisley -  Hyperion (JourneyId : 2, spaces left 16)
+[00:40] Port Ellen to Mos Eisley -  Millenium Falcon (JourneyId : 3, spaces left 8)
+[01:00] Port Ellen to Mos Eisley -  Golden Hind (JourneyId : 4, spaces left 14)
+[01:20] Port Ellen to Mos Eisley -  Hood (JourneyId : 6, spaces left 8)
+[01:40] Port Ellen to Mos Eisley -  Tempest (JourneyId : 7, spaces left 8)
+[00:20] Port Ellen to Mos Eisley -  Hyperion (JourneyId : 2, spaces left 16)
+[00:40] Port Ellen to Mos Eisley -  Millenium Falcon (JourneyId : 3, spaces left 8)
+[01:00] Port Ellen to Mos Eisley -  Golden Hind (JourneyId : 4, spaces left 14)
+[01:20] Port Ellen to Mos Eisley -  Hood (JourneyId : 6, spaces left 8)
+[01:40] Port Ellen to Mos Eisley -  Tempest (JourneyId : 7, spaces left 8)
+[00:20] Port Ellen to Mos Eisley -  Hyperion (JourneyId : 2, spaces left 16)
+[00:40] Port Ellen to Mos Eisley -  Millenium Falcon (JourneyId : 3, spaces left 8)
+[01:00] Port Ellen to Mos Eisley -  Golden Hind (JourneyId : 4, spaces left 14)
+[01:20] Port Ellen to Mos Eisley -  Hood (JourneyId : 6, spaces left 8)
+[01:40] Port Ellen to Mos Eisley -  Tempest (JourneyId : 7, spaces left 8)
+[00:20] Port Ellen to Mos Eisley -  Hyperion (JourneyId : 2, spaces left 16)
+[00:40] Port Ellen to Mos Eisley -  Millenium Falcon (JourneyId : 3, spaces left 8)
+[01:00] Port Ellen to Mos Eisley -  Golden Hind (JourneyId : 4, spaces left 14)
+[01:20] Port Ellen to Mos Eisley -  Hood (JourneyId : 6, spaces left 8)
+[01:40] Port Ellen to Mos Eisley -  Tempest (JourneyId : 7, spaces left 8)
+[00:20] Port Ellen to Mos Eisley -  Hyperion (JourneyId : 2, spaces left 16)
+[00:40] Port Ellen to Mos Eisley -  Millenium Falcon (JourneyId : 3, spaces left 8)
+[01:00] Port Ellen to Mos Eisley -  Golden Hind (JourneyId : 4, spaces left 14)
+[01:20] Port Ellen to Mos Eisley -  Hood (JourneyId : 6, spaces left 8)
+[01:40] Port Ellen to Mos Eisley -  Tempest (JourneyId : 7, spaces left 8)
+[00:20] Port Ellen to Mos Eisley -  Hyperion (JourneyId : 2, spaces left 16)
+[00:40] Port Ellen to Mos Eisley -  Millenium Falcon (JourneyId : 3, spaces left 8)
+[01:00] Port Ellen to Mos Eisley -  Golden Hind (JourneyId : 4, spaces left 14)
+[01:20] Port Ellen to Mos Eisley -  Hood (JourneyId : 6, spaces left 8)
+[01:40] Port Ellen to Mos Eisley -  Tempest (JourneyId : 7, spaces left 8)
+[00:20] Port Ellen to Mos Eisley -  Hyperion (JourneyId : 2, spaces left 16)
+[00:40] Port Ellen to Mos Eisley -  Millenium Falcon (JourneyId : 3, spaces left 8)
+[01:00] Port Ellen to Mos Eisley -  Golden Hind (JourneyId : 4, spaces left 14)
+[01:20] Port Ellen to Mos Eisley -  Hood (JourneyId : 6, spaces left 8)
+[01:40] Port Ellen to Mos Eisley -  Tempest (JourneyId : 7, spaces left 8)
+[00:20] Port Ellen to Mos Eisley -  Hyperion (JourneyId : 2, spaces left 16)
+[00:40] Port Ellen to Mos Eisley -  Millenium Falcon (JourneyId : 3, spaces left 8)
+[01:00] Port Ellen to Mos Eisley -  Golden Hind (JourneyId : 4, spaces left 14)
+[01:20] Port Ellen to Mos Eisley -  Hood (JourneyId : 6, spaces left 8)
+[01:40] Port Ellen to Mos Eisley -  Tempest (JourneyId : 7, spaces left 8)
+[00:20] Port Ellen to Mos Eisley -  Hyperion (JourneyId : 2, spaces left 16)
+[00:40] Port Ellen to Mos Eisley -  Millenium Falcon (JourneyId : 3, spaces left 8)
+[01:00] Port Ellen to Mos Eisley -  Golden Hind (JourneyId : 4, spaces left 14)
+[01:20] Port Ellen to Mos Eisley -  Hood (JourneyId : 6, spaces left 8)
+[01:40] Port Ellen to Mos Eisley -  Tempest (JourneyId : 7, spaces left 8)
+[00:40] Port Ellen to Mos Eisley -  Millenium Falcon (JourneyId : 3, spaces left 8)
+[01:00] Port Ellen to Mos Eisley -  Golden Hind (JourneyId : 4, spaces left 14)
+[01:20] Port Ellen to Mos Eisley -  Hood (JourneyId : 6, spaces left 8)
+[01:40] Port Ellen to Mos Eisley -  Tempest (JourneyId : 7, spaces left 8)
+[00:40] Port Ellen to Mos Eisley -  Millenium Falcon (JourneyId : 3, spaces left 8)
+[01:00] Port Ellen to Mos Eisley -  Golden Hind (JourneyId : 4, spaces left 14)
+[01:20] Port Ellen to Mos Eisley -  Hood (JourneyId : 6, spaces left 8)
+[01:40] Port Ellen to Mos Eisley -  Tempest (JourneyId : 7, spaces left 8)
+[00:40] Port Ellen to Mos Eisley -  Millenium Falcon (JourneyId : 3, spaces left 8)
+[01:00] Port Ellen to Mos Eisley -  Golden Hind (JourneyId : 4, spaces left 14)
+[01:20] Port Ellen to Mos Eisley -  Hood (JourneyId : 6, spaces left 8)
+[01:40] Port Ellen to Mos Eisley -  Tempest (JourneyId : 7, spaces left 8)
+[00:40] Port Ellen to Mos Eisley -  Millenium Falcon (JourneyId : 3, spaces left 8)
+[01:00] Port Ellen to Mos Eisley -  Golden Hind (JourneyId : 4, spaces left 14)
+[01:20] Port Ellen to Mos Eisley -  Hood (JourneyId : 6, spaces left 8)
+[01:40] Port Ellen to Mos Eisley -  Tempest (JourneyId : 7, spaces left 8)
+[00:40] Port Ellen to Mos Eisley -  Millenium Falcon (JourneyId : 3, spaces left 8)
+[01:00] Port Ellen to Mos Eisley -  Golden Hind (JourneyId : 4, spaces left 14)
+[01:20] Port Ellen to Mos Eisley -  Hood (JourneyId : 6, spaces left 8)
+[01:40] Port Ellen to Mos Eisley -  Tempest (JourneyId : 7, spaces left 8)
+[00:40] Port Ellen to Mos Eisley -  Millenium Falcon (JourneyId : 3, spaces left 8)
+[01:00] Port Ellen to Mos Eisley -  Golden Hind (JourneyId : 4, spaces left 14)
+[01:20] Port Ellen to Mos Eisley -  Hood (JourneyId : 6, spaces left 8)
+[01:40] Port Ellen to Mos Eisley -  Tempest (JourneyId : 7, spaces left 8)
+[00:40] Port Ellen to Mos Eisley -  Millenium Falcon (JourneyId : 3, spaces left 8)
+[01:00] Port Ellen to Mos Eisley -  Golden Hind (JourneyId : 4, spaces left 14)
+[01:20] Port Ellen to Mos Eisley -  Hood (JourneyId : 6, spaces left 8)
+[01:40] Port Ellen to Mos Eisley -  Tempest (JourneyId : 7, spaces left 8)
+[00:40] Port Ellen to Mos Eisley -  Millenium Falcon (JourneyId : 3, spaces left 8)
+[01:00] Port Ellen to Mos Eisley -  Golden Hind (JourneyId : 4, spaces left 14)
+[01:20] Port Ellen to Mos Eisley -  Hood (JourneyId : 6, spaces left 8)
+[01:40] Port Ellen to Mos Eisley -  Tempest (JourneyId : 7, spaces left 8)
+[00:40] Port Ellen to Mos Eisley -  Millenium Falcon (JourneyId : 3, spaces left 8)
+[01:00] Port Ellen to Mos Eisley -  Golden Hind (JourneyId : 4, spaces left 14)
+[01:20] Port Ellen to Mos Eisley -  Hood (JourneyId : 6, spaces left 8)
+[01:40] Port Ellen to Mos Eisley -  Tempest (JourneyId : 7, spaces left 8)
+[00:40] Port Ellen to Mos Eisley -  Millenium Falcon (JourneyId : 3, spaces left 8)
+[01:00] Port Ellen to Mos Eisley -  Golden Hind (JourneyId : 4, spaces left 14)
+[01:20] Port Ellen to Mos Eisley -  Hood (JourneyId : 6, spaces left 8)
+[01:40] Port Ellen to Mos Eisley -  Tempest (JourneyId : 7, spaces left 8)
+[00:40] Port Ellen to Mos Eisley -  Millenium Falcon (JourneyId : 3, spaces left 8)
+[01:00] Port Ellen to Mos Eisley -  Golden Hind (JourneyId : 4, spaces left 14)
+[01:20] Port Ellen to Mos Eisley -  Hood (JourneyId : 6, spaces left 8)
+[01:40] Port Ellen to Mos Eisley -  Tempest (JourneyId : 7, spaces left 8)
+[00:40] Port Ellen to Mos Eisley -  Millenium Falcon (JourneyId : 3, spaces left 8)
+[01:00] Port Ellen to Mos Eisley -  Golden Hind (JourneyId : 4, spaces left 14)
+[01:20] Port Ellen to Mos Eisley -  Hood (JourneyId : 6, spaces left 8)
+[01:40] Port Ellen to Mos Eisley -  Tempest (JourneyId : 7, spaces left 8)
+[00:40] Port Ellen to Mos Eisley -  Millenium Falcon (JourneyId : 3, spaces left 8)
+[01:00] Port Ellen to Mos Eisley -  Golden Hind (JourneyId : 4, spaces left 14)
+[01:20] Port Ellen to Mos Eisley -  Hood (JourneyId : 6, spaces left 8)
+[01:40] Port Ellen to Mos Eisley -  Tempest (JourneyId : 7, spaces left 8)
+[00:40] Port Ellen to Mos Eisley -  Millenium Falcon (JourneyId : 3, spaces left 8)
+[01:00] Port Ellen to Mos Eisley -  Golden Hind (JourneyId : 4, spaces left 14)
+[01:20] Port Ellen to Mos Eisley -  Hood (JourneyId : 6, spaces left 8)
+[01:40] Port Ellen to Mos Eisley -  Tempest (JourneyId : 7, spaces left 8)
+[00:40] Port Ellen to Mos Eisley -  Millenium Falcon (JourneyId : 3, spaces left 8)
+[01:00] Port Ellen to Mos Eisley -  Golden Hind (JourneyId : 4, spaces left 14)
+[01:20] Port Ellen to Mos Eisley -  Hood (JourneyId : 6, spaces left 8)
+[01:40] Port Ellen to Mos Eisley -  Tempest (JourneyId : 7, spaces left 8)
+[00:40] Port Ellen to Mos Eisley -  Millenium Falcon (JourneyId : 3, spaces left 8)
+[01:00] Port Ellen to Mos Eisley -  Golden Hind (JourneyId : 4, spaces left 14)
+[01:20] Port Ellen to Mos Eisley -  Hood (JourneyId : 6, spaces left 8)
+[01:40] Port Ellen to Mos Eisley -  Tempest (JourneyId : 7, spaces left 8)
+[00:40] Port Ellen to Mos Eisley -  Millenium Falcon (JourneyId : 3, spaces left 8)
+[01:00] Port Ellen to Mos Eisley -  Golden Hind (JourneyId : 4, spaces left 14)
+[01:20] Port Ellen to Mos Eisley -  Hood (JourneyId : 6, spaces left 8)
+[01:40] Port Ellen to Mos Eisley -  Tempest (JourneyId : 7, spaces left 8)
+[00:40] Port Ellen to Mos Eisley -  Millenium Falcon (JourneyId : 3, spaces left 8)
+[01:00] Port Ellen to Mos Eisley -  Golden Hind (JourneyId : 4, spaces left 14)
+[01:20] Port Ellen to Mos Eisley -  Hood (JourneyId : 6, spaces left 8)
+[01:40] Port Ellen to Mos Eisley -  Tempest (JourneyId : 7, spaces left 8)
+[00:40] Port Ellen to Mos Eisley -  Millenium Falcon (JourneyId : 3, spaces left 8)
+[01:00] Port Ellen to Mos Eisley -  Golden Hind (JourneyId : 4, spaces left 14)
+[01:20] Port Ellen to Mos Eisley -  Hood (JourneyId : 6, spaces left 8)
+[01:40] Port Ellen to Mos Eisley -  Tempest (JourneyId : 7, spaces left 8)
+[00:40] Port Ellen to Mos Eisley -  Millenium Falcon (JourneyId : 3, spaces left 8)
+[01:00] Port Ellen to Mos Eisley -  Golden Hind (JourneyId : 4, spaces left 14)
+[01:20] Port Ellen to Mos Eisley -  Hood (JourneyId : 6, spaces left 8)
+[01:40] Port Ellen to Mos Eisley -  Tempest (JourneyId : 7, spaces left 8)
+[01:00] Port Ellen to Mos Eisley -  Golden Hind (JourneyId : 4, spaces left 14)
+[01:20] Port Ellen to Mos Eisley -  Hood (JourneyId : 6, spaces left 8)
+[01:40] Port Ellen to Mos Eisley -  Tempest (JourneyId : 7, spaces left 8)
+[01:00] Port Ellen to Mos Eisley -  Golden Hind (JourneyId : 4, spaces left 14)
+[01:20] Port Ellen to Mos Eisley -  Hood (JourneyId : 6, spaces left 8)
+[01:40] Port Ellen to Mos Eisley -  Tempest (JourneyId : 7, spaces left 8)
+[01:00] Port Ellen to Mos Eisley -  Golden Hind (JourneyId : 4, spaces left 14)
+[01:20] Port Ellen to Mos Eisley -  Hood (JourneyId : 6, spaces left 8)
+[01:40] Port Ellen to Mos Eisley -  Tempest (JourneyId : 7, spaces left 8)
+[01:00] Port Ellen to Mos Eisley -  Golden Hind (JourneyId : 4, spaces left 14)
+[01:20] Port Ellen to Mos Eisley -  Hood (JourneyId : 6, spaces left 8)
+[01:40] Port Ellen to Mos Eisley -  Tempest (JourneyId : 7, spaces left 8)
+[01:00] Port Ellen to Mos Eisley -  Golden Hind (JourneyId : 4, spaces left 14)
+[01:20] Port Ellen to Mos Eisley -  Hood (JourneyId : 6, spaces left 8)
+[01:40] Port Ellen to Mos Eisley -  Tempest (JourneyId : 7, spaces left 8)
+[01:00] Port Ellen to Mos Eisley -  Golden Hind (JourneyId : 4, spaces left 14)
+[01:20] Port Ellen to Mos Eisley -  Hood (JourneyId : 6, spaces left 8)
+[01:40] Port Ellen to Mos Eisley -  Tempest (JourneyId : 7, spaces left 8)
+[01:00] Port Ellen to Mos Eisley -  Golden Hind (JourneyId : 4, spaces left 14)
+[01:20] Port Ellen to Mos Eisley -  Hood (JourneyId : 6, spaces left 8)
+[01:40] Port Ellen to Mos Eisley -  Tempest (JourneyId : 7, spaces left 8)
+[01:00] Port Ellen to Mos Eisley -  Golden Hind (JourneyId : 4, spaces left 14)
+[01:20] Port Ellen to Mos Eisley -  Hood (JourneyId : 6, spaces left 8)
+[01:40] Port Ellen to Mos Eisley -  Tempest (JourneyId : 7, spaces left 8)
+[01:00] Port Ellen to Mos Eisley -  Golden Hind (JourneyId : 4, spaces left 14)
+[01:20] Port Ellen to Mos Eisley -  Hood (JourneyId : 6, spaces left 8)
+[01:40] Port Ellen to Mos Eisley -  Tempest (JourneyId : 7, spaces left 8)
+[01:00] Port Ellen to Mos Eisley -  Golden Hind (JourneyId : 4, spaces left 14)
+[01:20] Port Ellen to Mos Eisley -  Hood (JourneyId : 6, spaces left 8)
+[01:40] Port Ellen to Mos Eisley -  Tempest (JourneyId : 7, spaces left 8)
+[01:00] Port Ellen to Mos Eisley -  Golden Hind (JourneyId : 4, spaces left 14)
+[01:20] Port Ellen to Mos Eisley -  Hood (JourneyId : 6, spaces left 8)
+[01:40] Port Ellen to Mos Eisley -  Tempest (JourneyId : 7, spaces left 8)
+[01:00] Port Ellen to Mos Eisley -  Golden Hind (JourneyId : 4, spaces left 14)
+[01:20] Port Ellen to Mos Eisley -  Hood (JourneyId : 6, spaces left 8)
+[01:40] Port Ellen to Mos Eisley -  Tempest (JourneyId : 7, spaces left 8)
+[01:00] Port Ellen to Mos Eisley -  Golden Hind (JourneyId : 4, spaces left 14)
+[01:20] Port Ellen to Mos Eisley -  Hood (JourneyId : 6, spaces left 8)
+[01:40] Port Ellen to Mos Eisley -  Tempest (JourneyId : 7, spaces left 8)
+[01:00] Port Ellen to Mos Eisley -  Golden Hind (JourneyId : 4, spaces left 14)
+[01:20] Port Ellen to Mos Eisley -  Hood (JourneyId : 6, spaces left 8)
+[01:40] Port Ellen to Mos Eisley -  Tempest (JourneyId : 7, spaces left 8)
+[01:00] Port Ellen to Mos Eisley -  Golden Hind (JourneyId : 4, spaces left 14)
+[01:20] Port Ellen to Mos Eisley -  Hood (JourneyId : 6, spaces left 8)
+[01:40] Port Ellen to Mos Eisley -  Tempest (JourneyId : 7, spaces left 8)
+[01:00] Port Ellen to Mos Eisley -  Golden Hind (JourneyId : 4, spaces left 14)
+[01:20] Port Ellen to Mos Eisley -  Hood (JourneyId : 6, spaces left 8)
+[01:40] Port Ellen to Mos Eisley -  Tempest (JourneyId : 7, spaces left 8)
+[01:00] Port Ellen to Mos Eisley -  Golden Hind (JourneyId : 4, spaces left 14)
+[01:20] Port Ellen to Mos Eisley -  Hood (JourneyId : 6, spaces left 8)
+[01:40] Port Ellen to Mos Eisley -  Tempest (JourneyId : 7, spaces left 8)
+[01:00] Port Ellen to Mos Eisley -  Golden Hind (JourneyId : 4, spaces left 14)
+[01:20] Port Ellen to Mos Eisley -  Hood (JourneyId : 6, spaces left 8)
+[01:40] Port Ellen to Mos Eisley -  Tempest (JourneyId : 7, spaces left 8)
+[01:00] Port Ellen to Mos Eisley -  Golden Hind (JourneyId : 4, spaces left 14)
+[01:20] Port Ellen to Mos Eisley -  Hood (JourneyId : 6, spaces left 8)
+[01:40] Port Ellen to Mos Eisley -  Tempest (JourneyId : 7, spaces left 8)
+[01:00] Port Ellen to Mos Eisley -  Golden Hind (JourneyId : 4, spaces left 14)
+[01:20] Port Ellen to Mos Eisley -  Hood (JourneyId : 6, spaces left 8)
+[01:40] Port Ellen to Mos Eisley -  Tempest (JourneyId : 7, spaces left 8)
+[01:20] Port Ellen to Mos Eisley -  Hood (JourneyId : 6, spaces left 8)
+[01:40] Port Ellen to Mos Eisley -  Tempest (JourneyId : 7, spaces left 8)
+[01:20] Port Ellen to Mos Eisley -  Hood (JourneyId : 6, spaces left 8)
+[01:40] Port Ellen to Mos Eisley -  Tempest (JourneyId : 7, spaces left 8)
+[01:20] Port Ellen to Mos Eisley -  Hood (JourneyId : 6, spaces left 8)
+[01:40] Port Ellen to Mos Eisley -  Tempest (JourneyId : 7, spaces left 8)
+[01:20] Port Ellen to Mos Eisley -  Hood (JourneyId : 6, spaces left 8)
+[01:40] Port Ellen to Mos Eisley -  Tempest (JourneyId : 7, spaces left 8)
+[01:20] Port Ellen to Mos Eisley -  Hood (JourneyId : 6, spaces left 8)
+[01:40] Port Ellen to Mos Eisley -  Tempest (JourneyId : 7, spaces left 8)
+[01:20] Port Ellen to Mos Eisley -  Hood (JourneyId : 6, spaces left 8)
+[01:40] Port Ellen to Mos Eisley -  Tempest (JourneyId : 7, spaces left 8)
+[01:20] Port Ellen to Mos Eisley -  Hood (JourneyId : 6, spaces left 8)
+[01:40] Port Ellen to Mos Eisley -  Tempest (JourneyId : 7, spaces left 8)
+[01:20] Port Ellen to Mos Eisley -  Hood (JourneyId : 6, spaces left 8)
+[01:40] Port Ellen to Mos Eisley -  Tempest (JourneyId : 7, spaces left 8)
+[01:20] Port Ellen to Mos Eisley -  Hood (JourneyId : 6, spaces left 8)
+[01:40] Port Ellen to Mos Eisley -  Tempest (JourneyId : 7, spaces left 8)
+[01:20] Port Ellen to Mos Eisley -  Hood (JourneyId : 6, spaces left 8)
+[01:40] Port Ellen to Mos Eisley -  Tempest (JourneyId : 7, spaces left 8)
+[01:20] Port Ellen to Mos Eisley -  Hood (JourneyId : 6, spaces left 8)
+[01:40] Port Ellen to Mos Eisley -  Tempest (JourneyId : 7, spaces left 8)
+[01:20] Port Ellen to Mos Eisley -  Hood (JourneyId : 6, spaces left 8)
+[01:40] Port Ellen to Mos Eisley -  Tempest (JourneyId : 7, spaces left 8)
+[01:20] Port Ellen to Mos Eisley -  Hood (JourneyId : 6, spaces left 8)
+[01:40] Port Ellen to Mos Eisley -  Tempest (JourneyId : 7, spaces left 8)
+[01:20] Port Ellen to Mos Eisley -  Hood (JourneyId : 6, spaces left 8)
+[01:40] Port Ellen to Mos Eisley -  Tempest (JourneyId : 7, spaces left 8)
+[01:20] Port Ellen to Mos Eisley -  Hood (JourneyId : 6, spaces left 8)
+[01:40] Port Ellen to Mos Eisley -  Tempest (JourneyId : 7, spaces left 8)
+[01:20] Port Ellen to Mos Eisley -  Hood (JourneyId : 6, spaces left 8)
+[01:40] Port Ellen to Mos Eisley -  Tempest (JourneyId : 7, spaces left 8)
+[01:20] Port Ellen to Mos Eisley -  Hood (JourneyId : 6, spaces left 8)
+[01:40] Port Ellen to Mos Eisley -  Tempest (JourneyId : 7, spaces left 8)
+[01:20] Port Ellen to Mos Eisley -  Hood (JourneyId : 6, spaces left 8)
+[01:40] Port Ellen to Mos Eisley -  Tempest (JourneyId : 7, spaces left 8)
+[01:20] Port Ellen to Mos Eisley -  Hood (JourneyId : 6, spaces left 8)
+[01:40] Port Ellen to Mos Eisley -  Tempest (JourneyId : 7, spaces left 8)
+[01:20] Port Ellen to Mos Eisley -  Hood (JourneyId : 6, spaces left 8)
+[01:40] Port Ellen to Mos Eisley -  Tempest (JourneyId : 7, spaces left 8)
+[01:40] Port Ellen to Mos Eisley -  Tempest (JourneyId : 7, spaces left 8)
+[01:40] Port Ellen to Mos Eisley -  Tempest (JourneyId : 7, spaces left 8)
+[01:40] Port Ellen to Mos Eisley -  Tempest (JourneyId : 7, spaces left 8)
+[01:40] Port Ellen to Mos Eisley -  Tempest (JourneyId : 7, spaces left 8)
+[01:40] Port Ellen to Mos Eisley -  Tempest (JourneyId : 7, spaces left 8)
+[01:40] Port Ellen to Mos Eisley -  Tempest (JourneyId : 7, spaces left 8)
+[01:40] Port Ellen to Mos Eisley -  Tempest (JourneyId : 7, spaces left 8)
+[01:40] Port Ellen to Mos Eisley -  Tempest (JourneyId : 7, spaces left 8)
+[01:40] Port Ellen to Mos Eisley -  Tempest (JourneyId : 7, spaces left 8)
+[01:40] Port Ellen to Mos Eisley -  Tempest (JourneyId : 7, spaces left 8)
+[01:40] Port Ellen to Mos Eisley -  Tempest (JourneyId : 7, spaces left 8)
+[01:40] Port Ellen to Mos Eisley -  Tempest (JourneyId : 7, spaces left 8)
+[01:40] Port Ellen to Mos Eisley -  Tempest (JourneyId : 7, spaces left 8)
+[01:40] Port Ellen to Mos Eisley -  Tempest (JourneyId : 7, spaces left 8)
+[01:40] Port Ellen to Mos Eisley -  Tempest (JourneyId : 7, spaces left 8)
+[01:40] Port Ellen to Mos Eisley -  Tempest (JourneyId : 7, spaces left 8)
+[01:40] Port Ellen to Mos Eisley -  Tempest (JourneyId : 7, spaces left 8)
+[01:40] Port Ellen to Mos Eisley -  Tempest (JourneyId : 7, spaces left 8)
+[01:40] Port Ellen to Mos Eisley -  Tempest (JourneyId : 7, spaces left 8)
+[01:40] Port Ellen to Mos Eisley -  Tempest (JourneyId : 7, spaces left 8)
+[00:10] Port Ellen to Tarsonis -  Titanic (JourneyId : 16, spaces left 12)
+[01:10] Port Ellen to Tarsonis -  Enterprise (JourneyId : 5, spaces left 14)
+[00:10] Port Ellen to Tarsonis -  Titanic (JourneyId : 16, spaces left 12)
+[01:10] Port Ellen to Tarsonis -  Enterprise (JourneyId : 5, spaces left 14)
+[00:10] Port Ellen to Tarsonis -  Titanic (JourneyId : 16, spaces left 12)
+[01:10] Port Ellen to Tarsonis -  Enterprise (JourneyId : 5, spaces left 14)
+[00:10] Port Ellen to Tarsonis -  Titanic (JourneyId : 16, spaces left 12)
+[01:10] Port Ellen to Tarsonis -  Enterprise (JourneyId : 5, spaces left 14)
+[00:10] Port Ellen to Tarsonis -  Titanic (JourneyId : 16, spaces left 12)
+[01:10] Port Ellen to Tarsonis -  Enterprise (JourneyId : 5, spaces left 14)
+[00:10] Port Ellen to Tarsonis -  Titanic (JourneyId : 16, spaces left 12)
+[01:10] Port Ellen to Tarsonis -  Enterprise (JourneyId : 5, spaces left 14)
+[00:10] Port Ellen to Tarsonis -  Titanic (JourneyId : 16, spaces left 12)
+[01:10] Port Ellen to Tarsonis -  Enterprise (JourneyId : 5, spaces left 14)
+[00:10] Port Ellen to Tarsonis -  Titanic (JourneyId : 16, spaces left 12)
+[01:10] Port Ellen to Tarsonis -  Enterprise (JourneyId : 5, spaces left 14)
+[00:10] Port Ellen to Tarsonis -  Titanic (JourneyId : 16, spaces left 12)
+[01:10] Port Ellen to Tarsonis -  Enterprise (JourneyId : 5, spaces left 14)
+[00:10] Port Ellen to Tarsonis -  Titanic (JourneyId : 16, spaces left 12)
+[01:10] Port Ellen to Tarsonis -  Enterprise (JourneyId : 5, spaces left 14)
+[00:10] Port Ellen to Tarsonis -  Titanic (JourneyId : 16, spaces left 12)
+[01:10] Port Ellen to Tarsonis -  Enterprise (JourneyId : 5, spaces left 14)
+[01:10] Port Ellen to Tarsonis -  Enterprise (JourneyId : 5, spaces left 14)
+[01:10] Port Ellen to Tarsonis -  Enterprise (JourneyId : 5, spaces left 14)
+[01:10] Port Ellen to Tarsonis -  Enterprise (JourneyId : 5, spaces left 14)
+[01:10] Port Ellen to Tarsonis -  Enterprise (JourneyId : 5, spaces left 14)
+[01:10] Port Ellen to Tarsonis -  Enterprise (JourneyId : 5, spaces left 14)
+[01:10] Port Ellen to Tarsonis -  Enterprise (JourneyId : 5, spaces left 14)
+[01:10] Port Ellen to Tarsonis -  Enterprise (JourneyId : 5, spaces left 14)
+[01:10] Port Ellen to Tarsonis -  Enterprise (JourneyId : 5, spaces left 14)
+[01:10] Port Ellen to Tarsonis -  Enterprise (JourneyId : 5, spaces left 14)
+[01:10] Port Ellen to Tarsonis -  Enterprise (JourneyId : 5, spaces left 14)
+[01:10] Port Ellen to Tarsonis -  Enterprise (JourneyId : 5, spaces left 14)
+[01:10] Port Ellen to Tarsonis -  Enterprise (JourneyId : 5, spaces left 14)
+[01:10] Port Ellen to Tarsonis -  Enterprise (JourneyId : 5, spaces left 14)
+[01:10] Port Ellen to Tarsonis -  Enterprise (JourneyId : 5, spaces left 14)
+[01:10] Port Ellen to Tarsonis -  Enterprise (JourneyId : 5, spaces left 14)
+[01:10] Port Ellen to Tarsonis -  Enterprise (JourneyId : 5, spaces left 14)
+[01:10] Port Ellen to Tarsonis -  Enterprise (JourneyId : 5, spaces left 14)
+[01:10] Port Ellen to Tarsonis -  Enterprise (JourneyId : 5, spaces left 14)
+[01:10] Port Ellen to Tarsonis -  Enterprise (JourneyId : 5, spaces left 14)
+[01:10] Port Ellen to Tarsonis -  Enterprise (JourneyId : 5, spaces left 14)
+[01:10] Port Ellen to Tarsonis -  Enterprise (JourneyId : 5, spaces left 14)
+[01:10] Port Ellen to Tarsonis -  Enterprise (JourneyId : 5, spaces left 14)
+[01:10] Port Ellen to Tarsonis -  Enterprise (JourneyId : 5, spaces left 14)
+[01:10] Port Ellen to Tarsonis -  Enterprise (JourneyId : 5, spaces left 14)
+[01:10] Port Ellen to Tarsonis -  Enterprise (JourneyId : 5, spaces left 14)
+[01:10] Port Ellen to Tarsonis -  Enterprise (JourneyId : 5, spaces left 14)
+[01:10] Port Ellen to Tarsonis -  Enterprise (JourneyId : 5, spaces left 14)
+[01:10] Port Ellen to Tarsonis -  Enterprise (JourneyId : 5, spaces left 14)
+[01:10] Port Ellen to Tarsonis -  Enterprise (JourneyId : 5, spaces left 14)
+[01:10] Port Ellen to Tarsonis -  Enterprise (JourneyId : 5, spaces left 14)
+[01:10] Port Ellen to Tarsonis -  Enterprise (JourneyId : 5, spaces left 14)
+[01:10] Port Ellen to Tarsonis -  Enterprise (JourneyId : 5, spaces left 14)
+[01:10] Port Ellen to Tarsonis -  Enterprise (JourneyId : 5, spaces left 14)
+[01:10] Port Ellen to Tarsonis -  Enterprise (JourneyId : 5, spaces left 14)
+[01:10] Port Ellen to Tarsonis -  Enterprise (JourneyId : 5, spaces left 14)
+[01:10] Port Ellen to Tarsonis -  Enterprise (JourneyId : 5, spaces left 14)
+[01:10] Port Ellen to Tarsonis -  Enterprise (JourneyId : 5, spaces left 14)
+[01:10] Port Ellen to Tarsonis -  Enterprise (JourneyId : 5, spaces left 14)
+[01:10] Port Ellen to Tarsonis -  Enterprise (JourneyId : 5, spaces left 14)
+[01:10] Port Ellen to Tarsonis -  Enterprise (JourneyId : 5, spaces left 14)
+[01:10] Port Ellen to Tarsonis -  Enterprise (JourneyId : 5, spaces left 14)
+[01:10] Port Ellen to Tarsonis -  Enterprise (JourneyId : 5, spaces left 14)
+[01:10] Port Ellen to Tarsonis -  Enterprise (JourneyId : 5, spaces left 14)
+[01:10] Port Ellen to Tarsonis -  Enterprise (JourneyId : 5, spaces left 14)
+[01:10] Port Ellen to Tarsonis -  Enterprise (JourneyId : 5, spaces left 14)
+[01:10] Port Ellen to Tarsonis -  Enterprise (JourneyId : 5, spaces left 14)
+[01:10] Port Ellen to Tarsonis -  Enterprise (JourneyId : 5, spaces left 14)
+[01:10] Port Ellen to Tarsonis -  Enterprise (JourneyId : 5, spaces left 14)
+[01:10] Port Ellen to Tarsonis -  Enterprise (JourneyId : 5, spaces left 14)
+[01:10] Port Ellen to Tarsonis -  Enterprise (JourneyId : 5, spaces left 14)
+[01:10] Port Ellen to Tarsonis -  Enterprise (JourneyId : 5, spaces left 14)
+[01:10] Port Ellen to Tarsonis -  Enterprise (JourneyId : 5, spaces left 14)
+[01:10] Port Ellen to Tarsonis -  Enterprise (JourneyId : 5, spaces left 14)
+[01:10] Port Ellen to Tarsonis -  Enterprise (JourneyId : 5, spaces left 14)
+[01:10] Port Ellen to Tarsonis -  Enterprise (JourneyId : 5, spaces left 14)
+[01:10] Port Ellen to Tarsonis -  Enterprise (JourneyId : 5, spaces left 14)
+[01:10] Port Ellen to Tarsonis -  Enterprise (JourneyId : 5, spaces left 14)
+[01:10] Port Ellen to Tarsonis -  Enterprise (JourneyId : 5, spaces left 14)
+[01:10] Port Ellen to Tarsonis -  Enterprise (JourneyId : 5, spaces left 14)
+[01:10] Port Ellen to Tarsonis -  Enterprise (JourneyId : 5, spaces left 14)
+Search is [search x y hh:mm]
+where: x - origin port id
+where: y - destinationg port id
+where: hh:mm - time to search after
+Search is [search x y hh:mm]
+where: x - origin port id
+where: y - destinationg port id
+where: hh:mm - time to search after
+Search is [search x y hh:mm]
+where: x - origin port id
+where: y - destinationg port id
+where: hh:mm - time to search after
+Search is [search x y hh:mm]
+where: x - origin port id
+where: y - destinationg port id
+where: hh:mm - time to search after
+Search is [search x y hh:mm]
+where: x - origin port id
+where: y - destinationg port id
+where: hh:mm - time to search after
+Search is [search x y hh:mm]
+where: x - origin port id
+where: y - destinationg port id
+where: hh:mm - time to search after
+Search is [search x y hh:mm]
+where: x - origin port id
+where: y - destinationg port id
+where: hh:mm - time to search after
+Search is [search x y hh:mm]
+where: x - origin port id
+where: y - destinationg port id
+where: hh:mm - time to search after
+Search is [search x y hh:mm]
+where: x - origin port id
+where: y - destinationg port id
+where: hh:mm - time to search after
+Search is [search x y hh:mm]
+where: x - origin port id
+where: y - destinationg port id
+where: hh:mm - time to search after
+Search is [search x y hh:mm]
+where: x - origin port id
+where: y - destinationg port id
+where: hh:mm - time to search after
+Search is [search x y hh:mm]
+where: x - origin port id
+where: y - destinationg port id
+where: hh:mm - time to search after
+Search is [search x y hh:mm]
+where: x - origin port id
+where: y - destinationg port id
+where: hh:mm - time to search after
+Search is [search x y hh:mm]
+where: x - origin port id
+where: y - destinationg port id
+where: hh:mm - time to search after
+Search is [search x y hh:mm]
+where: x - origin port id
+where: y - destinationg port id
+where: hh:mm - time to search after
+Search is [search x y hh:mm]
+where: x - origin port id
+where: y - destinationg port id
+where: hh:mm - time to search after
+Search is [search x y hh:mm]
+where: x - origin port id
+where: y - destinationg port id
+where: hh:mm - time to search after
+Search is [search x y hh:mm]
+where: x - origin port id
+where: y - destinationg port id
+where: hh:mm - time to search after
+Search is [search x y hh:mm]
+where: x - origin port id
+where: y - destinationg port id
+where: hh:mm - time to search after
+Search is [search x y hh:mm]
+where: x - origin port id
+where: y - destinationg port id
+where: hh:mm - time to search after
+Search is [search x y hh:mm]
+where: x - origin port id
+where: y - destinationg port id
+where: hh:mm - time to search after
+Search is [search x y hh:mm]
+where: x - origin port id
+where: y - destinationg port id
+where: hh:mm - time to search after
+Search is [search x y hh:mm]
+where: x - origin port id
+where: y - destinationg port id
+where: hh:mm - time to search after
+Search is [search x y hh:mm]
+where: x - origin port id
+where: y - destinationg port id
+where: hh:mm - time to search after
+Search is [search x y hh:mm]
+where: x - origin port id
+where: y - destinationg port id
+where: hh:mm - time to search after
+Search is [search x y hh:mm]
+where: x - origin port id
+where: y - destinationg port id
+where: hh:mm - time to search after
+Search is [search x y hh:mm]
+where: x - origin port id
+where: y - destinationg port id
+where: hh:mm - time to search after
+Search is [search x y hh:mm]
+where: x - origin port id
+where: y - destinationg port id
+where: hh:mm - time to search after
+Search is [search x y hh:mm]
+where: x - origin port id
+where: y - destinationg port id
+where: hh:mm - time to search after
+Search is [search x y hh:mm]
+where: x - origin port id
+where: y - destinationg port id
+where: hh:mm - time to search after
+Search is [search x y hh:mm]
+where: x - origin port id
+where: y - destinationg port id
+where: hh:mm - time to search after
+Search is [search x y hh:mm]
+where: x - origin port id
+where: y - destinationg port id
+where: hh:mm - time to search after
+Search is [search x y hh:mm]
+where: x - origin port id
+where: y - destinationg port id
+where: hh:mm - time to search after
+Search is [search x y hh:mm]
+where: x - origin port id
+where: y - destinationg port id
+where: hh:mm - time to search after
+Search is [search x y hh:mm]
+where: x - origin port id
+where: y - destinationg port id
+where: hh:mm - time to search after
+Search is [search x y hh:mm]
+where: x - origin port id
+where: y - destinationg port id
+where: hh:mm - time to search after
+Search is [search x y hh:mm]
+where: x - origin port id
+where: y - destinationg port id
+where: hh:mm - time to search after
+Search is [search x y hh:mm]
+where: x - origin port id
+where: y - destinationg port id
+where: hh:mm - time to search after
+Search is [search x y hh:mm]
+where: x - origin port id
+where: y - destinationg port id
+where: hh:mm - time to search after
+Search is [search x y hh:mm]
+where: x - origin port id
+where: y - destinationg port id
+where: hh:mm - time to search after
+Search is [search x y hh:mm]
+where: x - origin port id
+where: y - destinationg port id
+where: hh:mm - time to search after
+Search is [search x y hh:mm]
+where: x - origin port id
+where: y - destinationg port id
+where: hh:mm - time to search after
+Search is [search x y hh:mm]
+where: x - origin port id
+where: y - destinationg port id
+where: hh:mm - time to search after
+Search is [search x y hh:mm]
+where: x - origin port id
+where: y - destinationg port id
+where: hh:mm - time to search after
+Search is [search x y hh:mm]
+where: x - origin port id
+where: y - destinationg port id
+where: hh:mm - time to search after
+Search is [search x y hh:mm]
+where: x - origin port id
+where: y - destinationg port id
+where: hh:mm - time to search after
+Search is [search x y hh:mm]
+where: x - origin port id
+where: y - destinationg port id
+where: hh:mm - time to search after
+Search is [search x y hh:mm]
+where: x - origin port id
+where: y - destinationg port id
+where: hh:mm - time to search after
+Search is [search x y hh:mm]
+where: x - origin port id
+where: y - destinationg port id
+where: hh:mm - time to search after
+Search is [search x y hh:mm]
+where: x - origin port id
+where: y - destinationg port id
+where: hh:mm - time to search after
+Search is [search x y hh:mm]
+where: x - origin port id
+where: y - destinationg port id
+where: hh:mm - time to search after
+[01:10] Mos Eisley to Port Ellen -  Hyperion (JourneyId : 12, spaces left 16)
+[01:30] Mos Eisley to Port Ellen -  Millenium Falcon (JourneyId : 13, spaces left 8)
+[01:50] Mos Eisley to Port Ellen -  Golden Hind (JourneyId : 15, spaces left 14)
+[01:10] Mos Eisley to Port Ellen -  Hyperion (JourneyId : 12, spaces left 16)
+[01:30] Mos Eisley to Port Ellen -  Millenium Falcon (JourneyId : 13, spaces left 8)
+[01:50] Mos Eisley to Port Ellen -  Golden Hind (JourneyId : 15, spaces left 14)
+[01:10] Mos Eisley to Port Ellen -  Hyperion (JourneyId : 12, spaces left 16)
+[01:30] Mos Eisley to Port Ellen -  Millenium Falcon (JourneyId : 13, spaces left 8)
+[01:50] Mos Eisley to Port Ellen -  Golden Hind (JourneyId : 15, spaces left 14)
+[01:10] Mos Eisley to Port Ellen -  Hyperion (JourneyId : 12, spaces left 16)
+[01:30] Mos Eisley to Port Ellen -  Millenium Falcon (JourneyId : 13, spaces left 8)
+[01:50] Mos Eisley to Port Ellen -  Golden Hind (JourneyId : 15, spaces left 14)
+[01:10] Mos Eisley to Port Ellen -  Hyperion (JourneyId : 12, spaces left 16)
+[01:30] Mos Eisley to Port Ellen -  Millenium Falcon (JourneyId : 13, spaces left 8)
+[01:50] Mos Eisley to Port Ellen -  Golden Hind (JourneyId : 15, spaces left 14)
+[01:10] Mos Eisley to Port Ellen -  Hyperion (JourneyId : 12, spaces left 16)
+[01:30] Mos Eisley to Port Ellen -  Millenium Falcon (JourneyId : 13, spaces left 8)
+[01:50] Mos Eisley to Port Ellen -  Golden Hind (JourneyId : 15, spaces left 14)
+[01:10] Mos Eisley to Port Ellen -  Hyperion (JourneyId : 12, spaces left 16)
+[01:30] Mos Eisley to Port Ellen -  Millenium Falcon (JourneyId : 13, spaces left 8)
+[01:50] Mos Eisley to Port Ellen -  Golden Hind (JourneyId : 15, spaces left 14)
+[01:10] Mos Eisley to Port Ellen -  Hyperion (JourneyId : 12, spaces left 16)
+[01:30] Mos Eisley to Port Ellen -  Millenium Falcon (JourneyId : 13, spaces left 8)
+[01:50] Mos Eisley to Port Ellen -  Golden Hind (JourneyId : 15, spaces left 14)
+[01:10] Mos Eisley to Port Ellen -  Hyperion (JourneyId : 12, spaces left 16)
+[01:30] Mos Eisley to Port Ellen -  Millenium Falcon (JourneyId : 13, spaces left 8)
+[01:50] Mos Eisley to Port Ellen -  Golden Hind (JourneyId : 15, spaces left 14)
+[01:10] Mos Eisley to Port Ellen -  Hyperion (JourneyId : 12, spaces left 16)
+[01:30] Mos Eisley to Port Ellen -  Millenium Falcon (JourneyId : 13, spaces left 8)
+[01:50] Mos Eisley to Port Ellen -  Golden Hind (JourneyId : 15, spaces left 14)
+[01:10] Mos Eisley to Port Ellen -  Hyperion (JourneyId : 12, spaces left 16)
+[01:30] Mos Eisley to Port Ellen -  Millenium Falcon (JourneyId : 13, spaces left 8)
+[01:50] Mos Eisley to Port Ellen -  Golden Hind (JourneyId : 15, spaces left 14)
+[01:10] Mos Eisley to Port Ellen -  Hyperion (JourneyId : 12, spaces left 16)
+[01:30] Mos Eisley to Port Ellen -  Millenium Falcon (JourneyId : 13, spaces left 8)
+[01:50] Mos Eisley to Port Ellen -  Golden Hind (JourneyId : 15, spaces left 14)
+[01:10] Mos Eisley to Port Ellen -  Hyperion (JourneyId : 12, spaces left 16)
+[01:30] Mos Eisley to Port Ellen -  Millenium Falcon (JourneyId : 13, spaces left 8)
+[01:50] Mos Eisley to Port Ellen -  Golden Hind (JourneyId : 15, spaces left 14)
+[01:10] Mos Eisley to Port Ellen -  Hyperion (JourneyId : 12, spaces left 16)
+[01:30] Mos Eisley to Port Ellen -  Millenium Falcon (JourneyId : 13, spaces left 8)
+[01:50] Mos Eisley to Port Ellen -  Golden Hind (JourneyId : 15, spaces left 14)
+[01:10] Mos Eisley to Port Ellen -  Hyperion (JourneyId : 12, spaces left 16)
+[01:30] Mos Eisley to Port Ellen -  Millenium Falcon (JourneyId : 13, spaces left 8)
+[01:50] Mos Eisley to Port Ellen -  Golden Hind (JourneyId : 15, spaces left 14)
+[01:10] Mos Eisley to Port Ellen -  Hyperion (JourneyId : 12, spaces left 16)
+[01:30] Mos Eisley to Port Ellen -  Millenium Falcon (JourneyId : 13, spaces left 8)
+[01:50] Mos Eisley to Port Ellen -  Golden Hind (JourneyId : 15, spaces left 14)
+[01:10] Mos Eisley to Port Ellen -  Hyperion (JourneyId : 12, spaces left 16)
+[01:30] Mos Eisley to Port Ellen -  Millenium Falcon (JourneyId : 13, spaces left 8)
+[01:50] Mos Eisley to Port Ellen -  Golden Hind (JourneyId : 15, spaces left 14)
+[01:10] Mos Eisley to Port Ellen -  Hyperion (JourneyId : 12, spaces left 16)
+[01:30] Mos Eisley to Port Ellen -  Millenium Falcon (JourneyId : 13, spaces left 8)
+[01:50] Mos Eisley to Port Ellen -  Golden Hind (JourneyId : 15, spaces left 14)
+[01:10] Mos Eisley to Port Ellen -  Hyperion (JourneyId : 12, spaces left 16)
+[01:30] Mos Eisley to Port Ellen -  Millenium Falcon (JourneyId : 13, spaces left 8)
+[01:50] Mos Eisley to Port Ellen -  Golden Hind (JourneyId : 15, spaces left 14)
+[01:10] Mos Eisley to Port Ellen -  Hyperion (JourneyId : 12, spaces left 16)
+[01:30] Mos Eisley to Port Ellen -  Millenium Falcon (JourneyId : 13, spaces left 8)
+[01:50] Mos Eisley to Port Ellen -  Golden Hind (JourneyId : 15, spaces left 14)
+[01:30] Mos Eisley to Port Ellen -  Millenium Falcon (JourneyId : 13, spaces left 8)
+[01:50] Mos Eisley to Port Ellen -  Golden Hind (JourneyId : 15, spaces left 14)
+[01:30] Mos Eisley to Port Ellen -  Millenium Falcon (JourneyId : 13, spaces left 8)
+[01:50] Mos Eisley to Port Ellen -  Golden Hind (JourneyId : 15, spaces left 14)
+[01:30] Mos Eisley to Port Ellen -  Millenium Falcon (JourneyId : 13, spaces left 8)
+[01:50] Mos Eisley to Port Ellen -  Golden Hind (JourneyId : 15, spaces left 14)
+[01:30] Mos Eisley to Port Ellen -  Millenium Falcon (JourneyId : 13, spaces left 8)
+[01:50] Mos Eisley to Port Ellen -  Golden Hind (JourneyId : 15, spaces left 14)
+[01:30] Mos Eisley to Port Ellen -  Millenium Falcon (JourneyId : 13, spaces left 8)
+[01:50] Mos Eisley to Port Ellen -  Golden Hind (JourneyId : 15, spaces left 14)
+[01:30] Mos Eisley to Port Ellen -  Millenium Falcon (JourneyId : 13, spaces left 8)
+[01:50] Mos Eisley to Port Ellen -  Golden Hind (JourneyId : 15, spaces left 14)
+[01:30] Mos Eisley to Port Ellen -  Millenium Falcon (JourneyId : 13, spaces left 8)
+[01:50] Mos Eisley to Port Ellen -  Golden Hind (JourneyId : 15, spaces left 14)
+[01:30] Mos Eisley to Port Ellen -  Millenium Falcon (JourneyId : 13, spaces left 8)
+[01:50] Mos Eisley to Port Ellen -  Golden Hind (JourneyId : 15, spaces left 14)
+[01:30] Mos Eisley to Port Ellen -  Millenium Falcon (JourneyId : 13, spaces left 8)
+[01:50] Mos Eisley to Port Ellen -  Golden Hind (JourneyId : 15, spaces left 14)
+[01:30] Mos Eisley to Port Ellen -  Millenium Falcon (JourneyId : 13, spaces left 8)
+[01:50] Mos Eisley to Port Ellen -  Golden Hind (JourneyId : 15, spaces left 14)
+[01:30] Mos Eisley to Port Ellen -  Millenium Falcon (JourneyId : 13, spaces left 8)
+[01:50] Mos Eisley to Port Ellen -  Golden Hind (JourneyId : 15, spaces left 14)
+[01:30] Mos Eisley to Port Ellen -  Millenium Falcon (JourneyId : 13, spaces left 8)
+[01:50] Mos Eisley to Port Ellen -  Golden Hind (JourneyId : 15, spaces left 14)
+[01:30] Mos Eisley to Port Ellen -  Millenium Falcon (JourneyId : 13, spaces left 8)
+[01:50] Mos Eisley to Port Ellen -  Golden Hind (JourneyId : 15, spaces left 14)
+[01:30] Mos Eisley to Port Ellen -  Millenium Falcon (JourneyId : 13, spaces left 8)
+[01:50] Mos Eisley to Port Ellen -  Golden Hind (JourneyId : 15, spaces left 14)
+[01:30] Mos Eisley to Port Ellen -  Millenium Falcon (JourneyId : 13, spaces left 8)
+[01:50] Mos Eisley to Port Ellen -  Golden Hind (JourneyId : 15, spaces left 14)
+[01:30] Mos Eisley to Port Ellen -  Millenium Falcon (JourneyId : 13, spaces left 8)
+[01:50] Mos Eisley to Port Ellen -  Golden Hind (JourneyId : 15, spaces left 14)
+[01:30] Mos Eisley to Port Ellen -  Millenium Falcon (JourneyId : 13, spaces left 8)
+[01:50] Mos Eisley to Port Ellen -  Golden Hind (JourneyId : 15, spaces left 14)
+[01:30] Mos Eisley to Port Ellen -  Millenium Falcon (JourneyId : 13, spaces left 8)
+[01:50] Mos Eisley to Port Ellen -  Golden Hind (JourneyId : 15, spaces left 14)
+[01:30] Mos Eisley to Port Ellen -  Millenium Falcon (JourneyId : 13, spaces left 8)
+[01:50] Mos Eisley to Port Ellen -  Golden Hind (JourneyId : 15, spaces left 14)
+[01:30] Mos Eisley to Port Ellen -  Millenium Falcon (JourneyId : 13, spaces left 8)
+[01:50] Mos Eisley to Port Ellen -  Golden Hind (JourneyId : 15, spaces left 14)
+[01:50] Mos Eisley to Port Ellen -  Golden Hind (JourneyId : 15, spaces left 14)
+[01:50] Mos Eisley to Port Ellen -  Golden Hind (JourneyId : 15, spaces left 14)
+[01:50] Mos Eisley to Port Ellen -  Golden Hind (JourneyId : 15, spaces left 14)
+[01:50] Mos Eisley to Port Ellen -  Golden Hind (JourneyId : 15, spaces left 14)
+[01:50] Mos Eisley to Port Ellen -  Golden Hind (JourneyId : 15, spaces left 14)
+[01:50] Mos Eisley to Port Ellen -  Golden Hind (JourneyId : 15, spaces left 14)
+[01:50] Mos Eisley to Port Ellen -  Golden Hind (JourneyId : 15, spaces left 14)
+[01:50] Mos Eisley to Port Ellen -  Golden Hind (JourneyId : 15, spaces left 14)
+[01:50] Mos Eisley to Port Ellen -  Golden Hind (JourneyId : 15, spaces left 14)
+[01:50] Mos Eisley to Port Ellen -  Golden Hind (JourneyId : 15, spaces left 14)
+[01:50] Mos Eisley to Port Ellen -  Golden Hind (JourneyId : 15, spaces left 14)
+[00:40] Mos Eisley to Tarsonis -  Black Pearl (JourneyId : 10, spaces left 12)
+[01:40] Mos Eisley to Tarsonis -  Defiant (JourneyId : 14, spaces left 11)
+[00:40] Mos Eisley to Tarsonis -  Black Pearl (JourneyId : 10, spaces left 12)
+[01:40] Mos Eisley to Tarsonis -  Defiant (JourneyId : 14, spaces left 11)
+[00:40] Mos Eisley to Tarsonis -  Black Pearl (JourneyId : 10, spaces left 12)
+[01:40] Mos Eisley to Tarsonis -  Defiant (JourneyId : 14, spaces left 11)
+[00:40] Mos Eisley to Tarsonis -  Black Pearl (JourneyId : 10, spaces left 12)
+[01:40] Mos Eisley to Tarsonis -  Defiant (JourneyId : 14, spaces left 11)
+[00:40] Mos Eisley to Tarsonis -  Black Pearl (JourneyId : 10, spaces left 12)
+[01:40] Mos Eisley to Tarsonis -  Defiant (JourneyId : 14, spaces left 11)
+[00:40] Mos Eisley to Tarsonis -  Black Pearl (JourneyId : 10, spaces left 12)
+[01:40] Mos Eisley to Tarsonis -  Defiant (JourneyId : 14, spaces left 11)
+[00:40] Mos Eisley to Tarsonis -  Black Pearl (JourneyId : 10, spaces left 12)
+[01:40] Mos Eisley to Tarsonis -  Defiant (JourneyId : 14, spaces left 11)
+[00:40] Mos Eisley to Tarsonis -  Black Pearl (JourneyId : 10, spaces left 12)
+[01:40] Mos Eisley to Tarsonis -  Defiant (JourneyId : 14, spaces left 11)
+[00:40] Mos Eisley to Tarsonis -  Black Pearl (JourneyId : 10, spaces left 12)
+[01:40] Mos Eisley to Tarsonis -  Defiant (JourneyId : 14, spaces left 11)
+[00:40] Mos Eisley to Tarsonis -  Black Pearl (JourneyId : 10, spaces left 12)
+[01:40] Mos Eisley to Tarsonis -  Defiant (JourneyId : 14, spaces left 11)
+[00:40] Mos Eisley to Tarsonis -  Black Pearl (JourneyId : 10, spaces left 12)
+[01:40] Mos Eisley to Tarsonis -  Defiant (JourneyId : 14, spaces left 11)
+[00:40] Mos Eisley to Tarsonis -  Black Pearl (JourneyId : 10, spaces left 12)
+[01:40] Mos Eisley to Tarsonis -  Defiant (JourneyId : 14, spaces left 11)
+[00:40] Mos Eisley to Tarsonis -  Black Pearl (JourneyId : 10, spaces left 12)
+[01:40] Mos Eisley to Tarsonis -  Defiant (JourneyId : 14, spaces left 11)
+[00:40] Mos Eisley to Tarsonis -  Black Pearl (JourneyId : 10, spaces left 12)
+[01:40] Mos Eisley to Tarsonis -  Defiant (JourneyId : 14, spaces left 11)
+[00:40] Mos Eisley to Tarsonis -  Black Pearl (JourneyId : 10, spaces left 12)
+[01:40] Mos Eisley to Tarsonis -  Defiant (JourneyId : 14, spaces left 11)
+[00:40] Mos Eisley to Tarsonis -  Black Pearl (JourneyId : 10, spaces left 12)
+[01:40] Mos Eisley to Tarsonis -  Defiant (JourneyId : 14, spaces left 11)
+[00:40] Mos Eisley to Tarsonis -  Black Pearl (JourneyId : 10, spaces left 12)
+[01:40] Mos Eisley to Tarsonis -  Defiant (JourneyId : 14, spaces left 11)
+[00:40] Mos Eisley to Tarsonis -  Black Pearl (JourneyId : 10, spaces left 12)
+[01:40] Mos Eisley to Tarsonis -  Defiant (JourneyId : 14, spaces left 11)
+[00:40] Mos Eisley to Tarsonis -  Black Pearl (JourneyId : 10, spaces left 12)
+[01:40] Mos Eisley to Tarsonis -  Defiant (JourneyId : 14, spaces left 11)
+[00:40] Mos Eisley to Tarsonis -  Black Pearl (JourneyId : 10, spaces left 12)
+[01:40] Mos Eisley to Tarsonis -  Defiant (JourneyId : 14, spaces left 11)
+[00:40] Mos Eisley to Tarsonis -  Black Pearl (JourneyId : 10, spaces left 12)
+[01:40] Mos Eisley to Tarsonis -  Defiant (JourneyId : 14, spaces left 11)
+[00:40] Mos Eisley to Tarsonis -  Black Pearl (JourneyId : 10, spaces left 12)
+[01:40] Mos Eisley to Tarsonis -  Defiant (JourneyId : 14, spaces left 11)
+[00:40] Mos Eisley to Tarsonis -  Black Pearl (JourneyId : 10, spaces left 12)
+[01:40] Mos Eisley to Tarsonis -  Defiant (JourneyId : 14, spaces left 11)
+[00:40] Mos Eisley to Tarsonis -  Black Pearl (JourneyId : 10, spaces left 12)
+[01:40] Mos Eisley to Tarsonis -  Defiant (JourneyId : 14, spaces left 11)
+[00:40] Mos Eisley to Tarsonis -  Black Pearl (JourneyId : 10, spaces left 12)
+[01:40] Mos Eisley to Tarsonis -  Defiant (JourneyId : 14, spaces left 11)
+[00:40] Mos Eisley to Tarsonis -  Black Pearl (JourneyId : 10, spaces left 12)
+[01:40] Mos Eisley to Tarsonis -  Defiant (JourneyId : 14, spaces left 11)
+[00:40] Mos Eisley to Tarsonis -  Black Pearl (JourneyId : 10, spaces left 12)
+[01:40] Mos Eisley to Tarsonis -  Defiant (JourneyId : 14, spaces left 11)
+[00:40] Mos Eisley to Tarsonis -  Black Pearl (JourneyId : 10, spaces left 12)
+[01:40] Mos Eisley to Tarsonis -  Defiant (JourneyId : 14, spaces left 11)
+[00:40] Mos Eisley to Tarsonis -  Black Pearl (JourneyId : 10, spaces left 12)
+[01:40] Mos Eisley to Tarsonis -  Defiant (JourneyId : 14, spaces left 11)
+[00:40] Mos Eisley to Tarsonis -  Black Pearl (JourneyId : 10, spaces left 12)
+[01:40] Mos Eisley to Tarsonis -  Defiant (JourneyId : 14, spaces left 11)
+[00:40] Mos Eisley to Tarsonis -  Black Pearl (JourneyId : 10, spaces left 12)
+[01:40] Mos Eisley to Tarsonis -  Defiant (JourneyId : 14, spaces left 11)
+[00:40] Mos Eisley to Tarsonis -  Black Pearl (JourneyId : 10, spaces left 12)
+[01:40] Mos Eisley to Tarsonis -  Defiant (JourneyId : 14, spaces left 11)
+[00:40] Mos Eisley to Tarsonis -  Black Pearl (JourneyId : 10, spaces left 12)
+[01:40] Mos Eisley to Tarsonis -  Defiant (JourneyId : 14, spaces left 11)
+[00:40] Mos Eisley to Tarsonis -  Black Pearl (JourneyId : 10, spaces left 12)
+[01:40] Mos Eisley to Tarsonis -  Defiant (JourneyId : 14, spaces left 11)
+[00:40] Mos Eisley to Tarsonis -  Black Pearl (JourneyId : 10, spaces left 12)
+[01:40] Mos Eisley to Tarsonis -  Defiant (JourneyId : 14, spaces left 11)
+[00:40] Mos Eisley to Tarsonis -  Black Pearl (JourneyId : 10, spaces left 12)
+[01:40] Mos Eisley to Tarsonis -  Defiant (JourneyId : 14, spaces left 11)
+[00:40] Mos Eisley to Tarsonis -  Black Pearl (JourneyId : 10, spaces left 12)
+[01:40] Mos Eisley to Tarsonis -  Defiant (JourneyId : 14, spaces left 11)
+[00:40] Mos Eisley to Tarsonis -  Black Pearl (JourneyId : 10, spaces left 12)
+[01:40] Mos Eisley to Tarsonis -  Defiant (JourneyId : 14, spaces left 11)
+[00:40] Mos Eisley to Tarsonis -  Black Pearl (JourneyId : 10, spaces left 12)
+[01:40] Mos Eisley to Tarsonis -  Defiant (JourneyId : 14, spaces left 11)
+[00:40] Mos Eisley to Tarsonis -  Black Pearl (JourneyId : 10, spaces left 12)
+[01:40] Mos Eisley to Tarsonis -  Defiant (JourneyId : 14, spaces left 11)
+[00:40] Mos Eisley to Tarsonis -  Black Pearl (JourneyId : 10, spaces left 12)
+[01:40] Mos Eisley to Tarsonis -  Defiant (JourneyId : 14, spaces left 11)
+[01:40] Mos Eisley to Tarsonis -  Defiant (JourneyId : 14, spaces left 11)
+[01:40] Mos Eisley to Tarsonis -  Defiant (JourneyId : 14, spaces left 11)
+[01:40] Mos Eisley to Tarsonis -  Defiant (JourneyId : 14, spaces left 11)
+[01:40] Mos Eisley to Tarsonis -  Defiant (JourneyId : 14, spaces left 11)
+[01:40] Mos Eisley to Tarsonis -  Defiant (JourneyId : 14, spaces left 11)
+[01:40] Mos Eisley to Tarsonis -  Defiant (JourneyId : 14, spaces left 11)
+[01:40] Mos Eisley to Tarsonis -  Defiant (JourneyId : 14, spaces left 11)
+[01:40] Mos Eisley to Tarsonis -  Defiant (JourneyId : 14, spaces left 11)
+[01:40] Mos Eisley to Tarsonis -  Defiant (JourneyId : 14, spaces left 11)
+[01:40] Mos Eisley to Tarsonis -  Defiant (JourneyId : 14, spaces left 11)
+[01:40] Mos Eisley to Tarsonis -  Defiant (JourneyId : 14, spaces left 11)
+[01:40] Mos Eisley to Tarsonis -  Defiant (JourneyId : 14, spaces left 11)
+[01:40] Mos Eisley to Tarsonis -  Defiant (JourneyId : 14, spaces left 11)
+[01:40] Mos Eisley to Tarsonis -  Defiant (JourneyId : 14, spaces left 11)
+[01:40] Mos Eisley to Tarsonis -  Defiant (JourneyId : 14, spaces left 11)
+[01:40] Mos Eisley to Tarsonis -  Defiant (JourneyId : 14, spaces left 11)
+[01:40] Mos Eisley to Tarsonis -  Defiant (JourneyId : 14, spaces left 11)
+[01:40] Mos Eisley to Tarsonis -  Defiant (JourneyId : 14, spaces left 11)
+[01:40] Mos Eisley to Tarsonis -  Defiant (JourneyId : 14, spaces left 11)
+[01:40] Mos Eisley to Tarsonis -  Defiant (JourneyId : 14, spaces left 11)
+[01:40] Mos Eisley to Tarsonis -  Defiant (JourneyId : 14, spaces left 11)
+[01:40] Mos Eisley to Tarsonis -  Defiant (JourneyId : 14, spaces left 11)
+[01:40] Mos Eisley to Tarsonis -  Defiant (JourneyId : 14, spaces left 11)
+[01:40] Mos Eisley to Tarsonis -  Defiant (JourneyId : 14, spaces left 11)
+[01:40] Mos Eisley to Tarsonis -  Defiant (JourneyId : 14, spaces left 11)
+[01:40] Mos Eisley to Tarsonis -  Defiant (JourneyId : 14, spaces left 11)
+[01:40] Mos Eisley to Tarsonis -  Defiant (JourneyId : 14, spaces left 11)
+[01:40] Mos Eisley to Tarsonis -  Defiant (JourneyId : 14, spaces left 11)
+[01:40] Mos Eisley to Tarsonis -  Defiant (JourneyId : 14, spaces left 11)
+[01:40] Mos Eisley to Tarsonis -  Defiant (JourneyId : 14, spaces left 11)
+[01:40] Mos Eisley to Tarsonis -  Defiant (JourneyId : 14, spaces left 11)
+[01:40] Mos Eisley to Tarsonis -  Defiant (JourneyId : 14, spaces left 11)
+[01:40] Mos Eisley to Tarsonis -  Defiant (JourneyId : 14, spaces left 11)
+[01:40] Mos Eisley to Tarsonis -  Defiant (JourneyId : 14, spaces left 11)
+[01:40] Mos Eisley to Tarsonis -  Defiant (JourneyId : 14, spaces left 11)
+[01:40] Mos Eisley to Tarsonis -  Defiant (JourneyId : 14, spaces left 11)
+[01:40] Mos Eisley to Tarsonis -  Defiant (JourneyId : 14, spaces left 11)
+[01:40] Mos Eisley to Tarsonis -  Defiant (JourneyId : 14, spaces left 11)
+[01:40] Mos Eisley to Tarsonis -  Defiant (JourneyId : 14, spaces left 11)
+[01:40] Mos Eisley to Tarsonis -  Defiant (JourneyId : 14, spaces left 11)
+[01:40] Mos Eisley to Tarsonis -  Defiant (JourneyId : 14, spaces left 11)
+[01:40] Mos Eisley to Tarsonis -  Defiant (JourneyId : 14, spaces left 11)
+[01:40] Mos Eisley to Tarsonis -  Defiant (JourneyId : 14, spaces left 11)
+[01:40] Mos Eisley to Tarsonis -  Defiant (JourneyId : 14, spaces left 11)
+[01:40] Mos Eisley to Tarsonis -  Defiant (JourneyId : 14, spaces left 11)
+[01:40] Mos Eisley to Tarsonis -  Defiant (JourneyId : 14, spaces left 11)
+[01:40] Mos Eisley to Tarsonis -  Defiant (JourneyId : 14, spaces left 11)
+[01:40] Mos Eisley to Tarsonis -  Defiant (JourneyId : 14, spaces left 11)
+[01:40] Mos Eisley to Tarsonis -  Defiant (JourneyId : 14, spaces left 11)
+[01:40] Mos Eisley to Tarsonis -  Defiant (JourneyId : 14, spaces left 11)
+[01:40] Mos Eisley to Tarsonis -  Defiant (JourneyId : 14, spaces left 11)
+[01:40] Mos Eisley to Tarsonis -  Defiant (JourneyId : 14, spaces left 11)
+[01:40] Mos Eisley to Tarsonis -  Defiant (JourneyId : 14, spaces left 11)
+[01:40] Mos Eisley to Tarsonis -  Defiant (JourneyId : 14, spaces left 11)
+[01:40] Mos Eisley to Tarsonis -  Defiant (JourneyId : 14, spaces left 11)
+[01:40] Mos Eisley to Tarsonis -  Defiant (JourneyId : 14, spaces left 11)
+[01:40] Mos Eisley to Tarsonis -  Defiant (JourneyId : 14, spaces left 11)
+[01:40] Mos Eisley to Tarsonis -  Defiant (JourneyId : 14, spaces left 11)
+[01:40] Mos Eisley to Tarsonis -  Defiant (JourneyId : 14, spaces left 11)
+[01:40] Mos Eisley to Tarsonis -  Defiant (JourneyId : 14, spaces left 11)
+[00:25] Tarsonis to Port Ellen -  Dreadnaught (JourneyId : 17, spaces left 25)
+[01:25] Tarsonis to Port Ellen -  Titanic (JourneyId : 19, spaces left 12)
+[00:25] Tarsonis to Port Ellen -  Dreadnaught (JourneyId : 17, spaces left 25)
+[01:25] Tarsonis to Port Ellen -  Titanic (JourneyId : 19, spaces left 12)
+[00:25] Tarsonis to Port Ellen -  Dreadnaught (JourneyId : 17, spaces left 25)
+[01:25] Tarsonis to Port Ellen -  Titanic (JourneyId : 19, spaces left 12)
+[00:25] Tarsonis to Port Ellen -  Dreadnaught (JourneyId : 17, spaces left 25)
+[01:25] Tarsonis to Port Ellen -  Titanic (JourneyId : 19, spaces left 12)
+[00:25] Tarsonis to Port Ellen -  Dreadnaught (JourneyId : 17, spaces left 25)
+[01:25] Tarsonis to Port Ellen -  Titanic (JourneyId : 19, spaces left 12)
+[00:25] Tarsonis to Port Ellen -  Dreadnaught (JourneyId : 17, spaces left 25)
+[01:25] Tarsonis to Port Ellen -  Titanic (JourneyId : 19, spaces left 12)
+[00:25] Tarsonis to Port Ellen -  Dreadnaught (JourneyId : 17, spaces left 25)
+[01:25] Tarsonis to Port Ellen -  Titanic (JourneyId : 19, spaces left 12)
+[00:25] Tarsonis to Port Ellen -  Dreadnaught (JourneyId : 17, spaces left 25)
+[01:25] Tarsonis to Port Ellen -  Titanic (JourneyId : 19, spaces left 12)
+[00:25] Tarsonis to Port Ellen -  Dreadnaught (JourneyId : 17, spaces left 25)
+[01:25] Tarsonis to Port Ellen -  Titanic (JourneyId : 19, spaces left 12)
+[00:25] Tarsonis to Port Ellen -  Dreadnaught (JourneyId : 17, spaces left 25)
+[01:25] Tarsonis to Port Ellen -  Titanic (JourneyId : 19, spaces left 12)
+[00:25] Tarsonis to Port Ellen -  Dreadnaught (JourneyId : 17, spaces left 25)
+[01:25] Tarsonis to Port Ellen -  Titanic (JourneyId : 19, spaces left 12)
+[00:25] Tarsonis to Port Ellen -  Dreadnaught (JourneyId : 17, spaces left 25)
+[01:25] Tarsonis to Port Ellen -  Titanic (JourneyId : 19, spaces left 12)
+[00:25] Tarsonis to Port Ellen -  Dreadnaught (JourneyId : 17, spaces left 25)
+[01:25] Tarsonis to Port Ellen -  Titanic (JourneyId : 19, spaces left 12)
+[00:25] Tarsonis to Port Ellen -  Dreadnaught (JourneyId : 17, spaces left 25)
+[01:25] Tarsonis to Port Ellen -  Titanic (JourneyId : 19, spaces left 12)
+[00:25] Tarsonis to Port Ellen -  Dreadnaught (JourneyId : 17, spaces left 25)
+[01:25] Tarsonis to Port Ellen -  Titanic (JourneyId : 19, spaces left 12)
+[00:25] Tarsonis to Port Ellen -  Dreadnaught (JourneyId : 17, spaces left 25)
+[01:25] Tarsonis to Port Ellen -  Titanic (JourneyId : 19, spaces left 12)
+[00:25] Tarsonis to Port Ellen -  Dreadnaught (JourneyId : 17, spaces left 25)
+[01:25] Tarsonis to Port Ellen -  Titanic (JourneyId : 19, spaces left 12)
+[00:25] Tarsonis to Port Ellen -  Dreadnaught (JourneyId : 17, spaces left 25)
+[01:25] Tarsonis to Port Ellen -  Titanic (JourneyId : 19, spaces left 12)
+[00:25] Tarsonis to Port Ellen -  Dreadnaught (JourneyId : 17, spaces left 25)
+[01:25] Tarsonis to Port Ellen -  Titanic (JourneyId : 19, spaces left 12)
+[00:25] Tarsonis to Port Ellen -  Dreadnaught (JourneyId : 17, spaces left 25)
+[01:25] Tarsonis to Port Ellen -  Titanic (JourneyId : 19, spaces left 12)
+[00:25] Tarsonis to Port Ellen -  Dreadnaught (JourneyId : 17, spaces left 25)
+[01:25] Tarsonis to Port Ellen -  Titanic (JourneyId : 19, spaces left 12)
+[00:25] Tarsonis to Port Ellen -  Dreadnaught (JourneyId : 17, spaces left 25)
+[01:25] Tarsonis to Port Ellen -  Titanic (JourneyId : 19, spaces left 12)
+[00:25] Tarsonis to Port Ellen -  Dreadnaught (JourneyId : 17, spaces left 25)
+[01:25] Tarsonis to Port Ellen -  Titanic (JourneyId : 19, spaces left 12)
+[00:25] Tarsonis to Port Ellen -  Dreadnaught (JourneyId : 17, spaces left 25)
+[01:25] Tarsonis to Port Ellen -  Titanic (JourneyId : 19, spaces left 12)
+[00:25] Tarsonis to Port Ellen -  Dreadnaught (JourneyId : 17, spaces left 25)
+[01:25] Tarsonis to Port Ellen -  Titanic (JourneyId : 19, spaces left 12)
+[00:25] Tarsonis to Port Ellen -  Dreadnaught (JourneyId : 17, spaces left 25)
+[01:25] Tarsonis to Port Ellen -  Titanic (JourneyId : 19, spaces left 12)
+[01:25] Tarsonis to Port Ellen -  Titanic (JourneyId : 19, spaces left 12)
+[01:25] Tarsonis to Port Ellen -  Titanic (JourneyId : 19, spaces left 12)
+[01:25] Tarsonis to Port Ellen -  Titanic (JourneyId : 19, spaces left 12)
+[01:25] Tarsonis to Port Ellen -  Titanic (JourneyId : 19, spaces left 12)
+[01:25] Tarsonis to Port Ellen -  Titanic (JourneyId : 19, spaces left 12)
+[01:25] Tarsonis to Port Ellen -  Titanic (JourneyId : 19, spaces left 12)
+[01:25] Tarsonis to Port Ellen -  Titanic (JourneyId : 19, spaces left 12)
+[01:25] Tarsonis to Port Ellen -  Titanic (JourneyId : 19, spaces left 12)
+[01:25] Tarsonis to Port Ellen -  Titanic (JourneyId : 19, spaces left 12)
+[01:25] Tarsonis to Port Ellen -  Titanic (JourneyId : 19, spaces left 12)
+[01:25] Tarsonis to Port Ellen -  Titanic (JourneyId : 19, spaces left 12)
+[01:25] Tarsonis to Port Ellen -  Titanic (JourneyId : 19, spaces left 12)
+[01:25] Tarsonis to Port Ellen -  Titanic (JourneyId : 19, spaces left 12)
+[01:25] Tarsonis to Port Ellen -  Titanic (JourneyId : 19, spaces left 12)
+[01:25] Tarsonis to Port Ellen -  Titanic (JourneyId : 19, spaces left 12)
+[01:25] Tarsonis to Port Ellen -  Titanic (JourneyId : 19, spaces left 12)
+[01:25] Tarsonis to Port Ellen -  Titanic (JourneyId : 19, spaces left 12)
+[01:25] Tarsonis to Port Ellen -  Titanic (JourneyId : 19, spaces left 12)
+[01:25] Tarsonis to Port Ellen -  Titanic (JourneyId : 19, spaces left 12)
+[01:25] Tarsonis to Port Ellen -  Titanic (JourneyId : 19, spaces left 12)
+[01:25] Tarsonis to Port Ellen -  Titanic (JourneyId : 19, spaces left 12)
+[01:25] Tarsonis to Port Ellen -  Titanic (JourneyId : 19, spaces left 12)
+[01:25] Tarsonis to Port Ellen -  Titanic (JourneyId : 19, spaces left 12)
+[01:25] Tarsonis to Port Ellen -  Titanic (JourneyId : 19, spaces left 12)
+[01:25] Tarsonis to Port Ellen -  Titanic (JourneyId : 19, spaces left 12)
+[01:25] Tarsonis to Port Ellen -  Titanic (JourneyId : 19, spaces left 12)
+[01:25] Tarsonis to Port Ellen -  Titanic (JourneyId : 19, spaces left 12)
+[01:25] Tarsonis to Port Ellen -  Titanic (JourneyId : 19, spaces left 12)
+[01:25] Tarsonis to Port Ellen -  Titanic (JourneyId : 19, spaces left 12)
+[01:25] Tarsonis to Port Ellen -  Titanic (JourneyId : 19, spaces left 12)
+[01:25] Tarsonis to Port Ellen -  Titanic (JourneyId : 19, spaces left 12)
+[01:25] Tarsonis to Port Ellen -  Titanic (JourneyId : 19, spaces left 12)
+[01:25] Tarsonis to Port Ellen -  Titanic (JourneyId : 19, spaces left 12)
+[01:25] Tarsonis to Port Ellen -  Titanic (JourneyId : 19, spaces left 12)
+[01:25] Tarsonis to Port Ellen -  Titanic (JourneyId : 19, spaces left 12)
+[01:25] Tarsonis to Port Ellen -  Titanic (JourneyId : 19, spaces left 12)
+[01:25] Tarsonis to Port Ellen -  Titanic (JourneyId : 19, spaces left 12)
+[01:25] Tarsonis to Port Ellen -  Titanic (JourneyId : 19, spaces left 12)
+[01:25] Tarsonis to Port Ellen -  Titanic (JourneyId : 19, spaces left 12)
+[01:25] Tarsonis to Port Ellen -  Titanic (JourneyId : 19, spaces left 12)
+[01:25] Tarsonis to Port Ellen -  Titanic (JourneyId : 19, spaces left 12)
+[01:25] Tarsonis to Port Ellen -  Titanic (JourneyId : 19, spaces left 12)
+[01:25] Tarsonis to Port Ellen -  Titanic (JourneyId : 19, spaces left 12)
+[01:25] Tarsonis to Port Ellen -  Titanic (JourneyId : 19, spaces left 12)
+[01:25] Tarsonis to Port Ellen -  Titanic (JourneyId : 19, spaces left 12)
+[01:25] Tarsonis to Port Ellen -  Titanic (JourneyId : 19, spaces left 12)
+[01:25] Tarsonis to Port Ellen -  Titanic (JourneyId : 19, spaces left 12)
+[01:25] Tarsonis to Port Ellen -  Titanic (JourneyId : 19, spaces left 12)
+[01:25] Tarsonis to Port Ellen -  Titanic (JourneyId : 19, spaces left 12)
+[01:25] Tarsonis to Port Ellen -  Titanic (JourneyId : 19, spaces left 12)
+[01:25] Tarsonis to Port Ellen -  Titanic (JourneyId : 19, spaces left 12)
+[01:25] Tarsonis to Port Ellen -  Titanic (JourneyId : 19, spaces left 12)
+[01:25] Tarsonis to Port Ellen -  Titanic (JourneyId : 19, spaces left 12)
+[01:25] Tarsonis to Port Ellen -  Titanic (JourneyId : 19, spaces left 12)
+[01:25] Tarsonis to Port Ellen -  Titanic (JourneyId : 19, spaces left 12)
+[01:25] Tarsonis to Port Ellen -  Titanic (JourneyId : 19, spaces left 12)
+[01:25] Tarsonis to Port Ellen -  Titanic (JourneyId : 19, spaces left 12)
+[01:25] Tarsonis to Port Ellen -  Titanic (JourneyId : 19, spaces left 12)
+[01:25] Tarsonis to Port Ellen -  Titanic (JourneyId : 19, spaces left 12)
+[01:25] Tarsonis to Port Ellen -  Titanic (JourneyId : 19, spaces left 12)
+[00:40] Tarsonis to Mos Eisley -  Defiant (JourneyId : 18, spaces left 11)
+[01:40] Tarsonis to Mos Eisley -  Black Pearl (JourneyId : 20, spaces left 12)
+[00:40] Tarsonis to Mos Eisley -  Defiant (JourneyId : 18, spaces left 11)
+[01:40] Tarsonis to Mos Eisley -  Black Pearl (JourneyId : 20, spaces left 12)
+[00:40] Tarsonis to Mos Eisley -  Defiant (JourneyId : 18, spaces left 11)
+[01:40] Tarsonis to Mos Eisley -  Black Pearl (JourneyId : 20, spaces left 12)
+[00:40] Tarsonis to Mos Eisley -  Defiant (JourneyId : 18, spaces left 11)
+[01:40] Tarsonis to Mos Eisley -  Black Pearl (JourneyId : 20, spaces left 12)
+[00:40] Tarsonis to Mos Eisley -  Defiant (JourneyId : 18, spaces left 11)
+[01:40] Tarsonis to Mos Eisley -  Black Pearl (JourneyId : 20, spaces left 12)
+[00:40] Tarsonis to Mos Eisley -  Defiant (JourneyId : 18, spaces left 11)
+[01:40] Tarsonis to Mos Eisley -  Black Pearl (JourneyId : 20, spaces left 12)
+[00:40] Tarsonis to Mos Eisley -  Defiant (JourneyId : 18, spaces left 11)
+[01:40] Tarsonis to Mos Eisley -  Black Pearl (JourneyId : 20, spaces left 12)
+[00:40] Tarsonis to Mos Eisley -  Defiant (JourneyId : 18, spaces left 11)
+[01:40] Tarsonis to Mos Eisley -  Black Pearl (JourneyId : 20, spaces left 12)
+[00:40] Tarsonis to Mos Eisley -  Defiant (JourneyId : 18, spaces left 11)
+[01:40] Tarsonis to Mos Eisley -  Black Pearl (JourneyId : 20, spaces left 12)
+[00:40] Tarsonis to Mos Eisley -  Defiant (JourneyId : 18, spaces left 11)
+[01:40] Tarsonis to Mos Eisley -  Black Pearl (JourneyId : 20, spaces left 12)
+[00:40] Tarsonis to Mos Eisley -  Defiant (JourneyId : 18, spaces left 11)
+[01:40] Tarsonis to Mos Eisley -  Black Pearl (JourneyId : 20, spaces left 12)
+[00:40] Tarsonis to Mos Eisley -  Defiant (JourneyId : 18, spaces left 11)
+[01:40] Tarsonis to Mos Eisley -  Black Pearl (JourneyId : 20, spaces left 12)
+[00:40] Tarsonis to Mos Eisley -  Defiant (JourneyId : 18, spaces left 11)
+[01:40] Tarsonis to Mos Eisley -  Black Pearl (JourneyId : 20, spaces left 12)
+[00:40] Tarsonis to Mos Eisley -  Defiant (JourneyId : 18, spaces left 11)
+[01:40] Tarsonis to Mos Eisley -  Black Pearl (JourneyId : 20, spaces left 12)
+[00:40] Tarsonis to Mos Eisley -  Defiant (JourneyId : 18, spaces left 11)
+[01:40] Tarsonis to Mos Eisley -  Black Pearl (JourneyId : 20, spaces left 12)
+[00:40] Tarsonis to Mos Eisley -  Defiant (JourneyId : 18, spaces left 11)
+[01:40] Tarsonis to Mos Eisley -  Black Pearl (JourneyId : 20, spaces left 12)
+[00:40] Tarsonis to Mos Eisley -  Defiant (JourneyId : 18, spaces left 11)
+[01:40] Tarsonis to Mos Eisley -  Black Pearl (JourneyId : 20, spaces left 12)
+[00:40] Tarsonis to Mos Eisley -  Defiant (JourneyId : 18, spaces left 11)
+[01:40] Tarsonis to Mos Eisley -  Black Pearl (JourneyId : 20, spaces left 12)
+[00:40] Tarsonis to Mos Eisley -  Defiant (JourneyId : 18, spaces left 11)
+[01:40] Tarsonis to Mos Eisley -  Black Pearl (JourneyId : 20, spaces left 12)
+[00:40] Tarsonis to Mos Eisley -  Defiant (JourneyId : 18, spaces left 11)
+[01:40] Tarsonis to Mos Eisley -  Black Pearl (JourneyId : 20, spaces left 12)
+[00:40] Tarsonis to Mos Eisley -  Defiant (JourneyId : 18, spaces left 11)
+[01:40] Tarsonis to Mos Eisley -  Black Pearl (JourneyId : 20, spaces left 12)
+[00:40] Tarsonis to Mos Eisley -  Defiant (JourneyId : 18, spaces left 11)
+[01:40] Tarsonis to Mos Eisley -  Black Pearl (JourneyId : 20, spaces left 12)
+[00:40] Tarsonis to Mos Eisley -  Defiant (JourneyId : 18, spaces left 11)
+[01:40] Tarsonis to Mos Eisley -  Black Pearl (JourneyId : 20, spaces left 12)
+[00:40] Tarsonis to Mos Eisley -  Defiant (JourneyId : 18, spaces left 11)
+[01:40] Tarsonis to Mos Eisley -  Black Pearl (JourneyId : 20, spaces left 12)
+[00:40] Tarsonis to Mos Eisley -  Defiant (JourneyId : 18, spaces left 11)
+[01:40] Tarsonis to Mos Eisley -  Black Pearl (JourneyId : 20, spaces left 12)
+[00:40] Tarsonis to Mos Eisley -  Defiant (JourneyId : 18, spaces left 11)
+[01:40] Tarsonis to Mos Eisley -  Black Pearl (JourneyId : 20, spaces left 12)
+[00:40] Tarsonis to Mos Eisley -  Defiant (JourneyId : 18, spaces left 11)
+[01:40] Tarsonis to Mos Eisley -  Black Pearl (JourneyId : 20, spaces left 12)
+[00:40] Tarsonis to Mos Eisley -  Defiant (JourneyId : 18, spaces left 11)
+[01:40] Tarsonis to Mos Eisley -  Black Pearl (JourneyId : 20, spaces left 12)
+[00:40] Tarsonis to Mos Eisley -  Defiant (JourneyId : 18, spaces left 11)
+[01:40] Tarsonis to Mos Eisley -  Black Pearl (JourneyId : 20, spaces left 12)
+[00:40] Tarsonis to Mos Eisley -  Defiant (JourneyId : 18, spaces left 11)
+[01:40] Tarsonis to Mos Eisley -  Black Pearl (JourneyId : 20, spaces left 12)
+[00:40] Tarsonis to Mos Eisley -  Defiant (JourneyId : 18, spaces left 11)
+[01:40] Tarsonis to Mos Eisley -  Black Pearl (JourneyId : 20, spaces left 12)
+[00:40] Tarsonis to Mos Eisley -  Defiant (JourneyId : 18, spaces left 11)
+[01:40] Tarsonis to Mos Eisley -  Black Pearl (JourneyId : 20, spaces left 12)
+[00:40] Tarsonis to Mos Eisley -  Defiant (JourneyId : 18, spaces left 11)
+[01:40] Tarsonis to Mos Eisley -  Black Pearl (JourneyId : 20, spaces left 12)
+[00:40] Tarsonis to Mos Eisley -  Defiant (JourneyId : 18, spaces left 11)
+[01:40] Tarsonis to Mos Eisley -  Black Pearl (JourneyId : 20, spaces left 12)
+[00:40] Tarsonis to Mos Eisley -  Defiant (JourneyId : 18, spaces left 11)
+[01:40] Tarsonis to Mos Eisley -  Black Pearl (JourneyId : 20, spaces left 12)
+[00:40] Tarsonis to Mos Eisley -  Defiant (JourneyId : 18, spaces left 11)
+[01:40] Tarsonis to Mos Eisley -  Black Pearl (JourneyId : 20, spaces left 12)
+[00:40] Tarsonis to Mos Eisley -  Defiant (JourneyId : 18, spaces left 11)
+[01:40] Tarsonis to Mos Eisley -  Black Pearl (JourneyId : 20, spaces left 12)
+[00:40] Tarsonis to Mos Eisley -  Defiant (JourneyId : 18, spaces left 11)
+[01:40] Tarsonis to Mos Eisley -  Black Pearl (JourneyId : 20, spaces left 12)
+[00:40] Tarsonis to Mos Eisley -  Defiant (JourneyId : 18, spaces left 11)
+[01:40] Tarsonis to Mos Eisley -  Black Pearl (JourneyId : 20, spaces left 12)
+[00:40] Tarsonis to Mos Eisley -  Defiant (JourneyId : 18, spaces left 11)
+[01:40] Tarsonis to Mos Eisley -  Black Pearl (JourneyId : 20, spaces left 12)
+[00:40] Tarsonis to Mos Eisley -  Defiant (JourneyId : 18, spaces left 11)
+[01:40] Tarsonis to Mos Eisley -  Black Pearl (JourneyId : 20, spaces left 12)
+[01:40] Tarsonis to Mos Eisley -  Black Pearl (JourneyId : 20, spaces left 12)
+[01:40] Tarsonis to Mos Eisley -  Black Pearl (JourneyId : 20, spaces left 12)
+[01:40] Tarsonis to Mos Eisley -  Black Pearl (JourneyId : 20, spaces left 12)
+[01:40] Tarsonis to Mos Eisley -  Black Pearl (JourneyId : 20, spaces left 12)
+[01:40] Tarsonis to Mos Eisley -  Black Pearl (JourneyId : 20, spaces left 12)
+[01:40] Tarsonis to Mos Eisley -  Black Pearl (JourneyId : 20, spaces left 12)
+[01:40] Tarsonis to Mos Eisley -  Black Pearl (JourneyId : 20, spaces left 12)
+[01:40] Tarsonis to Mos Eisley -  Black Pearl (JourneyId : 20, spaces left 12)
+[01:40] Tarsonis to Mos Eisley -  Black Pearl (JourneyId : 20, spaces left 12)
+[01:40] Tarsonis to Mos Eisley -  Black Pearl (JourneyId : 20, spaces left 12)
+[01:40] Tarsonis to Mos Eisley -  Black Pearl (JourneyId : 20, spaces left 12)
+[01:40] Tarsonis to Mos Eisley -  Black Pearl (JourneyId : 20, spaces left 12)
+[01:40] Tarsonis to Mos Eisley -  Black Pearl (JourneyId : 20, spaces left 12)
+[01:40] Tarsonis to Mos Eisley -  Black Pearl (JourneyId : 20, spaces left 12)
+[01:40] Tarsonis to Mos Eisley -  Black Pearl (JourneyId : 20, spaces left 12)
+[01:40] Tarsonis to Mos Eisley -  Black Pearl (JourneyId : 20, spaces left 12)
+[01:40] Tarsonis to Mos Eisley -  Black Pearl (JourneyId : 20, spaces left 12)
+[01:40] Tarsonis to Mos Eisley -  Black Pearl (JourneyId : 20, spaces left 12)
+[01:40] Tarsonis to Mos Eisley -  Black Pearl (JourneyId : 20, spaces left 12)
+[01:40] Tarsonis to Mos Eisley -  Black Pearl (JourneyId : 20, spaces left 12)
+[01:40] Tarsonis to Mos Eisley -  Black Pearl (JourneyId : 20, spaces left 12)
+[01:40] Tarsonis to Mos Eisley -  Black Pearl (JourneyId : 20, spaces left 12)
+[01:40] Tarsonis to Mos Eisley -  Black Pearl (JourneyId : 20, spaces left 12)
+[01:40] Tarsonis to Mos Eisley -  Black Pearl (JourneyId : 20, spaces left 12)
+[01:40] Tarsonis to Mos Eisley -  Black Pearl (JourneyId : 20, spaces left 12)
+[01:40] Tarsonis to Mos Eisley -  Black Pearl (JourneyId : 20, spaces left 12)
+[01:40] Tarsonis to Mos Eisley -  Black Pearl (JourneyId : 20, spaces left 12)
+[01:40] Tarsonis to Mos Eisley -  Black Pearl (JourneyId : 20, spaces left 12)
+[01:40] Tarsonis to Mos Eisley -  Black Pearl (JourneyId : 20, spaces left 12)
+[01:40] Tarsonis to Mos Eisley -  Black Pearl (JourneyId : 20, spaces left 12)
+[01:40] Tarsonis to Mos Eisley -  Black Pearl (JourneyId : 20, spaces left 12)
+[01:40] Tarsonis to Mos Eisley -  Black Pearl (JourneyId : 20, spaces left 12)
+[01:40] Tarsonis to Mos Eisley -  Black Pearl (JourneyId : 20, spaces left 12)
+[01:40] Tarsonis to Mos Eisley -  Black Pearl (JourneyId : 20, spaces left 12)
+[01:40] Tarsonis to Mos Eisley -  Black Pearl (JourneyId : 20, spaces left 12)
+[01:40] Tarsonis to Mos Eisley -  Black Pearl (JourneyId : 20, spaces left 12)
+[01:40] Tarsonis to Mos Eisley -  Black Pearl (JourneyId : 20, spaces left 12)
+[01:40] Tarsonis to Mos Eisley -  Black Pearl (JourneyId : 20, spaces left 12)
+[01:40] Tarsonis to Mos Eisley -  Black Pearl (JourneyId : 20, spaces left 12)
+[01:40] Tarsonis to Mos Eisley -  Black Pearl (JourneyId : 20, spaces left 12)
+[01:40] Tarsonis to Mos Eisley -  Black Pearl (JourneyId : 20, spaces left 12)
+[01:40] Tarsonis to Mos Eisley -  Black Pearl (JourneyId : 20, spaces left 12)
+[01:40] Tarsonis to Mos Eisley -  Black Pearl (JourneyId : 20, spaces left 12)
+[01:40] Tarsonis to Mos Eisley -  Black Pearl (JourneyId : 20, spaces left 12)
+[01:40] Tarsonis to Mos Eisley -  Black Pearl (JourneyId : 20, spaces left 12)
+[01:40] Tarsonis to Mos Eisley -  Black Pearl (JourneyId : 20, spaces left 12)
+[01:40] Tarsonis to Mos Eisley -  Black Pearl (JourneyId : 20, spaces left 12)
+[01:40] Tarsonis to Mos Eisley -  Black Pearl (JourneyId : 20, spaces left 12)
+[01:40] Tarsonis to Mos Eisley -  Black Pearl (JourneyId : 20, spaces left 12)
+[01:40] Tarsonis to Mos Eisley -  Black Pearl (JourneyId : 20, spaces left 12)
+[01:40] Tarsonis to Mos Eisley -  Black Pearl (JourneyId : 20, spaces left 12)
+[01:40] Tarsonis to Mos Eisley -  Black Pearl (JourneyId : 20, spaces left 12)
+[01:40] Tarsonis to Mos Eisley -  Black Pearl (JourneyId : 20, spaces left 12)
+[01:40] Tarsonis to Mos Eisley -  Black Pearl (JourneyId : 20, spaces left 12)
+[01:40] Tarsonis to Mos Eisley -  Black Pearl (JourneyId : 20, spaces left 12)
+[01:40] Tarsonis to Mos Eisley -  Black Pearl (JourneyId : 20, spaces left 12)
+[01:40] Tarsonis to Mos Eisley -  Black Pearl (JourneyId : 20, spaces left 12)
+[01:40] Tarsonis to Mos Eisley -  Black Pearl (JourneyId : 20, spaces left 12)
+[01:40] Tarsonis to Mos Eisley -  Black Pearl (JourneyId : 20, spaces left 12)
+[01:40] Tarsonis to Mos Eisley -  Black Pearl (JourneyId : 20, spaces left 12)

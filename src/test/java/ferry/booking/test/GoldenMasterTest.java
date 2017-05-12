@@ -25,6 +25,17 @@ public class GoldenMasterTest {
         assertEquals(tests, master);
     }
 
+    @Test
+    public void i_compare_to_golden_master() throws IOException {
+
+        GoldenMasterCase goldenMasterCase = new GoldenMasterCase("availability");
+
+        execute(goldenMasterCase.input(), goldenMasterCase.execution());
+        String master = readFile(goldenMasterCase.master());
+        String tests = readFile(goldenMasterCase.execution());
+        assertEquals(tests, master);
+    }
+
     private static String readFile(Path path) throws IOException {
         byte[] encoded = Files.readAllBytes(path);
         return new String(encoded, Charset.defaultCharset());
