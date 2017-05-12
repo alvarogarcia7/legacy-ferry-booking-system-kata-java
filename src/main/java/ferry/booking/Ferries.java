@@ -1,5 +1,6 @@
 package ferry.booking;
 
+import ferry.booking.ferry.Ferry;
 import org.json.JSONArray;
 import org.json.JSONObject;
 

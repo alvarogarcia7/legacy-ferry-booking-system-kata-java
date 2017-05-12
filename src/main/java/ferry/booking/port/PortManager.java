@@ -2,7 +2,7 @@ package ferry.booking.port;
 
 
 import ferry.booking.Ferries;
-import ferry.booking.Ferry;
+import ferry.booking.ferry.Ferry;
 import ferry.booking.Ports;
 
 import java.util.ArrayList;

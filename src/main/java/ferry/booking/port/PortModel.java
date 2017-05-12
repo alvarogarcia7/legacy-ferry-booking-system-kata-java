@@ -1,6 +1,6 @@
 package ferry.booking.port;
 
-import ferry.booking.Ferry;
+import ferry.booking.ferry.Ferry;
 
 import java.util.ArrayList;
 import java.util.HashMap;

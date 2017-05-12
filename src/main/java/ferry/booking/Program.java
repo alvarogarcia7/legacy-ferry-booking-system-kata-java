@@ -1,5 +1,6 @@
 package ferry.booking;
 
+import ferry.booking.ferry.FerryAvailabilityService;
 import ferry.booking.port.Port;
 import ferry.booking.port.PortManager;
 

@@ -1,5 +1,8 @@
 package ferry.booking;
 
+import ferry.booking.ferry.Ferry;
+import ferry.booking.ferry.FerryAvailabilityService;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
