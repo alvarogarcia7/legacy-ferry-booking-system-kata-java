@@ -1,5 +1,8 @@
 package ferry.booking;
 
+import ferry.booking.port.Port;
+import ferry.booking.port.PortManager;
+
 import java.io.*;
 import java.util.ArrayList;
 import java.util.Collections;

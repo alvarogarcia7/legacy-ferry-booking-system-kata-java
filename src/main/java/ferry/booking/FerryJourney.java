@@ -1,5 +1,7 @@
 package ferry.booking;
 
+import ferry.booking.port.PortModel;
+
 public class FerryJourney {
 
     public Ferry ferry;

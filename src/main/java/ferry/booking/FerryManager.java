@@ -1,5 +1,7 @@
 package ferry.booking;
 
+import ferry.booking.port.PortModel;
+
 import java.util.List;
 
 public class FerryManager {
