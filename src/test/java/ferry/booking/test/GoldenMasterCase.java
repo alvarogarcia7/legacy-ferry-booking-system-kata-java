@@ -13,10 +13,6 @@ class GoldenMasterCase {
         this.caseDescription = caseDescription;
     }
 
-    private Path output() {
-        return pathForFileType("output");
-    }
-
     public Path input() {
         return pathForFileType("input");
     }
@@ -38,7 +34,7 @@ class GoldenMasterCase {
 
     public void deletePreviousRun() {
         try {
-            Files.delete(output());
+            Files.delete(execution());
             Files.delete(master());
         } catch (IOException e) {
         }
