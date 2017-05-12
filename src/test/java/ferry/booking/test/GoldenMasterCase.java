@@ -41,6 +41,6 @@ class GoldenMasterCase {
     }
 
     private Path pathForFileType(String fileType) {
-        return Paths.get("src/test/resources/" + this.caseDescription + "."+ fileType + ".txt").toAbsolutePath();
+        return Paths.get("src/test/resources/" + this.caseDescription + "." + fileType + ".txt").toAbsolutePath();
     }
 }

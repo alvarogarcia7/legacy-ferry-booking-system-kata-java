@@ -1,10 +1,10 @@
 package ferry.booking.ferry;
 
+import ferry.booking.port.PortManager;
+import ferry.booking.port.PortModel;
 import ferry.booking.timetable.TimeTable;
 import ferry.booking.timetable.TimeTableEntry;
 import ferry.booking.timetable.TimeTables;
-import ferry.booking.port.PortManager;
-import ferry.booking.port.PortModel;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -19,6 +19,16 @@ public class FerryAvailabilityService {
     public FerryAvailabilityService(TimeTables timeTables, PortManager portManager) {
         this.timeTables = timeTables;
         this.portManager = portManager;
+    }
+
+    private static void boatReady(TimeTableEntry timetable, PortModel destination, FerryJourney ferryJourney) {
+        if (ferryJourney.ferry == null) {
+            FerryManager.addFerry(timetable, ferryJourney);
+        }
+        Ferry ferry = ferryJourney.ferry;
+
+        long time = FerryModule.timeReady(timetable, destination);
+        destination.addBoat(time, ferry);
     }
 
     public Ferry nextFerryAvailableFrom(int portId, long time) {
@@ -50,15 +60,5 @@ public class FerryAvailabilityService {
         }
 
         return null;
-    }
-
-    private static void boatReady(TimeTableEntry timetable, PortModel destination, FerryJourney ferryJourney) {
-        if (ferryJourney.ferry == null) {
-            FerryManager.addFerry(timetable, ferryJourney);
-        }
-        Ferry ferry = ferryJourney.ferry;
-
-        long time = FerryModule.timeReady(timetable, destination);
-        destination.addBoat(time, ferry);
     }
 }

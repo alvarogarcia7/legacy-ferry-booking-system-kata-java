@@ -27,15 +27,15 @@ public class GoldenMasterCreator {
         GoldenMasterCase goldenMasterCase = new GoldenMasterCase("availability");
         File file = goldenMasterCase.input().toFile();
         try {
-            try(PrintStream ps = new PrintStream(file)){
-                for(int i = 0; i < ports.length; i++) {
+            try (PrintStream ps = new PrintStream(file)) {
+                for (int i = 0; i < ports.length; i++) {
                     for (int j = 0; j < ports.length; j++) {
                         if (i != j) {
-                            for(int minute =0; minute <= 59; minute++){
+                            for (int minute = 0; minute <= 59; minute++) {
                                 String searchCommand = String.format("search %s %s 00:%02d", ports[i], ports[j], minute);
                                 ps.append(searchCommand).append(System.lineSeparator());
                             }
-                            for(int minute =0; minute <= 41; minute++){
+                            for (int minute = 0; minute <= 41; minute++) {
                                 String searchCommand = String.format("search %s %s 01:%02d", ports[i], ports[j], minute);
                                 ps.append(searchCommand).append(System.lineSeparator());
                             }
@@ -47,8 +47,6 @@ public class GoldenMasterCreator {
             e.printStackTrace();
         }
     }
-
-
 
 
 }

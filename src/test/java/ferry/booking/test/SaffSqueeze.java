@@ -1,13 +1,13 @@
 package ferry.booking.test;
 
-import static org.junit.Assert.assertEquals;
+import ferry.booking.Program;
+import org.junit.Ignore;
+import org.junit.Test;
 
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
 
-import ferry.booking.Program;
-import org.junit.Ignore;
-import org.junit.Test;
+import static org.junit.Assert.assertEquals;
 
 public class SaffSqueeze {
 

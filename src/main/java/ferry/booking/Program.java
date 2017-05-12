@@ -3,8 +3,8 @@ package ferry.booking;
 import ferry.booking.booking.Bookings;
 import ferry.booking.booking.JourneyBookingService;
 import ferry.booking.command.*;
-import ferry.booking.delivery.adapter.Console;
 import ferry.booking.delivery.TimeTablePrinter;
+import ferry.booking.delivery.adapter.Console;
 import ferry.booking.delivery.port.UserCommunication;
 import ferry.booking.ferry.Ferries;
 import ferry.booking.ferry.FerryAvailabilityService;
@@ -21,8 +21,8 @@ import java.util.List;
 public class Program {
 
     public static TimeTableService timeTableService;
-    private static JourneyBookingService bookingService;
     public static Ports ports;
+    private static JourneyBookingService bookingService;
     private static FerryAvailabilityService ferryService;
     private static UserCommunication out;
     private static TimeTablePrinter timeTablePrinter;

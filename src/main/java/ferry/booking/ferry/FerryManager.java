@@ -1,7 +1,7 @@
 package ferry.booking.ferry;
 
-import ferry.booking.timetable.TimeTableEntry;
 import ferry.booking.port.PortModel;
+import ferry.booking.timetable.TimeTableEntry;
 
 import java.util.List;
 
