@@ -12,7 +12,7 @@ public class BookCommand implements Command {
     private final JourneyBookingService bookingService;
     private String line;
 
-    public BookCommand(UserCommunication out, JourneyBookingService bookingService, String line) {
+    public BookCommand(String line, JourneyBookingService bookingService, UserCommunication out) {
         this.out = out;
         this.bookingService = bookingService;
         this.line = line;

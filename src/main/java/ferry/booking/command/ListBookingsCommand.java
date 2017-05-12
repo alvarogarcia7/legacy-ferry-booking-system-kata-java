@@ -13,7 +13,7 @@ public class ListBookingsCommand implements Command {
     private final UserCommunication out;
     private final JourneyBookingService bookingService;
 
-    public ListBookingsCommand(UserCommunication out, JourneyBookingService bookingService) {
+    public ListBookingsCommand(JourneyBookingService bookingService, UserCommunication out) {
         this.out = out;
         this.bookingService = bookingService;
     }
