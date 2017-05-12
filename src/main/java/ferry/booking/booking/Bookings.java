@@ -1,4 +1,4 @@
-package ferry.booking;
+package ferry.booking.booking;
 
 import java.util.ArrayList;
 import java.util.List;
