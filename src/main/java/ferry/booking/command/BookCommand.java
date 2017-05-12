@@ -4,16 +4,16 @@ import ferry.booking.booking.Booking;
 import ferry.booking.booking.JourneyBookingService;
 import ferry.booking.delivery.port.ErrorMessage;
 import ferry.booking.delivery.port.HelpMessage;
-import ferry.booking.delivery.ProgramOutputter;
+import ferry.booking.delivery.port.UserCommunication;
 import ferry.booking.delivery.port.UserMessage;
 
 public class BookCommand implements Command {
-    private final ProgramOutputter programOutputter;
+    private final UserCommunication out;
     private final JourneyBookingService bookingService;
     private String line;
 
-    public BookCommand(ProgramOutputter programOutputter, JourneyBookingService bookingService, String line) {
-        this.programOutputter = programOutputter;
+    public BookCommand(UserCommunication out, JourneyBookingService bookingService, String line) {
+        this.out = out;
         this.bookingService = bookingService;
         this.line = line;
     }
@@ -31,18 +31,18 @@ public class BookCommand implements Command {
                 booking.passengers = passengers;
                 bookingService.book(booking);
 
-                programOutputter.print(new UserMessage("Booked"));
+                new UserMessage("Booked").print(this.out);
             } else {
-                programOutputter.print(new ErrorMessage(new String[]{
+                new ErrorMessage(new String[]{
                         "Cannot book that journey"
-                }));
+                }).print(this.out);
             }
         } catch (Exception e) {
-            programOutputter.print(new HelpMessage(new String[]{
+            new HelpMessage(new String[]{
                     "Book is [book x y]",
                     "where x - journey id",
                     "where y - number of passenger"
-            }));
+            }).print(this.out);
         }
     }
 }

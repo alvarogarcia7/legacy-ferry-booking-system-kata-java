@@ -23,17 +23,6 @@ public class ProgramOutputter {
         this.console = console;
     }
 
-    public void printPorts(List<Port> ports) {
-        List<String> message = new ArrayList<>();
-        message.add("Ports:");
-        message.add("------");
-        for (Port port : ports) {
-            message.add(String.format("%d - %s", port.id, port.name));
-        }
-        message.add("");
-        console.display(message.toArray(new String[0]));
-    }
-
     public void print(HelpMessage helpMessage) {
         helpMessage.print(console);
     }

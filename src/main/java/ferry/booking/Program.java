@@ -101,15 +101,15 @@ public class Program {
     }
 
     private static void doCommand(String commandDescription) {
-        Command command = new UnknownCommand(programOutputter);
+        Command command = new UnknownCommand(programOutputter.console);
         if (commandDescription.startsWith("search")) {
-            command = new SearchCommand(programOutputter, timeTableService, commandDescription);
+            command = new SearchCommand(programOutputter.console, timeTableService, commandDescription);
         } else if (commandDescription.startsWith("book")) {
-            command = new BookCommand(programOutputter, bookingService, commandDescription);
+            command = new BookCommand(programOutputter.console, bookingService, commandDescription);
         } else if (commandDescription.startsWith("list ports")) {
-            command = new ListPortsCommand(programOutputter, ports);
+            command = new ListPortsCommand(programOutputter.console, ports);
         } else if (commandDescription.startsWith("list bookings")) {
-            command = new ListBookingsCommand(programOutputter, bookingService);
+            command = new ListBookingsCommand(programOutputter.console, bookingService);
         }
         command.run();
     }

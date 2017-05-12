@@ -2,18 +2,19 @@ package ferry.booking.command;
 
 import ferry.booking.booking.Booking;
 import ferry.booking.booking.JourneyBookingService;
-import ferry.booking.delivery.ProgramOutputter;
+import ferry.booking.delivery.port.UserCommunication;
+import ferry.booking.delivery.port.UserMessage;
 
 import java.util.ArrayList;
 import java.util.List;
 
 
 public class ListBookingsCommand implements Command {
-    private final ProgramOutputter programOutputter;
+    private final UserCommunication out;
     private final JourneyBookingService bookingService;
 
-    public ListBookingsCommand(ProgramOutputter programOutputter, JourneyBookingService bookingService) {
-        this.programOutputter = programOutputter;
+    public ListBookingsCommand(UserCommunication out, JourneyBookingService bookingService) {
+        this.out = out;
         this.bookingService = bookingService;
     }
 
@@ -28,6 +29,6 @@ public class ListBookingsCommand implements Command {
             stringBuilder.append(String.format("journey %d - passengers %d", b.journeyId, b.passengers));
         }
         message.add(stringBuilder.toString());
-        programOutputter.console.display(message.toArray(new String[0]));
+        new UserMessage(message.toArray(new String[0])).print(this.out);
     }
 }
