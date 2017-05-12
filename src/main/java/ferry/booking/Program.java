@@ -7,6 +7,8 @@ import ferry.booking.ferry.FerryAvailabilityService;
 import ferry.booking.booking.JourneyBookingService;
 import ferry.booking.port.Port;
 import ferry.booking.port.PortManager;
+import ferry.booking.timetable.TimeTableService;
+import ferry.booking.timetable.TimeTables;
 
 import java.io.*;
 import java.util.ArrayList;

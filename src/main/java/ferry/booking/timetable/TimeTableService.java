@@ -1,5 +1,8 @@
-package ferry.booking;
+package ferry.booking.timetable;
 
+import ferry.booking.AvailableCrossing;
+import ferry.booking.Ports;
+import ferry.booking.TimeTableViewModelRow;
 import ferry.booking.booking.Booking;
 import ferry.booking.booking.Bookings;
 import ferry.booking.ferry.Ferry;

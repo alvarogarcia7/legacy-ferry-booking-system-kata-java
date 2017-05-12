@@ -1,8 +1,8 @@
 package ferry.booking.ferry;
 
-import ferry.booking.TimeTable;
-import ferry.booking.TimeTableEntry;
-import ferry.booking.TimeTables;
+import ferry.booking.timetable.TimeTable;
+import ferry.booking.timetable.TimeTableEntry;
+import ferry.booking.timetable.TimeTables;
 import ferry.booking.port.PortManager;
 import ferry.booking.port.PortModel;
 

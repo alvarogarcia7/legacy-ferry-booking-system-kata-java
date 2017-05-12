@@ -1,4 +1,4 @@
-package ferry.booking;
+package ferry.booking.timetable;
 
 import java.util.List;
 

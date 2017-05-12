@@ -1,10 +1,8 @@
-package ferry.booking;
+package ferry.booking.timetable;
 
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.commons.io.IOUtils;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
