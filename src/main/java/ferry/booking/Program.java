@@ -16,9 +16,6 @@ import ferry.booking.timetable.TimeTables;
 import ferry.booking.delivery.Console;
 
 import java.io.*;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
 import java.util.List;
 
 public class Program {
@@ -64,7 +61,7 @@ public class Program {
         List<Port> allPorts = ports.all();
         List<TimeTableViewModelRow> timeTable = timeTableService.getTimeTable(allPorts);
 
-        displayTimetable(allPorts, timeTable);
+        timeTablePrinter.displayTimetable(allPorts, timeTable);
     }
 
     private static void testCommands() {
@@ -86,31 +83,6 @@ public class Program {
         doCommand("book 16 16");
         doCommand("search 1 3 00:00");
         doCommand("list bookings");
-    }
-
-    public static void displayTimetable(List<Port> ports, List<TimeTableViewModelRow> rows) {
-        for (Port port : ports) {
-            printPortHeader(port.name);
-            List<TimeTableViewModelRow> items = new ArrayList<TimeTableViewModelRow>();
-            for (TimeTableViewModelRow x : rows) {
-                if (x.originPort.equals(port.name)) {
-                    items.add(x);
-                }
-            }
-            Collections.sort(items, new Comparator<TimeTableViewModelRow>() {
-
-                @Override
-                public int compare(TimeTableViewModelRow tt1, TimeTableViewModelRow tt2) {
-                    return tt1.startTime.compareTo(tt2.startTime);
-                }
-            });
-
-            for (TimeTableViewModelRow item : items) {
-                out.printf("| %-8s | %-13s | %-13s | %-18s | %-8s |", item.startTime, item.destinationPort,
-                        item.journeyLength, item.ferryName, item.arrivalTime);
-                out.println();
-            }
-        }
     }
 
     private static void commandLoop(InputStream in) {
@@ -211,16 +183,5 @@ public class Program {
             out.println("where: y - destinationg port id");
             out.println("where: hh:mm - time to search after");
         }
-    }
-
-    private static void printPortHeader(String portName) {
-        out.println();
-        out.println("Departures from " + portName);
-        out.println();
-        out.println(" --------------------------------------------------------------------------");
-        out.printf("| %-8s | %-13s | %-13s | %-18s | %-8s |", "Time", "Destination", "Journey Time", "Ferry",
-                "Arrives");
-        out.println();
-        out.println(" --------------------------------------------------------------------------");
     }
 }
