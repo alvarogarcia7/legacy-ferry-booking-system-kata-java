@@ -65,7 +65,7 @@ public class TimeTableService {
     }
 
     public List<AvailableCrossing> getAvailableCrossings(long time, int fromPort, int toPort) {
-        List<Port> ports = new Ports().all();
+        Ports ports = new Ports();
         List<TimeTable> timetables = timeTables.all();
         List<TimeTableEntry> allEntries = new ArrayList<>();
         for (TimeTable tt : timetables) {
@@ -76,16 +76,8 @@ public class TimeTableService {
         List<AvailableCrossing> result = new ArrayList<>();
 
         for (TimeTableEntry timetable : allEntries) {
-            Port origin = null;
-            Port destination = null;
-            for (Port x : ports) {
-                if (x.id == timetable.originId) {
-                    origin = x;
-                }
-                if (x.id == timetable.destinationId) {
-                    destination = x;
-                }
-            }
+            Port origin = ports.byId(timetable.originId);
+            Port destination = ports.byId(timetable.destinationId);
             Ferry ferry = ferryService.nextFerryAvailableFrom(timetable.originId, timetable.time);
 
             if (toPort == destination.id && fromPort == origin.id) {

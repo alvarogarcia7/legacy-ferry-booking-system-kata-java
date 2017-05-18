@@ -3,6 +3,7 @@ package ferry.booking.port;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
+import java.net.PortUnreachableException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -30,5 +31,14 @@ public class Ports {
 
     public List<Port> all() {
         return ports;
+    }
+
+    public Port byId(int id) {
+        for (Port port : ports) {
+            if(port.id == id){
+                return port;
+            }
+        }
+        throw new RuntimeException("This port does not exist: " + id);
     }
 }
