@@ -9,7 +9,6 @@ import ferry.booking.port.Port;
 import ferry.booking.port.Ports;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
@@ -101,7 +100,7 @@ public class TimeTableService {
         for (TimeTable tt : timetables) {
             allEntries.addAll(tt.entries);
         }
-        Collections.sort(allEntries, Comparator.comparingLong(entry -> entry.time));
+        allEntries.sort(Comparator.comparingLong(entry -> entry.time));
         return allEntries;
     }
 }
