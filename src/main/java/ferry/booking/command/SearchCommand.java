@@ -30,10 +30,10 @@ public class SearchCommand implements Command {
             List<AvailableCrossing> search = timeTableService.getAvailableCrossings(time, originPortId,
                     destinationPortId);
 
-            for (AvailableCrossing result : search) {
-                new UserMessage(String.format("[%02d:%02d] %s to %s -  %s (JourneyId : %d, spaces left %d)", result.setOff / 60,
-                        result.setOff % 60, result.originPort, result.destinationPort, result.ferryName,
-                        result.journeyId, result.seatsLeft)).print(this.out);
+            for (AvailableCrossing availableCrossing : search) {
+                new UserMessage(String.format("[%02d:%02d] %s to %s -  %s (JourneyId : %d, spaces left %d)", availableCrossing.setOff / 60,
+                        availableCrossing.setOff % 60, availableCrossing.originPort, availableCrossing.destinationPort, availableCrossing.ferryName,
+                        availableCrossing.journeyId, availableCrossing.seatsLeft)).print(this.out);
             }
         } catch (Exception e) {
             List<String> message = new ArrayList<>();
