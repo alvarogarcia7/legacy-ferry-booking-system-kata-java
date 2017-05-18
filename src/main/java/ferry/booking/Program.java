@@ -59,7 +59,7 @@ public class Program {
         timeTablePrinter.displayWelcomeMessage();
 
         List<Port> allPorts = ports.all();
-        List<TimeTableViewModelRow> timeTable = timeTableService.getTimeTable(allPorts);
+        List<TimeTableViewModelRow> timeTable = timeTableService.getTimeTable(ports);
 
         timeTablePrinter.displayTimetable(allPorts, timeTable);
     }

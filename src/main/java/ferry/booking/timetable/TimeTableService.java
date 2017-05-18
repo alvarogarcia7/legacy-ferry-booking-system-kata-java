@@ -27,7 +27,7 @@ public class TimeTableService {
         this.ferryService = ferryService;
     }
 
-    public List<TimeTableViewModelRow> getTimeTable(List<Port> ports) {
+    public List<TimeTableViewModelRow> getTimeTable(Ports ports) {
         List<TimeTable> timetables = timeTables.all();
         List<TimeTableEntry> allEntries = new ArrayList<>();
         for (TimeTable tt : timetables) {
@@ -38,16 +38,8 @@ public class TimeTableService {
         List<TimeTableViewModelRow> rows = new ArrayList<>();
 
         for (TimeTableEntry timetable : allEntries) {
-            Port origin = null;
-            Port destination = null;
-            for (Port x : ports) {
-                if (x.id == timetable.originId) {
-                    origin = x;
-                }
-                if (x.id == timetable.destinationId) {
-                    destination = x;
-                }
-            }
+            Port origin = ports.byId(timetable.originId);
+            Port destination = ports.byId(timetable.destinationId);
             TimeTableViewModelRow row = buildRow(timetable, origin, destination);
             rows.add(row);
         }
