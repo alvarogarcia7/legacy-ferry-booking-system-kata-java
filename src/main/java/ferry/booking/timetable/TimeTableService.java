@@ -48,20 +48,25 @@ public class TimeTableService {
                     destination = x;
                 }
             }
-            String destinationName = destination.name;
-            String originName = origin.name;
-            Ferry ferry = ferryService.nextFerryAvailableFrom(origin.id, timetable.time);
-            long arrivalTime = timetable.time + timetable.journeyTime;
-            TimeTableViewModelRow row = new TimeTableViewModelRow();
-            row.destinationPort = destinationName;
-            row.ferryName = ferry == null ? "" : ferry.name;
-            row.journeyLength = String.format("%02d:%02d", timetable.journeyTime / 60, timetable.journeyTime % 60);
-            row.originPort = originName;
-            row.startTime = String.format("%02d:%02d", timetable.time / 60, timetable.time % 60);
-            row.arrivalTime = String.format("%02d:%02d", arrivalTime / 60, arrivalTime % 60);
+            TimeTableViewModelRow row = buildRow(timetable, origin, destination);
             rows.add(row);
         }
         return rows;
+    }
+
+    private TimeTableViewModelRow buildRow(TimeTableEntry timetable, Port origin, Port destination) {
+        String destinationName = destination.name;
+        String originName = origin.name;
+        Ferry ferry = ferryService.nextFerryAvailableFrom(origin.id, timetable.time);
+        long arrivalTime = timetable.time + timetable.journeyTime;
+        TimeTableViewModelRow row = new TimeTableViewModelRow();
+        row.destinationPort = destinationName;
+        row.ferryName = ferry == null ? "" : ferry.name;
+        row.journeyLength = String.format("%02d:%02d", timetable.journeyTime / 60, timetable.journeyTime % 60);
+        row.originPort = originName;
+        row.startTime = String.format("%02d:%02d", timetable.time / 60, timetable.time % 60);
+        row.arrivalTime = String.format("%02d:%02d", arrivalTime / 60, arrivalTime % 60);
+        return row;
     }
 
     public List<AvailableCrossing> getAvailableCrossings(long time, int fromPort, int toPort) {
