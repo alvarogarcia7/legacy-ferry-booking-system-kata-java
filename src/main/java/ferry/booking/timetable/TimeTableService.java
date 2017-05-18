@@ -26,13 +26,7 @@ public class TimeTableService {
     }
 
     public List<TimeTableViewModelRow> getTimeTable(Ports ports) {
-        List<TimeTable> timetables = timeTables.all();
-        List<TimeTableEntry> allEntries1 = new ArrayList<>();
-        for (TimeTable tt : timetables) {
-            allEntries1.addAll(tt.entries);
-        }
-        Collections.sort(allEntries1, Comparator.comparingLong(entry -> entry.time));
-        List<TimeTableEntry> allEntries = allEntries1;
+        List<TimeTableEntry> allEntries = getTimeTableEntries();
 
         List<TimeTableViewModelRow> rows = new ArrayList<>();
 
@@ -62,13 +56,7 @@ public class TimeTableService {
 
     public List<AvailableCrossing> getAvailableCrossings(long time, int fromPort, int toPort) {
         Ports ports = new Ports();
-        List<TimeTable> timetables = timeTables.all();
-        List<TimeTableEntry> allEntries1 = new ArrayList<>();
-        for (TimeTable tt : timetables) {
-            allEntries1.addAll(tt.entries);
-        }
-        Collections.sort(allEntries1, Comparator.comparingLong(entry -> entry.time));
-        List<TimeTableEntry> allEntries = allEntries1;
+        List<TimeTableEntry> allEntries = getTimeTableEntries();
 
         List<AvailableCrossing> result = new ArrayList<>();
 
@@ -105,5 +93,15 @@ public class TimeTableService {
             }
         }
         return result;
+    }
+
+    private List<TimeTableEntry> getTimeTableEntries() {
+        List<TimeTable> timetables = timeTables.all();
+        List<TimeTableEntry> allEntries = new ArrayList<>();
+        for (TimeTable tt : timetables) {
+            allEntries.addAll(tt.entries);
+        }
+        Collections.sort(allEntries, Comparator.comparingLong(entry -> entry.time));
+        return allEntries;
     }
 }
