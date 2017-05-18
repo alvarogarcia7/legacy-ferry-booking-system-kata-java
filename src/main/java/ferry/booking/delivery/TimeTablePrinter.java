@@ -31,13 +31,7 @@ public class TimeTablePrinter {
                     items.add(x);
                 }
             }
-            Collections.sort(items, new Comparator<TimeTableViewModelRow>() {
-
-                @Override
-                public int compare(TimeTableViewModelRow tt1, TimeTableViewModelRow tt2) {
-                    return tt1.startTime.compareTo(tt2.startTime);
-                }
-            });
+            Collections.sort(items, Comparator.comparing(tt -> tt.startTime));
 
             for (TimeTableViewModelRow item : items) {
                 new UserMessage(String.format("| %-8s | %-13s | %-13s | %-18s | %-8s |", item.startTime, item.destinationPort,
