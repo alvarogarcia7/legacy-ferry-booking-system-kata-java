@@ -41,7 +41,7 @@ public class JourneyBookingService {
         for (TimeTable tt : timetables) {
             allEntries.addAll(tt.entries);
         }
-        Collections.sort(allEntries, Comparator.comparingLong(tte -> tte.time));
+        allEntries.sort(Comparator.comparingLong(tte -> tte.time));
 
         for (TimeTableEntry timetable : allEntries) {
             Ferry ferry = ferryService.nextFerryAvailableFrom(timetable.originId, timetable.time);
