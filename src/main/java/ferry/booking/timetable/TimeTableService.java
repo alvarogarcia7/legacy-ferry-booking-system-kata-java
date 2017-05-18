@@ -12,8 +12,6 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 public class TimeTableService {
 
@@ -29,11 +27,12 @@ public class TimeTableService {
 
     public List<TimeTableViewModelRow> getTimeTable(Ports ports) {
         List<TimeTable> timetables = timeTables.all();
-        List<TimeTableEntry> allEntries = new ArrayList<>();
+        List<TimeTableEntry> allEntries1 = new ArrayList<>();
         for (TimeTable tt : timetables) {
-            allEntries.addAll(tt.entries);
+            allEntries1.addAll(tt.entries);
         }
-        Collections.sort(allEntries, Comparator.comparingLong(entry -> entry.time));
+        Collections.sort(allEntries1, Comparator.comparingLong(entry -> entry.time));
+        List<TimeTableEntry> allEntries = allEntries1;
 
         List<TimeTableViewModelRow> rows = new ArrayList<>();
 
@@ -64,11 +63,12 @@ public class TimeTableService {
     public List<AvailableCrossing> getAvailableCrossings(long time, int fromPort, int toPort) {
         Ports ports = new Ports();
         List<TimeTable> timetables = timeTables.all();
-        List<TimeTableEntry> allEntries = new ArrayList<>();
+        List<TimeTableEntry> allEntries1 = new ArrayList<>();
         for (TimeTable tt : timetables) {
-            allEntries.addAll(tt.entries);
+            allEntries1.addAll(tt.entries);
         }
-        Collections.sort(allEntries, Comparator.comparingLong(tte -> tte.time));
+        Collections.sort(allEntries1, Comparator.comparingLong(entry -> entry.time));
+        List<TimeTableEntry> allEntries = allEntries1;
 
         List<AvailableCrossing> result = new ArrayList<>();
 
