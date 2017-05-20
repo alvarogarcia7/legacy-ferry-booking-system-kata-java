@@ -17,7 +17,7 @@ public class PortManager {
         this.ferries = ferries;
     }
 
-    public List<Port> PortModels() {
+    public List<Port> portModels() {
         for (Ferry ferry : ferries.all()) {
             for (Port port : ports.all()) {
                 if (port.id == ferry.homePortId) {
