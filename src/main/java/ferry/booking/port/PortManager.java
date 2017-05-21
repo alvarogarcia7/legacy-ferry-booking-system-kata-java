@@ -19,11 +19,7 @@ public class PortManager {
 
     public List<Port> portModels() {
         for (Ferry ferry : ferries.all()) {
-            for (Port port : ports.all()) {
-                if (port.id == ferry.homePortId) {
-                    port.addBoat(10, ferry);
-                }
-            }
+            ports.byId(ferry.homePortId).addBoat(10, ferry);
         }
         return ports.all();
     }
