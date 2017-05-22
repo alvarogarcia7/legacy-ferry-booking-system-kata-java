@@ -32,7 +32,7 @@ public class FerryAvailabilityService {
     }
 
     public Ferry nextFerryAvailableFrom(int portId, long time) {
-        List<Port> ports = portManager.portModels();
+        List<Port> ports = portManager.addAvailability();
         List<TimeTableEntry> allEntries = new ArrayList<>();
         for (TimeTable tt : timeTables.all()) {
             allEntries.addAll(tt.entries);
