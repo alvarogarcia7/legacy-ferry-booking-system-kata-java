@@ -19,9 +19,7 @@ public class Ports {
             JSONArray arr = new JSONArray(json);
             for (int i = 0; i < arr.length(); i++) {
                 JSONObject obj = arr.getJSONObject(i);
-                Port p = new Port();
-                p.id = obj.getInt("Id");
-                p.name = obj.getString("Name");
+                Port p = new Port(obj.getInt("Id"), obj.getString("Name"));
                 ports.add(p);
             }
         } catch (Exception e) {

@@ -10,8 +10,13 @@ import java.util.Map;
 public class Port {
     private final Map<Integer, Long> boatAvailability = new HashMap<>();
     private final List<Ferry> boats = new ArrayList<>();
-    public int id;
-    public String name;
+    public final int id;
+    public final String name;
+
+    public Port(int id, String name) {
+        this.id = id;
+        this.name = name;
+    }
 
     public void addBoat(long available, Ferry boat) {
         if (boat != null) {
