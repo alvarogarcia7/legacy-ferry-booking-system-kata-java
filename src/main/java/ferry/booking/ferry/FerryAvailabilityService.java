@@ -21,16 +21,6 @@ public class FerryAvailabilityService {
         this.portManager = portManager;
     }
 
-    private static void boatReady(TimeTableEntry timetable, Port destination, FerryJourney ferryJourney) {
-        if (ferryJourney.ferry == null) {
-            FerryManager.addFerry(timetable, ferryJourney);
-        }
-        Ferry ferry = ferryJourney.ferry;
-
-        long time = FerryModule.timeReady(timetable, destination);
-        destination.addBoat(time, ferry);
-    }
-
     public Ferry nextFerryAvailableFrom(int portId, long time) {
         List<Port> ports = portManager.addAvailability();
         List<TimeTableEntry> allEntries = sortEntries(timeTables.all());
@@ -50,6 +40,16 @@ public class FerryAvailabilityService {
         }
 
         return null;
+    }
+
+    private static void boatReady(TimeTableEntry timetable, Port destination, FerryJourney ferryJourney) {
+        if (ferryJourney.ferry == null) {
+            FerryManager.addFerry(timetable, ferryJourney);
+        }
+        Ferry ferry = ferryJourney.ferry;
+
+        long time = FerryModule.timeReady(timetable, destination);
+        destination.addBoat(time, ferry);
     }
 
     private List<TimeTableEntry> sortEntries(List<TimeTable> timeTables) {
