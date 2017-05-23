@@ -37,13 +37,7 @@ public class FerryAvailabilityService {
         for (TimeTable tt : timeTables.all()) {
             allEntries.addAll(tt.entries);
         }
-        Collections.sort(allEntries, new Comparator<TimeTableEntry>() {
-
-            @Override
-            public int compare(TimeTableEntry tte1, TimeTableEntry tte2) {
-                return Long.compare(tte1.time, tte2.time);
-            }
-        });
+        Collections.sort(allEntries, Comparator.comparingLong(tte -> tte.time));
 
         for (TimeTableEntry entry : allEntries) {
             FerryJourney ferry = FerryManager.createFerryJourney(ports, entry);
