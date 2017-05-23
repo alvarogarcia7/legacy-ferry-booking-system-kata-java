@@ -33,11 +33,7 @@ public class FerryAvailabilityService {
 
     public Ferry nextFerryAvailableFrom(int portId, long time) {
         List<Port> ports = portManager.addAvailability();
-        List<TimeTableEntry> allEntries = new ArrayList<>();
-        for (TimeTable tt : timeTables.all()) {
-            allEntries.addAll(tt.entries);
-        }
-        Collections.sort(allEntries, Comparator.comparingLong(tte -> tte.time));
+        List<TimeTableEntry> allEntries = sortEntries(timeTables.all());
 
         for (TimeTableEntry entry : allEntries) {
             FerryJourney ferry = FerryManager.createFerryJourney(ports, entry);
@@ -54,5 +50,14 @@ public class FerryAvailabilityService {
         }
 
         return null;
+    }
+
+    private List<TimeTableEntry> sortEntries(List<TimeTable> timeTables) {
+        List<TimeTableEntry> allEntries = new ArrayList<>();
+        for (TimeTable tt : timeTables) {
+            allEntries.addAll(tt.entries);
+        }
+        Collections.sort(allEntries, Comparator.comparingLong(tte -> tte.time));
+        return allEntries;
     }
 }
